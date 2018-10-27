@@ -374,9 +374,15 @@ The implementation process will be run on the synthesized design.  When the proc
 
 5. If it is not selected, click the *Routing Resources* icon ![](C:\xup\fpga_flow\2018.2_github\images\lab1\Fig34.png) to show routing resources. 
 
-   <p align="center">
-<img src ="./images/lab1/Fig35.png" width="40%" height="40%"/>
-</p>
+   <p align = "center">
+   <i>Selecting a net</i>
+   </p>
+      <p align="center">
+   <img src ="./images/lab1/Fig35.png" width="40%" height="40%"/>
+   </p>
+   <p align = "center">
+   <i>Viewing implemented design</i>
+   </p>
 <p align = "center">
 <i>Selecting a net</i>
 </p>

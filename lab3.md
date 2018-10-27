@@ -31,9 +31,6 @@ This lab is broken into steps that consist of general overview statements provid
 <img src ="./images/lab3/Fig1.png" width="80%" height="80%"/>
 </p>
 
-<p align = "center">
-</p> 
-
 ## Open a Vivado Project using IDE
 
 ### Launch Vivado and open the lab2 project. Save the project as lab3 in the *<2018_2_zynq _labs>* directory making sure that the create subdirectory option is selected.  Set the flatten_hierarchy setting to rebuilt. Create new synthesis run naming it as synth_2.

@@ -46,9 +46,7 @@ This lab guides you through the process of using Vivado IDE to create a simple H
 <p align="center">
 <img src ="./images/lab1/Fig1.png" width="70%" height="70%"/>
 </p>
-<p align = "center">
-<i>Second ila core triggered</i>
-</p>
+
 
 ### Lab 2
 This lab shows you the synthesis process and effect of changing of synthesis settings targeting the PYNQ-Z1 or PYNQ-Z2.  You will analyze the design and the generated reports.
@@ -56,20 +54,15 @@ This lab shows you the synthesis process and effect of changing of synthesis set
 <p align="center">
 <img src ="./images/lab2/Fig1.png" width="70%" height="70%"/>
 </p>
-<p align = "center">
-<i>Second ila core triggered</i>
-</p>
+
 
 ### Lab 3
 This lab continues with the previous lab. You will perform static timing analysis. You will implement the design with the default settings and generate a bitstream.  Then you will open a hardware session and program the FPGA. Finally the design will be validated by programming the hardware in SDK using the software application running on A9 that is provided to you.
 ### Lab 4
 In this lab you will use the IP Catalog to generate a clock resource. You will instantiate the generated clock core in the provided waveform generator design. You will also use IP Integrator to generate a FIFO core and then use it in the HDL design.
 
-  <p align="center">
+<p align="center">
 <img src ="./images/lab4/Fig1.png" width="70%" height="70%"/>
-</p>
-<p align = "center">
-<i>Second ila core triggered</i>
 </p>
 
 ### Lab 5
