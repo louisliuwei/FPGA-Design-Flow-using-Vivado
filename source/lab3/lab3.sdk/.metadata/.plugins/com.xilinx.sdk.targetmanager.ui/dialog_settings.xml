@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="uart_top_hw_platform_0-partial_bit"/>
+	<item value="" key="uart_top_hw_platform_0-bmmFile"/>
+	<item value="Local" key="uart_top_hw_platform_0-target"/>
+	<item value="uart_top_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="uart_top_hw_platform_0-device"/>
+	<item value="uart_top.bit" key="uart_top_hw_platform_0-bitFile"/>
+</section>

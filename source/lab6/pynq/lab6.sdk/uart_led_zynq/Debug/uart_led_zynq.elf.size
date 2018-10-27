@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  26868	   1152	  22584	  50604	   c5ac	uart_led_zynq.elf

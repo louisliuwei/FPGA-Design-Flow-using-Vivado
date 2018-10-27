@@ -1,0 +1,8 @@
+01:14:19 **** Incremental Build of configuration Debug for project uart_led_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+01:14:20 Build Finished (took 553ms)
+
