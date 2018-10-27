@@ -25,11 +25,23 @@ This lab is broken into steps that consist of general overview statements provid
 
 ## General Flow
 
-​       
+​   
 
 <p align="center">
-<img src ="./images/lab3/Fig1.png" width="80%" height="80%"/>
+<img src ="./images/lab3/Fig1.png" width="70%" height="70%"/>
 </p>
+
+
+<p align = "center">
+<i>Selecting to program the FPGA</i>
+</p> 
+
+## Open a Vivado Project using IDE
+
+<p align = "center">
+<i>Selecting to program the FPGA</i>
+</p>
+
 
 ## Open a Vivado Project using IDE
 
