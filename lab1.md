@@ -27,9 +27,7 @@ The design consists of some inputs that are logically operated on before the res
 <p align="center">
 <img src ="./images/lab1/Fig1.png" width="80%" height="80%"/>
 </p>
-<p align = "center">
-<i>General Flow</i>
-</p>
+
 
 
 ## General Flow
@@ -37,10 +35,6 @@ The design consists of some inputs that are logically operated on before the res
 <p align="center">
 <img src ="./images/lab1/Fig2.png" width="80%" height="80%"/>
 </p>
-<p align = "center">
-<i>General Flow</i>
-</p>
-
 
 
 ## Steps
