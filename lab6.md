@@ -28,26 +28,28 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 The provided design places the UART (RX) pin of the PS (Processing System) on the Cortex-A9 in a simple GPIO mode to allow the UART to be connected (passed through) to the Programmable Logic.  The processor samples the RX signal and sends it to the EMIO channel 0 which is connected to Rx input of the HDL module provided in the Static directory. This is done through a software application provided in the lab6.sdk folder hierarchy.  
 
 <p align="center">
-<img src ="./images/lab6/Fig1.png" width="80%" height="80%"/>
+<img src ="./images/lab6/Fig1.png">
 </p>
 <p align = "center">
 <i>The Complete Design on PL</i>
 </p>
 
 <p align="center">
-<img src ="./images/lab6/Fig2.png" width="50%" height="50%"/>
+<img src ="./images/lab6/Fig2.png">
 </p>
 <p align = "center">
 <i>The Complete System</i>
 </p>
 
+
 ## General Flow
 
 <p align="center">
-<img src ="./images/lab6/Fig3.png" width="80%" height="80%"/>
+<img src ="./images/lab6/Fig3.png">
 </p>
 <p align = "center">
 </p>
+
 
 ## Create a Vivado Project using IDE
 
@@ -102,7 +104,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined to be 115200 and 125 MHz respectively.
 
     <p align="center">
-    <img src ="./images/lab6/Fig4.png" width="80%" height="80%"/>
+    <img src ="./images/lab6/Fig4.png">
     </p>
     <p align = "center">
     <i>CLOCK_RATE parameter of uart_led</i>
@@ -117,11 +119,12 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 3. Expand the **Debug & Verification > Debug** folders and double-click the **ILA** entry.
 
    <p align="center">
-   <img src ="./images/lab6/Fig5.png" width="80%" height="80%"/>
+   <img src ="./images/lab6/Fig5.png">
    </p>
    <p align = "center">
    <i>ILA in IP Catalog</i>
    </p>
+
 
    This exercise will be connecting the ILA core/component to the LED port which is 8-bit wide.
 
@@ -132,7 +135,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 6. Change the *Number of Probes* to **2**.
 
    <p align="center">
-   <img src ="./images/lab6/Fig6.png" width="80%" height="80%"/>
+   <img src ="./images/lab6/Fig6.png">
    </p>
    <p align = "center">
    <i>Setting the component name and the number of probes field</i>
@@ -141,7 +144,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 7. Select the *Probe Ports* tab and change the PROBE1 port width to **8**, leaving the PROBE0 width to **1**.
 
    <p align="center">
-   <img src ="./images/lab6/Fig7.png" width="80%" height="80%"/>
+   <img src ="./images/lab6/Fig7.png">
    </p>
    <p align = "center">
    <i>Setting the probes widths</i>
@@ -152,7 +155,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    The Generate Output Products dialog box will appear.
 
    <p align="center">
-   <img src ="./images/lab6/Fig8.png" width="50%" height="50%"/>
+   <img src ="./images/lab6/Fig8.png">
    </p>
    <p align = "center">
    <i>The Generate Output Products</i>
@@ -161,7 +164,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 9. Click the **Generate** button to generate the core including the instantiation template. Click **OK** at the warning box. Notice the core is added to the *Design Sources* view.
 
    <p align="center">
-   <img src ="./images/lab6/Fig9.png" width="60%" height="60%"/>
+   <img src ="./images/lab6/Fig9.png">
    </p>
    <p align = "center">
    <i>Newly generate ila core added in the design source</i>
@@ -182,7 +185,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     *.probe1(PROBE1)   . probe1(led_pins)*
 
     <p align="center">
-    <img src ="./images/lab6/Fig10.png" width="60%" height="60%"/>
+    <img src ="./images/lab6/Fig10.png">
     </p>
     <p align = "center">
     <i>Instantiating the ILA Core in the uart_top.v</i>
@@ -193,7 +196,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     Notice that the ILA Core instance is in the design hierarchy.
 
     <p align="center">
-    <img src ="./images/lab6/Fig11.png" width="60%" height="60%"/>
+    <img src ="./images/lab6/Fig11.png">
     </p>
     <p align = "center">
     <i>ILA Core added to the design</i>
@@ -214,7 +217,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 4. Expand component **U0** and Select the **rx_data** bus between the *uart_rx_i0* and the *led_ctl_i0* instances, right-click, and select **Mark Debug**. 
 
    <p align="center">
-   <img src ="./images/lab6/Fig12.png" width="60%" height="60%"/>
+   <img src ="./images/lab6/Fig12.png">
    </p>
    <p align = "center">
    <i>Marking a bus to debug</i>
@@ -227,7 +230,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 7. Select the **Netlist** tab and notice that the nets which are marked/assigned for debugging have a debug icon next to them.
 
    <p align="center">
-   <img src ="./images/lab6/Fig13.png" width="50%" height="50%"/>
+   <img src ="./images/lab6/Fig13.png">
    </p>
    <p align = "center">
    <i>Nets with debug icons</i>
@@ -238,16 +241,16 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    Notice that the **Debug** tab is visible in the Console pane showing Assigned and Unassigned Debug Nets groups.
 
    <p align="center">
-   <img src ="./images/lab6/Fig14.png" width="60%" height="60%"/>
+   <img src ="./images/lab6/Fig14.png">
    </p>
    <p align = "center">
    <i>Debug tab showing assigned and unassigned nets</i>
    </p>
 
-9. Either click on the ![](.\images\lab6\Fig15.png) button in the top vertical tool buttons of the Debug pane, or right-click on the *Unassigned Debug Nets* and select the **Set up Debug…** option. 
+9. Either click on the ![](./images/lab6/Fig15.png) button in the top vertical tool buttons of the Debug pane, or right-click on the *Unassigned Debug Nets* and select the **Set up Debug…** option. 
 
    <p align="center">
-   <img src ="./images/lab6/Fig16.png" width="70%" height="70%"/>
+   <img src ="./images/lab6/Fig16.png">
    </p>
    <p align = "center">
    </p>
@@ -257,7 +260,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     Note that rx_data is listed, with the Clock Domain as clk_pin_IBUF_BUFG.
 
     <p align="center">
-    <img src ="./images/lab6/Fig17.png" width="70%" height="70%"/>
+    <img src ="./images/lab6/Fig17.png">
     </p>
     <p align = "center">
     <i>The remaining nets after removing already assigned nets in the Set Up Debug wizard</i>
@@ -268,7 +271,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 12. In the Synthesized Design Schematic, click on the net on the output side of the BUFG for the input pin named clk_pin. Hover over the now highlighted net and notice the name is clk_pin_IBUF_BUFG. This is the clock net selected for the debug nets earlier.
 
     <p align="center">
-    <img src ="./images/lab6/Fig18.png" width="80%" height="80%"/>
+    <img src ="./images/lab6/Fig18.png">
     </p>
     <p align = "center">
     <i>Locating clk_pin_IBUF_BUFG in the design</i>
@@ -337,29 +340,32 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    In the Hardware window in Vivado notice that there are two debug cores, hw_ila_1 and hw_ila_2.
 
    <p align="center">
-   <img src ="./images/lab6/Fig19.png" width="40%" height="40%"/>
+   <img src ="./images/lab6/Fig19.png">
    </p>
    <p align = "center">
    <i>Debug probes</i>
    </p>
 
+
    The hardware session status window also opens showing that the FPGA is programmed having two ila cores with the idle state.
 
    <p align="center">
-   <img src ="./images/lab6/Fig20.png" width="50%" height="50%"/>
+   <img src ="./images/lab6/Fig20.png">
    </p>
    <p align = "center">
    <i>Hardware session status</i>
    </p>
 
+
    Select the target FPGA xc7z020_1), and click on the **Run Trigger Immediate** button to see the signals in the waveform window.
 
    <p align="center">
-   <img src ="./images/lab6/Fig21.png" width="40%" height="40%"/>
+   <img src ="./images/lab6/Fig21.png">
    </p>
    <p align = "center">
    <i>Opening the waveform window</i>
    </p>
+
 
    Two waveform windows will be created, one for each ila; one ila is of the instantiated ILA core and another for the MARK DEBUG method.
 
@@ -368,7 +374,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 1. In the **Trigger Setup** window, click Add Probes and select the **rx_data_rdy_out**.
 
    <p align="center">
-   <img src ="./images/lab6/Fig22.png" width="50%" height="50%"/>
+   <img src ="./images/lab6/Fig22.png">
    </p>
    <p align = "center">
    <i>Adding a signal to trigger setup</i>
@@ -377,7 +383,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 2. Set the compare value (== [B] X) and change the value from x to 1. Click **OK**.
 
    <p align="center">
-   <img src ="./images/lab6/Fig23.png" width="50%" height="50%"/>
+   <img src ="./images/lab6/Fig23.png">
    </p>
    <p align = "center">
    <i>Setting the trigger condition</i>
@@ -386,7 +392,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 3. Set the trigger position of the *hw_ila_1* to **512**.
 
    <p align="center">
-   <img src ="./images/lab6/Fig24.png" width="50%" height="50%"/>
+   <img src ="./images/lab6/Fig24.png">
    </p>
    <p align = "center">
    <i>Setting up the trigger position</i>
@@ -397,7 +403,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 5. Select the hw_ila_1 in the Hardware window and then click on the Run Trigger ( ![](.\images\lab6\Fig25.png)  ) button. Observe that the hw_ila_1 core is armed and showing the status as **Waiting for Trigger**.  
 
    <p align="center">
-   <img src ="./images/lab6/Fig26.png" width="50%" height="50%"/>
+   <img src ="./images/lab6/Fig26.png">
    </p>
    <p align = "center">
    <i>Hardware analyzer running in capture mode</i>
@@ -408,16 +414,17 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 7. Select the hw_ila_data_1.wcfg window and see the waveform.  Notice that the rx_data_rdy_out goes from 0 to 1 at 512th sample.
 
   <p align="center">
-<img src ="./images/lab6/Fig27.png" width="100%" height="100%"/>
+<img src ="./images/lab6/Fig27.png">
 </p>
 <p align = "center">
 <i>Zoomed waveform view</i>
 </p>
 
+
 8. Add the hw_ila_2 probes to the trigger window of the hw_ila_2 and change the trigger condtion for rx_data[7:0]’s Radix from Hexadecimal to Binary. Change XXXX_XXXX to **0101_0101** (for the ASCII equivalent of U).
 
    <p align="center">
-   <img src ="./images/lab6/Fig28.png" width="100%" height="100%"/>
+   <img src ="./images/lab6/Fig28.png">
    </p>
    <p align = "center">
    <i>Setting up trigger condition for a particular input pattern</i>
@@ -430,7 +437,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 11. Select the corresponding waveform window and verify that it shows 55 after the trigger.
 
     <p align="center">
-    <img src ="./images/lab6/Fig29.png" width="90%" height="90%"/>
+    <img src ="./images/lab6/Fig29.png">
     </p>
     <p align = "center">
     <i>Second ila core triggered</i>

@@ -31,18 +31,6 @@ This lab is broken into steps that consist of general overview statements provid
 <img src ="./images/lab3/Fig1.png" width="70%" height="70%"/>
 </p>
 
-
-<p align = "center">
-<i>Selecting to program the FPGA</i>
-</p> 
-
-## Open a Vivado Project using IDE
-
-<p align = "center">
-<i>Selecting to program the FPGA</i>
-</p>
-
-
 ## Open a Vivado Project using IDE
 
 ### Launch Vivado and open the lab2 project. Save the project as lab3 in the *<2018_2_zynq _labs>* directory making sure that the create subdirectory option is selected.  Set the flatten_hierarchy setting to rebuilt. Create new synthesis run naming it as synth_2.
@@ -58,7 +46,7 @@ This lab is broken into steps that consist of general overview statements provid
 4. Make sure that the *Synthesis >* *flatten_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
 
    <p align="center">
-   <img src ="./images/lab3/Fig2.png" width="80%" height="80%"/>
+   <img src ="./images/lab3/Fig2.png">
    </p>
    <p align = "center">
    <i>Setting hierarchy to rebuilt</i>
@@ -81,11 +69,12 @@ This lab is broken into steps that consist of general overview statements provid
 4. Leave all the settings unchanged, and click **OK** to generate a default timing report, *timing_1.*
 
 <p align="center">
-<img src ="./images/lab3/Fig3.png" width="80%" height="80%"/>
+<img src ="./images/lab3/Fig3.png">
 </p>
 <p align = "center">
 <i>Timing report for the PYNQ</i>
 </p>
+
 
 5. Click on the link beside the **Worst Negative Slack** (WNS) and see the 8 failing paths.
 
@@ -96,7 +85,7 @@ This lab is broken into steps that consist of general overview statements provid
    The schematic for the output data path will be displayed.
 
    <p align="center">
-   <img src ="./images/lab3/Fig4.png" width="60%" height="60%"/>
+   <img src ="./images/lab3/Fig4.png">
    </p>
    <p align = "center">
    <i>The output data path</i>
@@ -109,7 +98,7 @@ This lab is broken into steps that consist of general overview statements provid
 9. Similarly, double-click on the left end of the BUFG to see the path between IBUF and BUFG.
 
    <p align="center">
-   <img src ="./images/lab3/Fig5.png" width="80%" height="80%"/>
+   <img src ="./images/lab3/Fig5.png">
    </p>
    <p align = "center">
    <i>Source to clock port of the FDRE</i>
@@ -118,25 +107,27 @@ This lab is broken into steps that consist of general overview statements provid
 10. Finally, double-click on the input pin of IBUF to see the path between the clock input pin and the IBUF.
 
     <p align="center">
-    <img src ="./images/lab3/Fig6.png" width="80%" height="80%"/>
+    <img src ="./images/lab3/Fig6.png">
     </p>
     <p align = "center">
     <i>The schematic view of the source clock path</i>
     </p>
 
+
     This corresponds to the Source Clock Path in the timing report.
 
     <p align="center">
-    <img src ="./images/lab3/Fig7.png" width="80%" height="80%"/>
+    <img src ="./images/lab3/Fig7.png">
     </p>
     <p align = "center">
     <i>The source clock path for the PYNQ</i>
     </p>
 
+
     Since the virtual clock is slower (12 ns) than the clk_pin period (8 ns), the data path delay includes the clock period of the clk_pin clock source.
 
     <p align="center">
-    <img src ="./images/lab3/Fig8.png" width="70%" height="70%"/>
+    <img src ="./images/lab3/Fig8.png">
     </p>
     <p align = "center">
     <i>Worst failing path for the PYNQ</i>
@@ -149,7 +140,7 @@ This lab is broken into steps that consist of general overview statements provid
    The Timing Constraints GUI will appear, showing the design has two create clocks, four inputs, and one output constraints. It also shows the constraints in the text form in the All Constraints section.
 
    <p align="center">
-   <img src ="./images/lab3/Fig9.png" width="80%" height="80%"/>
+   <img src ="./images/lab3/Fig9.png">
    </p>
    <p align = "center">
    <i>Timing Constraints showing 12 ns Virtual Clock period defined</i>
@@ -158,31 +149,34 @@ This lab is broken into steps that consist of general overview statements provid
 2. Click in the Period cell of the virtual_clock and change the period from 12 to 8 
 
 <p align="center">
-<img src ="./images/lab3/Fig10.png" width="30%" height="30%"/>
+<img src ="./images/lab3/Fig10.png">
 </p>
 <p align = "center">
 </p>
+
 
 3. Click **Apply**.
 
    Note that since the timing constraint has changed, a warning message in the console pane is displayed to rerun the report.
 
 <p align="center">
-<img src ="./images/lab3/Fig11.png" width="60%" height="60%"/>
+<img src ="./images/lab3/Fig11.png">
 </p>
 <p align = "center">
 </p>
+
 
 4. Click on **Rerun**.
 
    Notice that setup timing violations are gone. However, there are still 2 failing paths for the Hold.
 
 <p align="center">
-<img src ="./images/lab3/Fig12.png" width="80%" height="80%"/>
+<img src ="./images/lab3/Fig12.png">
 </p>
 <p align = "center">
 <i>Setup timing met for the PYNQ</i>
 </p>
+
 
 5. Click on the WHS link to see the paths.
 
@@ -225,7 +219,7 @@ This lab is broken into steps that consist of general overview statements provid
 3. Select Slice LUTs to view how much and which module consumes the resource.
 
    <p align="center">
-   <img src ="./images/lab3/Fig13.png" width="80%" height="80%"/>
+   <img src ="./images/lab3/Fig13.png">
    </p>
    <p align = "center">
    <i>Resource utilization for the PYNQ</i>
@@ -240,22 +234,24 @@ This lab is broken into steps that consist of general overview statements provid
 2. Leave all the settings unchanged and click **OK** to generate the report. 
 
 <p align="center">
-<img src ="./images/lab3/Fig14.png" width="80%" height="80%"/>
+<img src ="./images/lab3/Fig14.png">
 </p>
 <p align = "center">
 <i>The timing summary report showing timing violations</i>
 </p>
+
 
 3. Click on the WNS link to see a detailed report to determine the failing path entries.
 
 4. Double-click on the first failing path to see why it is failing.
 
    <p align="center">
-   <img src ="./images/lab3/Fig15.png" width="80%" height="80%"/>
+   <img src ="./images/lab3/Fig15.png">
    </p>
    <p align = "center">
    <i>First failing path delays for the PYNQ</i>
    </p>
+
 
    Compared to delays from the synthesis report, the net delays are actual delays (rather than an estimated figure).  The data path delay is longer than the destination clock path delay giving a negative slack (violation). The data path delay is 11.693 ns for the PYNQ-Z2, the destination clock path is 7.975 ns and the negative slack is -3.718 ns. 
 
@@ -264,10 +260,11 @@ This lab is broken into steps that consist of general overview statements provid
 5. Change the output delay by -4 ns and add the following min delay constraint in the uart_led_timing_pynq.xdc file.
 
 <p align="center">
-<img src ="./images/lab3/Fig16.png" width="80%" height="80%"/>
+<img src ="./images/lab3/Fig16.png">
 </p>
 <p align = "center">
 </p>
+
 
 6. Click on **Save File** button to save the modified constraint file and then click on the **Run Implementation** in the *Flow Navigator* pane to implement the project with new constraint file.
 
@@ -298,7 +295,7 @@ This lab is broken into steps that consist of general overview statements provid
     The clock nets are spread across multiple clock regions.
 
     <p align="center">
-    <img src ="./images/lab3/Fig17.png" width="60%" height="60%"/>
+    <img src ="./images/lab3/Fig17.png">
     </p>
     <p align = "center">
     <i>Clock nets for the PYNQ-Z2</i>
@@ -311,7 +308,7 @@ This lab is broken into steps that consist of general overview statements provid
 1. In the Flow Navigator, under **PROGRAM AND DEBUG** click **Generate Bitstream**.
 
    <p align="center">
-   <img src ="./images/lab3/Fig18.png" width="30%" height="30%"/>
+   <img src ="./images/lab3/Fig18.png">
    </p>
    <p align = "center">
    <i>Generating the bitstream</i>
@@ -334,10 +331,11 @@ This lab is broken into steps that consist of general overview statements provid
 3. Click on the **Open target** link, then **Auto Connect** from the drop down menu.
 
 <p align="center">
-<img src ="./images/lab3/Fig20.png" width="50%" height="50%"/>
+<img src ="./images/lab3/Fig20.png">
 </p>
 <p align = "center">
 </p>
+
 
 4. The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
@@ -346,10 +344,11 @@ This lab is broken into steps that consist of general overview statements provid
 6. Click on the FPGA device in the HARDWARE MANAGER window
 
 <p align="center">
-<img src ="./images/lab3/Fig20.png" width="50%" height="50%"/>
+<img src ="./images/lab3/Fig20.png">
 </p>
 <p align = "center">
 </p>
+
 
 7. Click on the **Program** button.
 
@@ -372,11 +371,12 @@ This lab is broken into steps that consist of general overview statements provid
 3. In the *Project Explorer*, right-click on the *uart_led_zynq*, select *Run As*, and then **Launch on Hardware (System Debugger).**
 
    <p align="center">
-   <img src ="./images/lab3/Fig21.png" width="80%" height="80%"/>
+   <img src ="./images/lab3/Fig21.png">
    </p>
    <p align = "center">
    <i>Running the application</i>
    </p>
+
 
    The program will be downloaded and the execution will begin.
 

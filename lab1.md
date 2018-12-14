@@ -25,16 +25,18 @@ This lab is broken into steps that consist of general overview statements provid
 The design consists of some inputs that are logically operated on before the results are output on the LEDs. 
 
 <p align="center">
-<img src ="./images/lab1/Fig1.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig1.png">
 </p>
+
 
 
 
 ## General Flow
 
 <p align="center">
-<img src ="./images/lab1/Fig2.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig2.png">
 </p>
+
 
 
 ## Steps
@@ -49,7 +51,7 @@ The design consists of some inputs that are logically operated on before the res
 4. Enter **lab1** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
    <p align="center">
-<img src ="./images/lab1/Fig3.png" width="100%" height="100%"/>
+<img src ="./images/lab1/Fig3.png">
 </p>
 <p align = "center">
 <i>Project Name and Location entry</i>
@@ -60,7 +62,7 @@ The design consists of some inputs that are logically operated on before the res
 6. Using the drop-down buttons, select **Verilog** as the *Target Language* and *Simulator Language* in the *Add Sources* form.
 
    <p align="center">
-<img src ="./images/lab1/Fig4.png" width="100%" height="100%"/>
+<img src ="./images/lab1/Fig4.png">
 </p>
 <p align = "center">
 <i>Selecting Target and Simulator language</i>
@@ -69,10 +71,11 @@ The design consists of some inputs that are logically operated on before the res
 7. Click on the **Blue Plus** button, then **Add Files…** and browse to the **C:\xup\fpga_flow\2018_2_zynq_sources\lab1** directory, select *lab1.v,* click **OK**.
 
    <p align="center">
-   <img src ="./images/lab1/Fig5.png" width="100%" height="100%"/>
+   <img src ="./images/lab1/Fig5.png">
    </p>
    <p align = "center">
    </p>
+
 
    If it is not already checked, check **Copy sources into project**
 
@@ -85,11 +88,12 @@ The design consists of some inputs that are logically operated on before the res
 10. In the *Default Part* form, use the **Parts** option and various drop-down fields of the **Filter** section. Select the **XC7Z020clg400-1**. ​		
 
     <p align="center">
-    <img src ="./images/lab1/Fig6.png" width="100%" height="100%"/>
+    <img src ="./images/lab1/Fig6.png">
     </p>
     <p align = "center">
     <i>Part Selection for the PYNQ</i>
     </p>
+
 
     You may also select the **Boards** option, select www.digilentinc.com for the PYNQ-Z1 board, tul.com.tw for the PYNQ-Z2 board under the Vendor filter and select the appropriate board. Notice that PYNQ-Z1 and PYNQ-Z1 may not be listed as they are not in the tools database. If not listed then you can download the board files for the desired boards either from Digilent PYNQ-Z1 webpage or TUL PYNQ-Z2 webpage. Click **Next**.
 
@@ -98,11 +102,12 @@ The design consists of some inputs that are logically operated on before the res
 Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab1** directory.  You will find that the lab1.cache and lab1.srcs directories and the lab1.xpr (Vivado) project file have been created. The lab1.cache directory is a place holder for the Vivado program database. Two directories, constrs_1 and sources_1, are created under the lab1.srcs directory; deep down under them, the copied lab1_<board>.xdc (constraint) and lab1.v (source) files respectively are placed.
 
    <p align="center">
-<img src ="./images/lab1/Fig7.png" width="50%" height="50%"/>
+<img src ="./images/lab1/Fig7.png">
 </p>
 <p align = "center">
 <i>Generated directory structure</i>
 </p>
+
 
 
 ### Open the lab1.v source and analyze the content.
@@ -110,7 +115,7 @@ Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab
 1. In the *Sources* pane, double-click the **lab1.v** entry to open the file in text mode.
 
    <p align="center">
-<img src ="./images/lab1/Fig8.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig8.png">
 </p>
 <p align = "center">
 <i>Opening the source file</i>
@@ -127,7 +132,7 @@ Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab
 1. In the *Sources* pane, expand the *Constraints* folder and double-click the **lab1_zynq.xdc** entry to open the file in text mode. 
 
    <p align="center">
-   <img src ="./images/lab1/Fig9.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig9.png">
    </p>
    <p align = "center">
    <i>Opening the constraint file</i>
@@ -142,11 +147,12 @@ Expand the *Open Elaborated Design* entry under the *RTL Analysis* tasks of the 
 The model (design) will be elaborated and a logic view of the design is displayed.
 
 <p align="center">
-<img src ="./images/lab1/Fig10.png" width="60%" height="60%"/>
+<img src ="./images/lab1/Fig10.png">
 </p>
 <p align = "center">
 <i>A logic view of the design</i>
 </p>
+
 
 
 ## Simulate the Design using the Vivado Simulator
@@ -156,7 +162,7 @@ The model (design) will be elaborated and a logic view of the design is displaye
 1. Click **Add Sources** under the *Project Manager* tasks of the *Flow Navigator* pane.
 
    <p align="center">
-   <img src ="./images/lab1/Fig11.png" width="40%" height="40%"/>
+   <img src ="./images/lab1/Fig11.png">
    </p>
    <p align = "center">
    <i>Add Sources</i>
@@ -165,11 +171,12 @@ The model (design) will be elaborated and a logic view of the design is displaye
 2.  Select the *Add or Create Simulation Sources* option and click **Next**.
 
    <p align="center">
-   <img src ="./images/lab1/Fig12.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig12.png">
    </p>
    <p align = "center">
    <i>Selecting Simulation Sources option</i>
    </p>
+
 
 3. In the *Add Sources Files* form, click the **Blue Plus** button and then **Add Files…**.
 
@@ -182,7 +189,7 @@ The model (design) will be elaborated and a logic view of the design is displaye
    The lab1_tb.v file is added under the *Simulation Sources* group, and **lab1.v** is automatically placed in its hierarchy as a dut (device under test) instance.
 
    <p align="center">
-   <img src ="./images/lab1/Fig13.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig13.png">
    </p>
    <p align = "center">
    <i>Simulation Sources hierarchy</i>
@@ -193,11 +200,12 @@ The model (design) will be elaborated and a logic view of the design is displaye
 8. Double-click on the **lab1_tb** in the *Sources* pane to view its contents.
 
    <p align="center">
-   <img src ="./images/lab1/Fig14.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig14.png">
    </p>
    <p align = "center">
    <i>The self-checking test bench</i>
    </p>
+
 
    The test bench defines the simulation step size and the resolution in line 1. The test bench module 		definition begins on line 5.  Line 15 instantiates the DUT (device/module under test). Lines 17 through 25 define the same module functionality for the expected value computation.  Lines 27 through 38 define the stimuli generation, and compare the expected output with what the DUT provides.  Line 40 ends the test bench.  The **$display** task will print the message in the simulator console window when the simulation is run.
 
@@ -210,7 +218,7 @@ The model (design) will be elaborated and a logic view of the design is displaye
 2. Select the **Simulation** tab, and set the **Simulation Run Time** value to 200 ns and click **OK**.
 
    <p align="center">
-   <img src ="./images/lab1/Fig15.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig15.png">
    </p>
    <p align = "center">
    <i>Setting simulation run time</i>
@@ -221,18 +229,19 @@ The model (design) will be elaborated and a logic view of the design is displaye
    The testbench and source files will be compiled and the Vivado simulator will be run (assuming no errors). You will see a simulator output like the one shown below.
 
    <p align="center">
-   <img src ="./images/lab1/Fig16.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig16.png">
    </p>
    <p align = "center">
    <i>Simulator output</i>
    </p>
+
 
    You will see four main views: (i) *Scopes,* where the testbench hierarchy as well as glbl instances are displayed, (ii) *Objects,* where top-level signals are displayed, (iii) the waveform window, and (iv) *Tcl Console* where the simulation activities are displayed.  Notice that since the testbench used is self-checking, the results are displayed as the simulation is run.
 
    Notice that the **lab1.sim** directory is created under the **lab1** directory, along with several lower-level directories. 
 
    <p align="center">
-   <img src ="./images/lab1/Fig17.png" width="60%" height="60%"/>
+   <img src ="./images/lab1/Fig17.png">
    </p>
    <p align = "center">
    <i>Directory structure after running behavioral simulation</i>
@@ -242,17 +251,18 @@ The model (design) will be elaborated and a logic view of the design is displaye
    You will see several buttons next to the waveform window which can be used for the specific purpose as listed in the table below.
 
  <p align="center">
-<img src ="./images/lab1/Fig18.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig18.png">
 </p>
 <p align = "center">
 <i>Various buttons available to view the waveform</i>
 </p>
 
-4. Click on the *Zoom Fit* button (![](C:\xup\fpga_flow\2018.2_github\images\lab1\Fig19.png)) to see the entire waveform.
+
+4. Click on the *Zoom Fit* button (![](./images/lab1/Fig19.png)) to see the entire waveform.
 
    Notice that the output changes when the input changes.
 
-   You can also float the simulation waveform window by clicking on the Float button (![](.\images\lab1\Fig20.png)) on the upper right hand side of the view. This will allow you to have a wider window to view the simulation waveforms. To reintegrate the floating window back into the GUI, simply click on the Dock Window button (![](.\images\lab1\Fig21.png)).
+   You can also float the simulation waveform window by clicking on the Float button (![](./images/lab1/Fig20.png)) on the upper right hand side of the view. This will allow you to have a wider window to view the simulation waveforms. To reintegrate the floating window back into the GUI, simply click on the Dock Window button (![](./images/lab1/Fig21.png)).
 
 ### Change display format if desired.
 
@@ -265,32 +275,35 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
    The btn[3:0] and led[3:0] signals will be displayed in the *Objects* window.
 
 <p align="center">
-<img src ="./images/lab1/Fig22.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig22.png">
 </p>
 <p align = "center">
 <i>Selecting lower-level signals</i>
 </p>
 
+
 2. Select **btn[3:0]** and **led[3:0]** and drag them into the waveform window to monitor those lower-level signals.
 
-3. On the simulator tool buttons ribbon bar![](.\images\lab1\Fig23.png), type 500 over in the simulation run time field,  click on the drop-down button of the units field and select ns since we want to run for 500 ns (total of 700 ns), and click on the (  ![](.\images\lab1\Fig25.png) ) button. The simulation will run for an additional 500 ns.     
+3. On the simulator tool buttons ribbon bar![](./images/lab1/Fig23.png), type 500 over in the simulation run time field,  click on the drop-down button of the units field and select ns since we want to run for 500 ns (total of 700 ns), and click on the (  ![](./images/lab1/Fig25.png) ) button. The simulation will run for an additional 500 ns.     
 4. Click on the *Zoom Fit* button and observe the output.
 
 <p align="center">
-<img src ="./images/lab1/Fig26.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig26.png">
 </p>
 <p align = "center">
 <i>Running simulation for additional 500 ns</i>
 </p>
 
+
 Observe the Tcl Console window and see the output is being displayed as the testbench uses the $display task.
 
 <p align="center">
-<img src ="./images/lab1/Fig28.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig28.png">
 </p>
 <p align = "center">
 <i>Tcl Console output after running the simulation for additional 500 ns</i>
 </p>
+
 
 5. Close the simulator by selecting **File > Close Simulation**. 
 
@@ -310,10 +323,10 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
 3. Select the **Project Summary** tab and understand the various windows.
 
-   If you don’t see the Project Summary tab then select **Window > Project Summary** or click the **Project Summary** icon![](C:\xup\fpga_flow\2018.2_github\images\lab1\Fig29.png).
+   If you don’t see the Project Summary tab then select **Window > Project Summary** or click the **Project Summary** icon![](./images/lab1/Fig29.png).
 
    <p align="center">
-   <img src ="./images/lab1/Fig30.png" width="100%" height="100%"/>
+   <img src ="./images/lab1/Fig30.png">
    </p>
    <p align = "center">
    <i>Project Summary view </i>
@@ -327,7 +340,7 @@ Observe the Tcl Console window and see the output is being displayed as the test
    Notice that there are an estimated 3 LUTs and 8 IOs (4 input and 4 output) that are used.
 
    <p align="center">
-<img src ="./images/lab1/Fig31.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig31.png">
 </p>
 <p align = "center">
 <i>Resource utilization estimation summary</i>
@@ -336,19 +349,20 @@ Observe the Tcl Console window and see the output is being displayed as the test
 5. In The *Flow Navigator*, under *Synthesis* (expand *Open* *Synthesized Design* if necessary), click on **Schematic** to view the synthesized design in a schematic view.
 
    <p align="center">
-   <img src ="./images/lab1/Fig32.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig32.png">
    </p>
    <p align = "center">
    <i>Synthesized design’s schematic view</i>
    </p>
+
 
    Notice that IBUFs and OBUFs are automatically instantiated (added) to the design as the input and output are buffered.  The logical gates are implemented in LUTs (1 input is listed as LUT1, 2 input is listed as LUT2, and 3 input is listed as LUT3).  Four gates in RTL analysis output are mapped onto four LUTs in the synthesized output.
 
    Using Windows Explorer, verify that **lab1.runs** directory is created under **lab1**.  Under the **runs** directory, **synth_1** directory is created which holds several files related to synthesis.
 
    <p align="center">
-<img src ="./images/lab1/Fig33.png" width="40%" height="40%"/>
-</p>
+   <img src ="./images/lab1/Fig33.png">
+   </p>
 <p align = "center">
 <i>Directory structure after synthesizing the design</i>
 </p>
@@ -366,13 +380,13 @@ The implementation process will be run on the synthesized design.  When the proc
 3. Click **Yes,** if prompted, to close the synthesized design.  The implemented design will be opened. 
 4. In the *Netlist* pane, select one of the nets (e.g. led_OBUF[3]) and notice that the net displayed in the X1Y2 clock region in the Device view tab (you may have to zoom in to see it).
 
-5. If it is not selected, click the *Routing Resources* icon ![](C:\xup\fpga_flow\2018.2_github\images\lab1\Fig34.png) to show routing resources. 
+5. If it is not selected, click the *Routing Resources* icon ![](./images/lab1/Fig34.png) to show routing resources. 
 
    <p align = "center">
    <i>Selecting a net</i>
    </p>
       <p align="center">
-   <img src ="./images/lab1/Fig35.png" width="40%" height="40%"/>
+   <img src ="./images/lab1/Fig35.png">
    </p>
    <p align = "center">
    <i>Viewing implemented design</i>
@@ -381,11 +395,12 @@ The implementation process will be run on the synthesized design.  When the proc
 <i>Selecting a net</i>
 </p>
    <p align="center">
-<img src ="./images/lab1/Fig36.png" width="30%" height="30%"/>
+<img src ="./images/lab1/Fig36.png">
 </p>
 <p align = "center">
 <i>Viewing implemented design</i>
 </p>
+
 
 
 6. Close the implemented design view by selecting **File > Close Implemented Design**, and select the **Project Summary** tab (you may have to change to the Default Layout view) and observe the results.
@@ -395,7 +410,7 @@ The implementation process will be run on the synthesized design.  When the proc
    **Notice** that the actual resource utilization is 3 LUTs and 8 IOs.  Also, it indicates that no timing constraints were defined for this design (since the design is combinatorial).
 
    <p align="center">
-   <img src ="./images/lab1/Fig37.png" width="100%" height="100%"/>
+   <img src ="./images/lab1/Fig37.png">
    </p>
    <p align = "center">
    <i>Implementation results for the PYNQ-Z1 and PYNQ-Z2</i>
@@ -407,7 +422,7 @@ The implementation process will be run on the synthesized design.  When the proc
 7. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
 
    <p align="center">
-<img src ="./images/lab1/Fig38.png" width="100%" height="100%"/>
+<img src ="./images/lab1/Fig38.png">
 </p>
 <p align = "center">
 <i>Available reports to view</i>
@@ -429,14 +444,15 @@ The implementation process will be run on the synthesized design.  When the proc
 
 4. Similarly, right-click and add a marker at around 58.000 ns where the **leds** changes.
 
-5. You can also add a marker by clicking on the Add Marker button ( ![](.\images\lab1\Fig39.png)  ). Click on the **Add Marker** button and left-click at around 60 ns where **e_led** changes.
+5. You can also add a marker by clicking on the Add Marker button ( ![](./images/lab1/Fig39.png)  ). Click on the **Add Marker** button and left-click at around 60 ns where **e_led** changes.
 
    <p align="center">
-   <img src ="./images/lab1/Fig40.png" width="80%" height="80%"/>
+   <img src ="./images/lab1/Fig40.png">
    </p>
    <p align = "center">
    <i>Timing simulation output</i>
    </p>
+
 
    Notice that we monitored the expected led output at 10 ns after the input is changed (see the testbench) whereas the actual delay is about 8 to 9.7 ns (depending on the board).
 
@@ -453,18 +469,19 @@ The implementation process will be run on the synthesized design.  When the proc
    Make sure that the board is set to use USB power.
 
 <p align="center">
-<img src ="./images/lab1/Fig41.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig41.png">
 </p>
 <p align = "center">
 <i>Board connection for the PYNQ-Z1</i>
 </p>
 
 <p align="center">
-<img src ="./images/lab1/Fig42.png" width="80%" height="80%"/>
+<img src ="./images/lab1/Fig42.png">
 </p>
 <p align = "center">
 <i>Board connection for the PYNQ-Z2</i>
 </p>
+
 
 3. Power **ON** the board.
 
@@ -473,11 +490,12 @@ The implementation process will be run on the synthesized design.  When the proc
    The bitstream generation process will be run on the implemented design.  When the process is completed a *Bitstream Generation* *Completed* dialog box with three options will be displayed.  
 
    <p align="center">
-   <img src ="./images/lab1/Fig43.png" width="60%" height="60%"/>
+   <img src ="./images/lab1/Fig43.png">
    </p>
    <p align = "center">
    <i>Bitstream generation</i>
    </p>
+
 
    This process will have generated a **lab1.bit** file under **impl_1** directory in the **lab1.runs** directory.
 
@@ -488,28 +506,30 @@ The implementation process will be run on the synthesized design.  When the proc
 6. Click on the **Open target** link.
 
 <p align="center">
-<img src ="./images/lab1/Fig44.png" width="60%" height="60%"/>
+<img src ="./images/lab1/Fig44.png">
 </p>
 <p align = "center">
 <i>Opening new hardware target</i>
 </p>
+
 
 7. From the dropdown menu, click **Auto Connect.**
 
    The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
    <p align="center">
-   <img src ="./images/lab1/Fig45.png" width="60%" height="60%"/>
+   <img src ="./images/lab1/Fig45.png">
    </p>
    <p align = "center">
    <i>Opened hardware session</i>
    </p>
 
+
    Select the device and verify that the lab1.bit is selected as the programming file in the General tab.
 
    <p align="center">
-<img src ="./images/lab1/Fig46.png" width="60%" height="60%"/>
-</p>
+   <img src ="./images/lab1/Fig46.png">
+   </p>
 <p align = "center">
 <i>Programming file</i>
 </p>
@@ -517,11 +537,12 @@ The implementation process will be run on the synthesized design.  When the proc
 8. Click on the *Program device* link in the green information bar to program the target FPGA device. Another way is to right click on the device and select *Program Device.*
 
 <p align="center">
-<img src ="./images/lab1/Fig47.png" width="60%" height="60%"/>
+<img src ="./images/lab1/Fig47.png">
 </p>
 <p align = "center">
 <i>Selecting to program the FPGA</i>
 </p>
+
 
 9. Click **Program** to program the FPGA.
 

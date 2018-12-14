@@ -30,11 +30,12 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 The provided design places the UART (RX) pin of the PS (Processing System) on the Cortex-A9 in a simple GPIO mode to allow the UART to be connected (passed through) to the Programmable Logic.  The processor samples the RX signal and sends it to the EMIO channel 0 which is connected to Rx input of the HDL module provided in the Static directory. This is done through a software application provided in the lab5.sdk folder hierarchy.  
 
 <p align="center">
-<img src ="./images/lab5/Fig1.png" width="60%" height="60%"/>
+<img src ="./images/lab5/Fig1.png">
 </p>
 <p align = "center">
 <i>The Complete Design on PL</i>
 </p>
+
 
 <p align="center">
 <img src ="./images/lab5/Fig2.png" width="50%" height="50%"/>
@@ -43,15 +44,16 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 <i>The Complete System</i>
 </p>
 
- 
+
 
 ## General Flow
 
 ​   
 
 <p align="center">
-<img src ="./images/lab5/Fig3.png" width="80%" height="80%"/>
+<img src ="./images/lab5/Fig3.png">
 </p>
+
 
 <p align = "center">
 </p> 
@@ -83,7 +85,7 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
    The device view window and package pins tab will be displayed.
 
    <p align="center">
-   <img src ="./images/lab5/Fig4.png" width="70%" height="70%"/>
+   <img src ="./images/lab5/Fig4.png">
    </p>
    <p align = "center">
    <i>I/O Planning project’s default windows and views</i>
@@ -100,7 +102,7 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 2. Type **clk_pin** in the *Name* field, select **Input** for the *Direction* and select **LVCMOS33** as the *I/O Standard*, and click **OK**.
 
    <p align="center">
-   <img src ="./images/lab5/Fig5.png" width="60%" height="60%"/>
+   <img src ="./images/lab5/Fig5.png">
    </p>
    <p align = "center">
    <i>Creating I/O Port for clk_pin input</i>
@@ -113,11 +115,12 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 Hover the mouse over **H16** in the Device view window.
 
 <p align="center">
-<img src ="./images/lab5/Fig6.png" width="80%" height="80%"/>
+<img src ="./images/lab5/Fig6.png">
 </p>
 <p align = "center">
 <i>Locating H16 pin in the Device view</i>
 </p>
+
 
 1. When located, click on it.
 
@@ -130,11 +133,12 @@ Hover the mouse over **H16** in the Device view window.
 4. Select **Edit > Find** or Ctrl-F to open the Find form.  Select **Package Pins** in the *Find* drop-down field, type ***D20** in the match criteria field, and click on **OK**.
 
    <p align="center">
-   <img src ="./images/lab5/Fig7.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig7.png">
    </p>
    <p align = "center">
    <i>Finding a package pin</i>
    </p>
+
 
    Notice that the Find Results tab is opened, and the corresponding entry is shown in the tab.
 
@@ -147,22 +151,24 @@ Hover the mouse over **H16** in the Device view window.
 1. In the I/O Ports tab, click on the create I/O port button on the left vertical ribbon.
 
    <p align="center">
-   <img src ="./images/lab5/Fig8.png" width="60%" height="60%"/>
+   <img src ="./images/lab5/Fig8.png">
    </p>
    <p align = "center">
    <i>Create I/O Ports button</i>
    </p>
+
 
    The Create I/O Ports form will be displayed.
 
 2. Type **led_pins** in the *Name* field, select *Output* direction, click on the check-box of **Create bus**, set the msb to **7**, and select **LVCMOS33** I/O standard and click **OK**. 
 
    <p align="center">
-   <img src ="./images/lab5/Fig9.png" width="60%" height="60%"/>
+   <img src ="./images/lab5/Fig9.png">
    </p>
    <p align = "center">
    <i>Creating I/O ports for the led_pins output</i>
    </p>
+
 
    The led_pins entries will be created and displayed in the I/O Ports tab.  Notice that the I/O standard and directions are already set, leaving only the pin locations to be assigned.
 
@@ -193,11 +199,12 @@ Hover the mouse over **H16** in the Device view window.
 4. Enter **uart_led_pynq** in the *File name* field, and click **OK**.
 
    <p align="center">
-   <img src ="./images/lab5/Fig10.png" width="60%" height="60%"/>
+   <img src ="./images/lab5/Fig10.png">
    </p>
    <p align = "center">
    <i>Saving constraints</i>
    </p>
+
 
    The uart_led_pynq.xdc file will be created and added to the Sources tab.
 
@@ -221,7 +228,7 @@ Hover the mouse over **H16** in the Device view window.
 9. Change *io_1.v* to **uart_top.v**, and click **OK**
 
    <p align="center">
-   <img src ="./images/lab5/Fig12.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig12.png">
    </p>
    <p align = "center">
    <i>Assigning top-level file name</i>
@@ -230,7 +237,7 @@ Hover the mouse over **H16** in the Device view window.
 10. Select the **Hierarchy** tab and notice that the *uart_top.v* file has been added to the project with top-level module name as **ios**.  If you double-click the entry, you will see the module name with the ports listing.
 
     <p align="center">
-    <img src ="./images/lab5/Fig13.png" width="80%" height="80%"/>
+    <img src ="./images/lab5/Fig13.png">
     </p>
     <p align = "center">
     <i>The top-level module content and the design hierarchy after migrating to RTL</i>
@@ -265,7 +272,7 @@ Hover the mouse over **H16** in the Device view window.
    Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined to be 115200 and 125 MHz respectively.
 
    <p align="center">
-   <img src ="./images/lab5/Fig14.png" width="70%" height="70%"/>
+   <img src ="./images/lab5/Fig14.png">
    </p>
    <p align = "center">
    <i>CLOCK_RATE parameter of uart_led</i>
@@ -290,7 +297,7 @@ Hover the mouse over **H16** in the Device view window.
 5. Specify the frequency of the object “clk_pin” to be **125 MHz,** notice the Period, Rise At and Fall At are automatically populated. Also notice the Tcl command that can be previewed at the bottom of the wizard. Click **Next** to proceed.
 
    <p align="center">
-   <img src ="./images/lab5/Fig15.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig15.png">
    </p>
    <p align = "center">
    <i>Constraints Wizard clk_pin parameters and Tcl command</i>
@@ -313,7 +320,7 @@ Hover the mouse over **H16** in the Device view window.
    - Click **Next**.
 
    <p align="center">
-   <img src ="./images/lab5/Fig16.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig16.png">
    </p>
    <p align = "center">
    <i>Specifying Input Delays for btn_pin and rst_pin</i>
@@ -328,7 +335,7 @@ Hover the mouse over **H16** in the Device view window.
 13. **Check** *On Finish –* **View Timing Constraints** and click **Finish** to close the wizard. The option will open the Timing Constraints Editor to show you the generated timing constraint.
 
     <p align="center">
-    <img src ="./images/lab5/Fig17.png" width="80%" height="80%"/>
+    <img src ="./images/lab5/Fig17.png">
     </p>
     <p align = "center">
     <i>Selecting View Timing constraints</i>
@@ -339,7 +346,7 @@ Hover the mouse over **H16** in the Device view window.
     There is no need to click Apply since the constraints have already been applied in the Constraints Wizard.
 
     <p align="center">
-    <img src ="./images/lab5/Fig18.png" width="80%" height="80%"/>
+    <img src ="./images/lab5/Fig18.png">
     </p>
     <p align = "center">
     <i>The constraints added after using the Constraints Wizard</i>
@@ -354,7 +361,7 @@ Hover the mouse over **H16** in the Device view window.
 2. In the Options tab, select min_max from the Path delay type drop-down list.
 
    <p align="center">
-   <img src ="./images/lab5/Fig19.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig19.png">
    </p>
    <p align = "center">
    <i>Performing timing analysis</i>
@@ -365,11 +372,12 @@ Hover the mouse over **H16** in the Device view window.
    The Timing Results view opens at the bottom of the Vivado IDE.
 
    <p align="center">
-   <img src ="./images/lab5/Fig20.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig20.png">
    </p>
    <p align = "center">
    <i>Timing summary</i>
    </p>
+
 
    The *Design Timing Summary* report provides a brief worst Setup and Hold slack information and Number of failing endpoints to indicate whether the design has met timing or not.
 
@@ -378,7 +386,7 @@ Hover the mouse over **H16** in the Device view window.
 4. Click on the link next to *Worst Hold Slack* (WHS) to see the list of failing paths.
 
    <p align="center">
-   <img src ="./images/lab5/Fig21.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig21.png">
    </p>
    <p align = "center">
    <i>The list of paths showing hold violations</i>
@@ -387,7 +395,7 @@ Hover the mouse over **H16** in the Device view window.
 5. Double-click on the Path 11 to see the actual path detail.
 
    <p align="center">
-   <img src ="./images/lab5/Fig22.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig22.png">
    </p>
    <p align = "center">
    <i>Failing hold path</i>
@@ -396,7 +404,7 @@ Hover the mouse over **H16** in the Device view window.
 6. Select Path11, right-click and select Schematic.
 
    <p align="center">
-   <img src ="./images/lab5/Fig23.png" width="70%" height="70%"/>
+   <img src ="./images/lab5/Fig23.png">
    </p>
    <p align = "center">
    <i>The schematic of the failing path</i>
@@ -427,7 +435,7 @@ Hover the mouse over **H16** in the Device view window.
    Note that failing timing paths are indicated in red. 
 
    <p align="center">
-   <img src ="./images/lab5/Fig24.png" width="80%" height="80%"/>
+   <img src ="./images/lab5/Fig24.png">
    </p>
    <p align = "center">
    <i>Failing setup paths</i>

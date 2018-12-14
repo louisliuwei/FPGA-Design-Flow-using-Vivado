@@ -34,29 +34,32 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 The provided design places the UART (RX) pin of the PS (Processing System) on the Cortex-A9 in a simple GPIO mode to allow the UART to be connected (passed through) to the Programmable Logic.  The processor samples the RX signal and sends it to the EMIO channel 0 which is connected to Rx input of the HDL module provided in the Static directory. This is done through a software application provided in the lab3.sdk folder hierarchy.  
 
 <p align="center">
-<img src ="./images/lab2/Fig1.png" width="60%" height="60%"/>
+<img src ="./images/lab2/Fig1.png">
 </p>
 <p align = "center">
 <i>The Complete Design on PL</i>
 </p>
 
 
+
 <p align="center">
-<img src ="./images/lab2/Fig2.png" width="60%" height="60%"/>
+<img src ="./images/lab2/Fig2.png">
 </p>
 <p align = "center">
 <i>The Complete System</i>
 </p>
 
+
 ## General Flow
 
 <p align="center">
-<img src ="./images/lab2/Fig3.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig3.png">
 </p>
 <p align = "center">
 </p>
 
- 
+
+
 
 ## Create a Vivado Project using IDE 
 
@@ -111,7 +114,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 1. In the *Sources* pane, expand the **uart_led** entry and notice hierarchy of the lower-level modules.
 
    <p align="center">
-<img src ="./images/lab2/Fig4.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig4.png">
 </p>
 <p align = "center">
 <i>Opening the source file</i>
@@ -122,7 +125,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined to be 115200 and 125 MHz respectively as shown in the design diagram. Also notice that the lower level modules are instantiated. The meta_harden modules are used to synchronize the asynchronous reset and push-button inputs.
 
    <p align="center">
-<img src ="./images/lab2/Fig5.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig5.png">
 </p>
 <p align = "center">
 <i>CLOCK_RATE parameter of uart_led for PYNQ board</i>
@@ -137,7 +140,7 @@ This module uses the baud rate generator and a finite state machine. The rxd_pin
 1. In the *Sources* pane, expand the *Constraints* folder and double-click the **uart_led_timing_pynq.xdc** entry to open the file in text mode.
 
    <p align="center">
-   <img src ="./images/lab2/Fig6.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig6.png">
    </p>
    <p align = "center">
    <i>Timing constraints</i>
@@ -154,11 +157,12 @@ Line 4 creates the period constraint of 8ns with a duty cycle of 50%. Line 7 cre
    The model (design) will be elaborated and a logical view of the design is displayed.
 
 <p align="center">
-<img src ="./images/lab2/Fig7.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig7.png">
 </p>
 <p align = "center">
 <i>A logic view of the design one-level down from the top in component U0</i>
 </p>   
+
 You will see two components at the top-level, going down one level in component U0 shows 2 instances of meta_harden, one instance of uart_rx, and one instance of led_ctl. 
 
 2. To see where the uart_rx_i0 gets generated, right-click on the uart_rx_i0 instance and select *Go To Source* and see that line 84 in the source code is generating it.
@@ -166,11 +170,12 @@ You will see two components at the top-level, going down one level in component 
 3. Double-click on the uart_rx_i0 instance in the schematic diagram to see the underlying components.
 
  <p align="center">
-<img src ="./images/lab2/Fig8.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig8.png">
 </p>
 <p align = "center">
 <i>Lower level components of the uart_rx_i0 module</i>
 </p>  
+
 
 4. Click on **Report Noise** under the *Open Elaborated Design* entry of the *RTL Analysis* tasks of the *Flow Navigator* pane.
 
@@ -179,11 +184,12 @@ You will see two components at the top-level, going down one level in component 
 6. View the ssn_1 report and observe the unplaced ports, Summary, and I/O Bank Details are highlighted in red because the pin assignments were not done.  Note that only output pins are reported as the noise analysis is done on the output pins.
 
 <p align="center">
-<img src ="./images/lab2/Fig9.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig9.png">
 </p>
 <p align = "center">
 <i>Noise report</i>
 </p>
+
 
 7. Click on **Add Sources** under the *Project Navigator*, select *Add or create constraints* option and click **Next**.
 
@@ -192,10 +198,11 @@ You will see two components at the top-level, going down one level in component 
    Notice that the sources are modified and the tools detect it, showing a warning status bar to re-load the design.
 
 <p align="center">
-<img src ="./images/lab2/Fig10.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig10.png">
 </p>
 <p align = "center">
 </p>
+
 
 9. Click on the **Reload** link. The constraints will be processed.
 
@@ -217,7 +224,7 @@ You will see two components at the top-level, going down one level in component 
 
 3. Select the **Project Summary** tab
 
-   If you don’t see the Project Summary tab then select **Layout > Default Layout,** **or** click the **Project Summary** icon![](.\images\lab2\Fig11.png).    
+   If you don’t see the Project Summary tab then select **Layout > Default Layout,** **or** click the **Project Summary** icon![](./images/lab2/Fig11.png).    
 
 4. Click on the **Table** tab in the **Project Summary** tab and fill out the following information.
 
@@ -226,19 +233,21 @@ You will see two components at the top-level, going down one level in component 
 Look through the table and find the number used of each of the following: 
 
 <p align="center">
-<img src ="./images/lab2/Fig12.png" width="60%" height="60%"/>
+<img src ="./images/lab2/Fig12.png">
 </p>
 <p align = "center">
 </p>                                               
 
+
 5. Click on **Schematic** under the *Open Synthesized Design* tasks of *Synthesis* tasks of the *Flow Navigator* pane to view the synthesized design in a schematic view.
 
    <p align="center">
-   <img src ="./images/lab2/Fig13.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig13.png">
    </p>
    <p align = "center">
    <i>Synthesized design’s schematic view</i>
    </p>
+
 
    Notice that IBUF and OBUF are automatically instantiated (added) to the design as the input and output are buffered.  There are still four lower level modules instantiated.
 
@@ -250,7 +259,7 @@ Look through the table and find the number used of each of the following:
 
 8. Double-click on the **meta_harden_rxd_io** instance to see how the synchronization circuit is being implemented using two FFs.  This synchronization is necessary to reduce the likelihood of meta-stability.  
 
-9. Click on the (  ![](G:\Works\Study\Workshop\Github_Markdown\images\lab2\Fig11_1.png) ) in the schematic view to go back to its parent block.
+9. Click on the (  ![](./images/lab2/Fig11_1.png) ) in the schematic view to go back to its parent block.
 
 ### Analyze the timing report.    
 
@@ -259,11 +268,12 @@ Look through the table and find the number used of each of the following:
 2. Click **OK** to generate the Timing_1 report.
 
    <p align="center">
-   <img src ="./images/lab2/Fig14.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig14.png">
    </p>
    <p align = "center">
    <i>Timing report for the PYNQ</i>
    </p>
+
 
    Notice that the Design Timing Summary and Inter-Clock Paths entry in the left pane is highlighted in red indicating timing violations. In the right pane, the information is grouped in Setup, Hold, and Width columns.
 
@@ -272,20 +282,22 @@ Look through the table and find the number used of each of the following:
 3. Click on the WNS link and see the 8 failing paths.
 
    <p align="center">
-   <img src ="./images/lab2/Fig15.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig15.png">
    </p>
    <p align = "center">
    <i>The 8 failing paths for the PYNQ</i>
    </p>
 
+
    Double-click on the Path 25 to see how the path is made.
 
    <p align="center">
-   <img src ="./images/lab2/Fig16.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig16.png">
    </p>
    <p align = "center">
    <i>Worst failing path for the PYNQ</i>
    </p>
+
 
    Note that this is an estimate only. The nets are specified as unplaced and have all been allocated default values (0.584 ns). No actual routing delays are considered.
 
@@ -294,7 +306,7 @@ Look through the table and find the number used of each of the following:
 1. Click **Report Utilization** under the Open Synthesized Design, and click **OK** to generate the utilization report.  Click on **Summary** in the left pane.
 
    <p align="center">
-   <img src ="./images/lab2/Fig17.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig17.png">
    </p>
    <p align = "center">
    <i>Utilization report for the PYNQ</i>
@@ -305,15 +317,16 @@ Look through the table and find the number used of each of the following:
 Look through the report and find the number used of each of the following: 
 
 <p align="center">
-<img src ="./images/lab2/Fig18.png" width="60%" height="60%"/>
+<img src ="./images/lab2/Fig18.png">
 </p>
 <p align = "center">
 </p>                                          
 
+
 2. Select Slice LUTs entry in the left pane and see the utilization by lower-level instances. You can expand the instances in the right pane to see the complete hierarchy utilization.
 
    <p align="center">
-   <img src ="./images/lab2/Fig19.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig19.png">
    </p>
    <p align = "center">
    <i>Utilization of lower-level modules for the PYNQ</i>
@@ -324,21 +337,23 @@ Look through the report and find the number used of each of the following:
    Note that this is just an estimate as no simulation run data was provided and no accurate activity rate, or environment information was entered.
 
    <p align="center">
-   <img src ="./images/lab2/Fig20.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig20.png">
    </p>
    <p align = "center">
    <i>Power consumption estimation for the PYNQ</i>
    </p>
+
 
    **Question 3**
 
    From the power report, find the % power consumption used by each of the following: 
 
    <p align="center">
-   <img src ="./images/lab2/Fig21.png" width="60%" height="60%"/>
+   <img src ="./images/lab2/Fig21.png">
    </p>
    <p align = "center">
    </p>
+
 
    You can move the mouse on the boxes which do not show the percentage to see the consumption.
 
@@ -349,7 +364,7 @@ Look through the report and find the number used of each of the following:
 2. A dialog box will appear showing the default name of the file in the current project directory.
 
    <p align="center">
-   <img src ="./images/lab2/Fig22.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig22.png">
    </p>
    <p align = "center">
    <i>Writing checkpoint</i>
@@ -364,7 +379,7 @@ Look through the report and find the number used of each of the following:
 2. Click on the **flatten_hierarchy** drop-down button and select **full** to flatten the design.
 
    <p align="center">
-   <img src ="./images/lab2/Fig23.png" width="80%" height="80%"/>
+   <img src ="./images/lab2/Fig23.png">
    </p>
    <p align = "center">
    <i>Selecting flatten hierarchy option</i>
@@ -375,11 +390,12 @@ Look through the report and find the number used of each of the following:
 4. A Create New Run dialog box will appear asking you whether you want to create a new run since the settings have been changed.
 
 <p align="center">
-<img src ="./images/lab2/Fig24.png" width="80%" height="80%"/>
+<img src ="./images/lab2/Fig24.png">
 </p>
 <p align = "center">
 <i>Create New Run dialog box</i>
 </p>
+
 
 5. Click **Yes**.
 
@@ -398,7 +414,7 @@ Look through the report and find the number used of each of the following:
     Notice that the design is completely flattened.
 
     <p align="center">
-    <img src ="./images/lab2/Fig25.png" width="80%" height="80%"/>
+    <img src ="./images/lab2/Fig25.png">
     </p>
     <p align = "center">
     <i>Flattened design</i>
@@ -463,7 +479,7 @@ In this lab you applied the timing constraints and synthesized the design.  You 
 1. Look through the table and find the number used of each of the following:
 
    <p align="center">
-   <img src ="./images/lab2/Fig26.png" width="40%" height="40%"/>
+   <img src ="./images/lab2/Fig26.png">
    </p>
    <p align = "center">
    </p>
@@ -471,7 +487,7 @@ In this lab you applied the timing constraints and synthesized the design.  You 
 2. From the power report, find the % power consumption used by each of the following:
 
    <p align="center">
-   <img src ="./images/lab2/Fig27.png" width="40%" height="40%"/>
+   <img src ="./images/lab2/Fig27.png">
    </p>
    <p align = "center">
    </p>

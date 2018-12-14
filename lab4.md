@@ -49,30 +49,32 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 The provided design places the UART (RX and TX) pins of the PS (Processing System) on the Cortex-A9 in a simple GPIO mode to allow the UART to be connected (passed through) to the Programmable Logic.  The processor samples the RX signal and sends it to the EMIO channel 0 which is connected to Rx input of the HDL module provided in the Static directory. Similarly, the design samples the Tx output of the HDL module through another EMIO channel 1 and sends it on the PS UART TX pin. This is done through a software application provided in the lab4.sdk folder hierarchy.  
 
 <p align="center">
-<img src ="./images/lab4/Fig1.png" width="60%" height="60%"/>
+<img src ="./images/lab4/Fig1.png">
 </p>
 <p align = "center">
 <i>The complete design on PL</i>
 </p>
 
 <p align="center">
-<img src ="./images/lab4/Fig2.png" width="60%" height="60%"/>
+<img src ="./images/lab4/Fig2.png">
 </p>
 <p align = "center">
 <i>The Complete System</i>
 </p>
 
- 
 
- 
+
+
+
 
 ## General Flow
 
 <p align="center">
-<img src ="./images/lab4/Fig3.png" width="80%" height="80%"/>
+<img src ="./images/lab4/Fig3.png">
 </p>
 <p align = "center">
 </p>
+
 
 ## Create a Vivado Project using IDE
 
@@ -153,7 +155,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 2. Expand the **FPGA Features and Design > Clocking** sub-folders and double-click on the **Clocking Wizard** entry.
 
    <p align="center">
-   <img src ="./images/lab4/Fig4.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig4.png">
    </p>
    <p align = "center">
    <i>Accessing the clocking wizard</i>
@@ -164,7 +166,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 4. Change the core name to **clk_core**.  Make sure that the *Primary* input clock frequency is **125.000** MHz and the primitive used is **MMCM**.
 
    <p align="center">
-   <img src ="./images/lab4/Fig5.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig5.png">
    </p>
    <p align = "center">
    <i>The clocking wizard</i>
@@ -173,7 +175,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 5. Select the **Output Clocks** tab. Click on the check box to enable the second clock output. Make sure that the requested output frequency is 50 MHz for both clocks.
 
    <p align="center">
-   <img src ="./images/lab4/Fig6.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig6.png">
    </p>
    <p align = "center">
    <i>Setting output clocks</i>
@@ -182,7 +184,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 6. Click on the **Summary** tab and check the information.
 
    <p align="center">
-   <img src ="./images/lab4/Fig7.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig7.png">
    </p>
    <p align = "center">
    <i>Summary page of the clock core being generated</i>
@@ -191,11 +193,12 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 7. Click **OK** to see the *Generate Output Products* form.
 
 <p align="center">
-<img src ="./images/lab4/Fig8.png" width="50%" height="50%"/>
+<img src ="./images/lab4/Fig8.png">
 </p>
 <p align = "center">
 <i>Generate output products form</i>
 </p>
+
 
 8. Click on **Generate** to generate the output products including the instantiation template. Click **OK** to proceed.
 
@@ -212,7 +215,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 5. Change the instance name and net names to as shown in the figure below to match the names of existing signals in the design.
 
    <p align="center">
-   <img src ="./images/lab4/Fig9.png" width="60%" height="60%"/>
+   <img src ="./images/lab4/Fig9.png">
    </p>
    <p align = "center">
    <i>Assigning instance name and net connections</i>
@@ -223,7 +226,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 7. Select the Hierarchy tab and expand the **wave_gen > clk_gen_i0** hierarchy and verify that clk_core.xci is in the hierarchy. The IP has a bordered yellow square icon next to it.
 
    <p align="center">
-   <img src ="./images/lab4/Fig11.png" width="60%" height="60%"/>
+   <img src ="./images/lab4/Fig11.png">
    </p>
    <p align = "center">
    <i>The clk_core instantiated and shown in the hierarchy</i>
@@ -252,7 +255,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 3. Verify that the design is using the clock resource. 
 
    <p align="center">
-   <img src ="./images/lab4/Fig12.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig12.png">
    </p>
    <p align = "center">
    <i>Clock resource utilization</i>
@@ -307,7 +310,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    In the *Project Explorer*, right-click on the wave_gen_uart, select *Run As*, and then **Launch on Hardware (System Debugger)**
 
    <p align="center">
-   <img src ="./images/lab4/Fig13.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig13.png">
    </p>
    <p align = "center">
    <i>Running the application</i>
@@ -319,50 +322,50 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 6. Browse to **<2018_2_zynq_sources>\lab4**, select **testpattern.txt** file, and click **Open**.
 
-The file content will be send to the design.  The file content is as follows:
+   The file content will be send to the design.  The file content is as follows:
 
-**PFFFF                        < --  specifies the pre-scaling*
+   **PFFFF                        < --  specifies the pre-scaling*
 
-**S0fff                         < -- specifies the speed value*
+   **S0fff                         < -- specifies the speed value*
 
-**N000f                          < -- specifies the number of samples to play*
+   **N000f                          < -- specifies the number of samples to play*
 
-**W00000000                 < -- write first sample of value 0 at location 0000*
+   **W00000000                 < -- write first sample of value 0 at location 0000*
 
-**W00011111                 < -- write second sample of value 0x1111 at location 0001*
+   **W00011111                 < -- write second sample of value 0x1111 at location 0001*
 
-**W00022222*
+   **W00022222*
 
-**W00033333*
+   **W00033333*
 
-**W00044444*
+   **W00044444*
 
-**W00055555*
+   **W00055555*
 
-**W00066666*
+   **W00066666*
 
-**W00077777*
+   **W00077777*
 
-**W00088888*
+   **W00088888*
 
-**W00099999*
+   **W00099999*
 
-**W000AAAAA*
+   **W000AAAAA*
 
-**W000BBBBB*
+   **W000BBBBB*
 
-**W000CCCCC*
+   **W000CCCCC*
 
-**W000DDDDD*
+   **W000DDDDD*
 
-**W000EEEEE*
+   **W000EEEEE*
 
-**W000FFFFF*
+   **W000FFFFF*
 
 7. The design understands various commands as listed in figure below.  All values are in hexadecimal.  All values and addresses are in hexadecimal.
 
    <p align="center">
-   <img src ="./images/lab4/Fig14.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig14.png">
    </p>
    <p align = "center">
    <i>Commands</i>
@@ -373,7 +376,7 @@ The file content will be send to the design.  The file content is as follows:
 9. You can also type *H to halt the play.
 
    <p align="center">
-   <img src ="./images/lab4/Fig15.png" width="10%" height="10%"/>
+   <img src ="./images/lab4/Fig15.png">
    </p>
    <p align = "center">
    <i>Terminal window display</i>
@@ -396,7 +399,7 @@ The file content will be send to the design.  The file content is as follows:
 4. If a following window appears, click on the check-box of *Also delete the project local file/directory from disk*, and click **OK** or else continue to next step.
 
    <p align="center">
-   <img src ="./images/lab4/Fig16.png" width="50%" height="50%"/>
+   <img src ="./images/lab4/Fig16.png">
    </p>
    <p align = "center">
    <i>Removing an existing IP from the project</i>
@@ -405,7 +408,7 @@ The file content will be send to the design.  The file content is as follows:
 5. Select **Hierarchy** tab in the *Sources* pane and observe that the char_fifo instance has a ? mark indicating that it is missing the source file.
 
    <p align="center">
-   <img src ="./images/lab4/Fig17.png" width="60%" height="60%"/>
+   <img src ="./images/lab4/Fig17.png">
    </p>
    <p align = "center">
    <i>Removed source file</i>
@@ -416,10 +419,11 @@ The file content will be send to the design.  The file content is as follows:
 7. Toggle line comments the instantiation of the char_fifo from the file around line 336.
 
 <p align="center">
-<img src ="./images/lab4/Fig18.png" width="60%" height="60%"/>
+<img src ="./images/lab4/Fig18.png">
 </p>
 <p align = "center">
 </p>
+
 
 8. Select **File > Save File**.
 
@@ -430,11 +434,12 @@ The file content will be send to the design.  The file content is as follows:
 2. Enter **char_fifo** as the block design name.
 
 <p align="center">
-<img src ="./images/lab4/Fig19.png" width="50%" height="50%"/>
+<img src ="./images/lab4/Fig19.png">
 </p>
 <p align = "center">
 <i>Naming the new block design</i>
 </p>
+
 
 3. Click **OK**.
 
@@ -447,18 +452,19 @@ The file content will be send to the design.  The file content is as follows:
 5. Type FIFO in the search box at the top of the IP Integrator Catalog to see FIFO related available IPs.
 
 <p align="center">
-<img src ="./images/lab4/Fig20.png" width="50%" height="50%"/>
+<img src ="./images/lab4/Fig20.png">
 </p>
 <p align = "center">
 <i>Searching for an IP in the IP Catalog</i>
 </p>
+
 
 6. Double-click FIFO Generator.
 
    The FIFO is added to the IP Integrator design canvas.
 
    <p align="center">
-   <img src ="./images/lab4/Fig21.png" width="60%" height="60%"/>
+   <img src ="./images/lab4/Fig21.png">
    </p>
    <p align = "center">
    <i>FIFO Generator instantiated</i>
@@ -475,7 +481,7 @@ The file content will be send to the design.  The file content is as follows:
 3. Select Independent Clocks Block RAM from the Fifo Implementation drop-down list. 
 
    <p align="center">
-   <img src ="./images/lab4/Fig22.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig22.png">
    </p>
    <p align = "center">
    <i>Configuring BRAM for separate read and write clocks</i>
@@ -494,11 +500,12 @@ The file content will be send to the design.  The file content is as follows:
 8. Deselect the *Enable Safety Circuit* option.
 
 <p align="center">
-<img src ="./images/lab4/Fig23.png" width="80%" height="80%"/>
+<img src ="./images/lab4/Fig23.png">
 </p>
 <p align = "center">
 <i>Configuring port width and read mode</i>
 </p>
+
 
 9. Browse through the settings of the Status Flags and Data Counts tabs.
 
@@ -509,7 +516,7 @@ The file content will be send to the design.  The file content is as follows:
     This tab displays a summary of all the selected configuration options, as well as listing resources used for this configuration.
 
     <p align="center">
-    <img src ="./images/lab4/Fig24.png" width="80%" height="80%"/>
+    <img src ="./images/lab4/Fig24.png">
     </p>
     <p align = "center">
     <i>Summary page</i>
@@ -520,11 +527,12 @@ The file content will be send to the design.  The file content is as follows:
 ### Make the ports external naming them as shown below.    
 
 <p align="center">
-<img src ="./images/lab4/Fig25.png" width="60%" height="60%"/>
+<img src ="./images/lab4/Fig25.png">
 </p>
 <p align = "center">
 <i>FIFO Generator IP fully generated and connected</i>
 </p>
+
 
 1. Expand the **FIFO_WRITE** and **FIFO_READ** interfaces.
 
@@ -539,7 +547,7 @@ The file content will be send to the design.  The file content is as follows:
 5. In the External Port Properties window, in the Name field of the General tab, type the name clk_rx and press Enter.  Similarly, select the external connection port named rd_clk and change its name to clk_tx.
 
    <p align="center">
-   <img src ="./images/lab4/Fig26.png" width="60%" height="60%"/>
+   <img src ="./images/lab4/Fig26.png">
    </p>
    <p align = "center">
    <i>Changing the external port name</i>
@@ -566,7 +574,7 @@ The file content will be send to the design.  The file content is as follows:
    When you have finished, your subsystem design should look like the figure below.  
 
    <p align="center">
-   <img src ="./images/lab4/Fig27.png" width="80%" height="80%"/>
+   <img src ="./images/lab4/Fig27.png">
    </p>
    <p align = "center">
    <i>Renamed external ports</i>
@@ -585,7 +593,7 @@ The file content will be send to the design.  The file content is as follows:
 2. Right-click and select Generate Output Products. 
 
    <p align="center">
-   <img src ="./images/lab4/Fig29.png" width="50%" height="50%"/>
+   <img src ="./images/lab4/Fig29.png">
    </p>
    <p align = "center">
    <i>Generating the output products so the IP can be instantiated in the design</i>
@@ -596,7 +604,7 @@ The file content will be send to the design.  The file content is as follows:
    You should see the various IP output products displayed in the IP Sources tab of the Sources window.
 
    <p align="center">
-   <img src ="./images/lab4/Fig30.png" width="50%" height="50%"/>
+   <img src ="./images/lab4/Fig30.png">
    </p>
    <p align = "center">
    <i>Generated output products</i>
@@ -609,7 +617,7 @@ The file content will be send to the design.  The file content is as follows:
 2. Right-click and select View Instantiation Template.
 
    <p align="center">
-   <img src ="./images/lab4/Fig31.png" width="50%" height="50%"/>
+   <img src ="./images/lab4/Fig31.png">
    </p>
    <p align = "center">
    <i>Generating an instantiation template</i>
@@ -618,11 +626,12 @@ The file content will be send to the design.  The file content is as follows:
 The char_fifo_wrapper.v instantiation template is opened in the text editor in the Vivado IDE.
 
 <p align="center">
-<img src ="./images/lab4/Fig32.png" width="40%" height="40%"/>
+<img src ="./images/lab4/Fig32.png">
 </p>
 <p align = "center">
 <i>Part of the instantiation template</i>
 </p>
+
 
 3. Copy lines 42 through line 51, and paste them at or around line 334 in the wave_gen.v file.
 
