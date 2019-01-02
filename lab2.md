@@ -426,26 +426,26 @@ In this lab you applied the timing constraints and synthesized the design.  You 
 
 | Resource | Number |
 | :-------- | ------: |
-| FF | __59__ |
-| LUT | __87__ |
-| I/O | __11____ |
-| BUFG | __1____ |
+| FF | 59 |
+| LUT | 87 |
+| I/O | 11 |
+| BUFG | 1 |
 
 2. Look through the table and find the number used of each of the following:
 
 | Resource | Number |
 | :-------- | ------: |
-| FF | __59__ |
-| LUT | __87__ |
-| I/O | __11____ |
-| BUFG | __1____ |
+| FF | 59 |
+| LUT | 87 |
+| I/O | 11 |
+| BUFG | 1 |
 
 3. From the power report, find the % power consumption used by each of the following:
 
 | Resource | Number |
 | :-------- | ------: |
-| Clocks: | __<1%__ |
-| Signals: | __<1%__ |
-| Logic: | __<1%____ |
-| I/O: | __<1%____ |
-| PS7: | __<96%____ |
+| Clocks: | <1% |
+| Signals: | <1% |
+| Logic: | <1% |
+| I/O: | <1% |
+| PS7: | <96% |
