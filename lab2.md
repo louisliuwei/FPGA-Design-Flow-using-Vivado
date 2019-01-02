@@ -1,9 +1,5 @@
 # Synthesizing a RTL Design
 
-## Introduction
-
-This lab shows you the synthesis process and effect of changing of synthesis settings targeting the PYNQ-Z1 and PYNQ-Z2.  You will analyze the design and the generated reports.
-
 ## Objectives 
 
 After completing this lab, you will be able to:
@@ -20,56 +16,16 @@ After completing this lab, you will be able to:
 
 - Write a checkpoint after the synthesis so the results can be analyzed after re-loading it
 
+## Steps
+### Create a Vivado Project using IDE 
 
-## Procedure 
+In this design we will use board’s USB-UART which is controlled by the Zynq’s ARM Cortex-A9 processor.  Our PL design needs access to this USB-UART. So first thing we will do is to create a Processing System (PS) design which will put the USB-UART connections in a simple GPIO-style and make it available to the PL section.
 
-This lab is broken into steps that consist of general overview statements providing information on the detailed instructions that follow. Follow these detailed instructions to progress through the lab.
+#### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use provided the tcl scripts (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart_led_pins_pynq.xdc and uart_led_timing.xdc files from the < *2018_2_zynq_sources >\lab2* directory.
 
-## Design Description
+ **<2018_2_zynq_labs>** refers to **C:\xup\fpga_flow\2018_2_zynq_labs** directory and **<2018_2_zynq_sources>** refers to **C:\xup\fpga_flow\2018_2_zynq_sources** directory.     
 
-The design consists of a uart receiver receiving the input typed on a keyboard and displaying the binary equivalent of the typed character on the LEDs.  When a push button is pressed, the lower and upper nibbles are swapped. 
-
-In this design we will use board’s USB-UART which is controlled by the Zynq’s ARM Cortex-A9 processor.  Our PL design needs access to this USB-UART. So first thing we will do is to create a Processing System design which will put the USB-UART connections in a simple GPIO-style and make it available to the PL section. 
-
-The provided design places the UART (RX) pin of the PS (Processing System) on the Cortex-A9 in a simple GPIO mode to allow the UART to be connected (passed through) to the Programmable Logic.  The processor samples the RX signal and sends it to the EMIO channel 0 which is connected to Rx input of the HDL module provided in the Static directory. This is done through a software application provided in the lab3.sdk folder hierarchy.  
-
-<p align="center">
-<img src ="./images/lab2/Fig1.png">
-</p>
-<p align = "center">
-<i>The Complete Design on PL</i>
-</p>
-
-
-
-<p align="center">
-<img src ="./images/lab2/Fig2.png">
-</p>
-<p align = "center">
-<i>The Complete System</i>
-</p>
-
-
-## General Flow
-
-<p align="center">
-<img src ="./images/lab2/Fig3.png">
-</p>
-<p align = "center">
-</p>
-
-
-
-
-## Create a Vivado Project using IDE 
-
-In this design we will use board’s USB-UART which is controlled by the Zynq’s ARM Cortex-A9 processor.  Our PL design needs access to this USB-UART. So first thing we will do is to create a Processing System design which will put the USB-UART connections in a simple GPIO-style and make it available to the PL section.
-
-### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use provided the tcl scripts (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart_led_pins_pynq.xdc and uart_led_timing.xdc files from the < *2018_2_zynq_sources >\lab2* directory.
-
- References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_flow\2018_2_zynq_labs**   directory and **<** **2018_2_zynq_sources>** is a place holder   for the **C:\xup\fpga_flow\2018_2_zynq_sources**   directory.     
-
-1. Open Vivado by selecting **Start > All Programs >** **Xilinx Design Tools > Vivado 2018.2 > Vivado 2018.2**
+1. Open Vivado by selecting **Start > All Programs > Xilinx Design Tools > Vivado 2018.2 > Vivado 2018.2**
 
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 
@@ -81,9 +37,9 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 6. Using the drop-down buttons, select **Verilog** as the *Target Language* and *Simulator Language* in the *Add Sources* form.
 
-7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018_2_zynq_sources >\lab2** directory, select all the Verilog files *(led_ctl.v, meta_harden.v, uart_baud_gen.v, uart_led.v, uart_rx.v, uart_rx_ctl.v and uart_top.v),* click **OK**, and then click **Next** to get to the *Add Cons*traints *f*orm.
+7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018_2_zynq_sources>\lab2** directory, select all the Verilog files *(led_ctl.v, meta_harden.v, uart_baud_gen.v, uart_led.v, uart_rx.v, uart_rx_ctl.v and uart_top.v),* click **OK**, and then click **Next** to get to the *Add Constraints* form.
 
-8. Click on the **Blue Plus** button, then **Add Files…** and browse to the **<2018_2_zynq_sources >\lab2** directory (if necessary), select *uart_led_timing_pynq.xdc* and click **Open**.
+8. Click on the **Blue Plus** button, then **Add Files…** and browse to the **<2018_2_zynq_sources>\lab2** directory (if necessary), select *uart_led_timing_pynq.xdc* and click **Open**.
 
 9. Click **Next.**
 
@@ -107,13 +63,13 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
     *source ps7_create_pynq.tcl*
 
-    This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel 14 and one EMIO channel. It will then create a top-level wrapper file called system_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run. 
+    This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel (GPIO14) and one EMIO channel. It will then create a top-level wrapper file called system_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run. 
 
-### Analyze the design source files hierarchy.
+#### Analyze the design source files hierarchy.
 
 1. In the *Sources* pane, expand the **uart_led** entry and notice hierarchy of the lower-level modules.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab2/Fig4.png">
 </p>
 <p align = "center">
@@ -124,18 +80,18 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
    Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined to be 115200 and 125 MHz respectively as shown in the design diagram. Also notice that the lower level modules are instantiated. The meta_harden modules are used to synchronize the asynchronous reset and push-button inputs.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab2/Fig5.png">
 </p>
 <p align = "center">
-<i>CLOCK_RATE parameter of uart_led for PYNQ board</i>
+<i>CLOCK_RATE parameter of uart_led for the PYNQ board</i>
 </p>
 
 3. Expand **U0** and **uart_rx_i0** instance to see its hierarchy. 
 
 This module uses the baud rate generator and a finite state machine. The rxd_pin is sampled at a x16 the baud rate.
 
-### Open the uart_led_timing_pynq.xdc source and analyze the content
+#### Open the uart_led_timing_pynq.xdc source and analyze the content
 
 1. In the *Sources* pane, expand the *Constraints* folder and double-click the **uart_led_timing_pynq.xdc** entry to open the file in text mode.
 
@@ -148,11 +104,11 @@ This module uses the baud rate generator and a finite state machine. The rxd_pin
 
 Line 4 creates the period constraint of 8ns with a duty cycle of 50%. Line 7 creates a virtual clock of 12 ns. This clock can be viewed as the upstream device is generating its output with respect to its clock and outputs data with respect to it. The btn_pin is constrained with respect to the upstream clock (lines 13, 14).  The led_pins are constrained with respect to the upstream clock as the downstream device may be using it.
 
-## Elaborate the Design
+### Elaborate the Design
 
-### Elaborate and perform the RTL analysis on the source file.
+#### Elaborate and perform the RTL analysis on the source file.
 
-1. Expand the *Open Elaborated Design* entry under the *RTL Analysis* tasks of the *Flow Navigator* pane and click on **Schematic**. Click **OK**.
+1. Click **Flow Navigator > RTL ANALYSIS > Open Elaborated Design > Schematic**. Click **OK**.
 
    The model (design) will be elaborated and a logical view of the design is displayed.
 
@@ -163,21 +119,20 @@ Line 4 creates the period constraint of 8ns with a duty cycle of 50%. Line 7 cre
 <i>A logic view of the design one-level down from the top in component U0</i>
 </p>   
 
-You will see two components at the top-level, going down one level in component U0 shows 2 instances of meta_harden, one instance of uart_rx, and one instance of led_ctl. 
+You will see two components at the top-level; going down one level in component U0 shows 2 instances of meta_harden, one instance of uart_rx, and one instance of led_ctl. 
 
 2. To see where the uart_rx_i0 gets generated, right-click on the uart_rx_i0 instance and select *Go To Source* and see that line 84 in the source code is generating it.
 
 3. Double-click on the uart_rx_i0 instance in the schematic diagram to see the underlying components.
 
- <p align="center">
+<p align="center">
 <img src ="./images/lab2/Fig8.png">
 </p>
 <p align = "center">
 <i>Lower level components of the uart_rx_i0 module</i>
 </p>  
 
-
-4. Click on **Report Noise** under the *Open Elaborated Design* entry of the *RTL Analysis* tasks of the *Flow Navigator* pane.
+4. Click on **Flow Navigator > RTL Analysis > Open Elaborated Design > Report Noise**.
 
 5. Click **OK** to generate the report named **ssn_1**.
 
@@ -190,10 +145,9 @@ You will see two components at the top-level, going down one level in component 
 <i>Noise report</i>
 </p>
 
-
 7. Click on **Add Sources** under the *Project Navigator*, select *Add or create constraints* option and click **Next**.
 
-8. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018_2_zynq_sources >\lab2** directory, select the **uart_led_pins_pynq.xdc** file, click **OK**, and then click **Finish** to add the pins location constraints.
+8. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018_2_zynq_sources>\lab2** directory, select the **uart_led_pins_pynq.xdc** file, click **OK**, and then click **Finish** to add the pins location constraints.
 
    Notice that the sources are modified and the tools detect it, showing a warning status bar to re-load the design.
 
@@ -203,16 +157,15 @@ You will see two components at the top-level, going down one level in component 
 <p align = "center">
 </p>
 
-
 9. Click on the **Reload** link. The constraints will be processed.
 
 10. Click on **Report Noise** and click **OK** to generate the report named **ssn_1**.  Observe that this time it does not show any errors (no red). 
 
-## Synthesize the Design
+### Synthesize the Design
 
-### Synthesize the design with the Vivado synthesis tool and analyze the Project Summary output.    
+#### Synthesize the design with the Vivado synthesis tool and analyze the Project Summary output.    
 
-1. Click on **Run Synthesis** under the *Synthesis* tasks of the *Flow Navigator* pane.
+1. Click on **Flow Navigator > SYNTHESIS > Run Synthesis**.
 
    Click **Save** if the Save Project dialog box is displayed.
 
@@ -224,7 +177,7 @@ You will see two components at the top-level, going down one level in component 
 
 3. Select the **Project Summary** tab
 
-   If you don’t see the Project Summary tab then select **Layout > Default Layout,** **or** click the **Project Summary** icon![](./images/lab2/Fig11.png).    
+   If you don’t see the Project Summary tab then select **Layout > Default Layout,** or click the **Project Summary** icon![](./images/lab2/Fig11.png).    
 
 4. Click on the **Table** tab in the **Project Summary** tab and fill out the following information.
 
@@ -232,14 +185,14 @@ You will see two components at the top-level, going down one level in component 
 
 Look through the table and find the number used of each of the following: 
 
-<p align="center">
-<img src ="./images/lab2/Fig12.png">
-</p>
-<p align = "center">
-</p>                                               
+| Resource | Number |
+| :-------- | ------: |
+| FF | ______ |
+| LUT | ______ |
+| I/O | ______ |
+| BUFG | ______ |
 
-
-5. Click on **Schematic** under the *Open Synthesized Design* tasks of *Synthesis* tasks of the *Flow Navigator* pane to view the synthesized design in a schematic view.
+5. Click on **Flow Navigator > SYNTHESIS > Open Synthesized Design > Schematic** to view the synthesized design in a schematic view.
 
    <p align="center">
    <img src ="./images/lab2/Fig13.png">
@@ -247,7 +200,6 @@ Look through the table and find the number used of each of the following:
    <p align = "center">
    <i>Synthesized design’s schematic view</i>
    </p>
-
 
    Notice that IBUF and OBUF are automatically instantiated (added) to the design as the input and output are buffered.  There are still four lower level modules instantiated.
 
@@ -261,9 +213,9 @@ Look through the table and find the number used of each of the following:
 
 9. Click on the (  ![](./images/lab2/Fig11_1.png) ) in the schematic view to go back to its parent block.
 
-### Analyze the timing report.    
+#### Analyze the timing report.    
 
-1. Click on **Report Timing Summary** under the *Synthesized Design* tasks of the *Flow Navigator* pane.
+1. Click on **Flow Navigator > SYNTHESIS > Open Synthesized Design > Report Timing Summary**.
 
 2. Click **OK** to generate the Timing_1 report.
 
@@ -273,7 +225,6 @@ Look through the table and find the number used of each of the following:
    <p align = "center">
    <i>Timing report for the PYNQ</i>
    </p>
-
 
    Notice that the Design Timing Summary and Inter-Clock Paths entry in the left pane is highlighted in red indicating timing violations. In the right pane, the information is grouped in Setup, Hold, and Width columns.
 
@@ -288,7 +239,6 @@ Look through the table and find the number used of each of the following:
    <i>The 8 failing paths for the PYNQ</i>
    </p>
 
-
    Double-click on the Path 25 to see how the path is made.
 
    <p align="center">
@@ -298,12 +248,11 @@ Look through the table and find the number used of each of the following:
    <i>Worst failing path for the PYNQ</i>
    </p>
 
-
    Note that this is an estimate only. The nets are specified as unplaced and have all been allocated default values (0.584 ns). No actual routing delays are considered.
 
-### Generate the utilization and power reports.
+#### Generate the utilization and power reports.
 
-1. Click **Report Utilization** under the Open Synthesized Design, and click **OK** to generate the utilization report.  Click on **Summary** in the left pane.
+1. Click **Flow Navigator > SYNTHESIS > Open Synthesized Design > Report Report Utilization**, and click **OK** to generate the utilization report.  Click on **Summary** in the left pane.
 
    <p align="center">
    <img src ="./images/lab2/Fig17.png">
@@ -316,12 +265,12 @@ Look through the table and find the number used of each of the following:
 
 Look through the report and find the number used of each of the following: 
 
-<p align="center">
-<img src ="./images/lab2/Fig18.png">
-</p>
-<p align = "center">
-</p>                                          
-
+| Resource | Number |
+| :-------- | ------: |
+| FF: | ______ |
+| LUT: | ______ |
+| I/O: | ______ |
+| BUFG: | ______ |
 
 2. Select Slice LUTs entry in the left pane and see the utilization by lower-level instances. You can expand the instances in the right pane to see the complete hierarchy utilization.
 
@@ -332,7 +281,7 @@ Look through the report and find the number used of each of the following:
    <i>Utilization of lower-level modules for the PYNQ</i>
    </p>
 
-3. Click **Report Power** under the Synthesized Design, and click **OK** to generate the estimated power consumption report using default values.
+3. Click **Flow Navigator > SYNTHESIS > Open Synthesized Design > Report Power**, and click **OK** to generate the estimated power consumption report using default values.
 
    Note that this is just an estimate as no simulation run data was provided and no accurate activity rate, or environment information was entered.
 
@@ -343,17 +292,17 @@ Look through the report and find the number used of each of the following:
    <i>Power consumption estimation for the PYNQ</i>
    </p>
 
-
    **Question 3**
 
    From the power report, find the % power consumption used by each of the following: 
 
-   <p align="center">
-   <img src ="./images/lab2/Fig21.png">
-   </p>
-   <p align = "center">
-   </p>
-
+| Resource | Number |
+| :-------- | ------: |
+| Clocks: | ______ |
+| Signals: | ______ |
+| Logic: | ______ |
+| I/O: | ______ |
+| PS7: | ______ |
 
    You can move the mouse on the boxes which do not show the percentage to see the consumption.
 
@@ -396,7 +345,6 @@ Look through the report and find the number used of each of the following:
 <i>Create New Run dialog box</i>
 </p>
 
-
 5. Click **Yes**.
 
 6. Change the name from **synth_2** to **synth_flatten** and click **OK**.
@@ -409,7 +357,7 @@ Look through the report and find the number used of each of the following:
 
 9. Click **OK** to open the synthesized design when synthesis process is completed.
 
-10. Click on **Schematic** under the *Open Synthesized Design* tasks of *Synthesis* tasks of the *Flow Navigator* pane to view the synthesized design in a schematic view.
+10. Click on **Flow Navigator > SYNTHESIS > Open Synthesized Design > Schematic** to view the synthesized design in a schematic view.
 
     Notice that the design is completely flattened.
 
@@ -432,13 +380,13 @@ Look through the report and find the number used of each of the following:
 
 4. Close the project by selecting **File > Close Project**.
 
-## Read the Checkpoints 
+### Read the Checkpoints 
 
-### Read the previously saved checkpoint (checkpoint_1) in order to analyze the results without going through the actual synthesis process
+#### Read the previously saved checkpoint (checkpoint_1) in order to analyze the results without going through the actual synthesis process
 
 1. Select **File > Checkpoint > Open…** at the *Getting Started* screen.
 
-2. Browse to **<2018_2_zynq_labs >\lab2** and select **checkpoint_1.**
+2. Browse to **<2018_2_zynq_labs>\lab2** and select **checkpoint_1.**
 
 3. Click **OK**.
 
@@ -468,8 +416,6 @@ Look through the report and find the number used of each of the following:
 
 12. Close the **Vivado** program by selecting **File > Exit** and click **OK**.
 
- 
-
 ## Conclusion 
 
 In this lab you applied the timing constraints and synthesized the design.  You viewed various post-synthesis reports.  You wrote checkpoints and read it back to perform the analysis you were doing during the design flow. You saw the effect of changing synthesis settings.  
@@ -478,24 +424,28 @@ In this lab you applied the timing constraints and synthesized the design.  You 
 
 1. Look through the table and find the number used of each of the following:
 
-   <p align="center">
-   <img src ="./images/lab2/Fig26.png">
-   </p>
-   <p align = "center">
-   </p>
+| Resource | Number |
+| :-------- | ------: |
+| FF | __59__ |
+| LUT | __87__ |
+| I/O | __11____ |
+| BUFG | __1____ |
 
-2. From the power report, find the % power consumption used by each of the following:
+2. Look through the table and find the number used of each of the following:
 
-   <p align="center">
-   <img src ="./images/lab2/Fig27.png">
-   </p>
-   <p align = "center">
-   </p>
+| Resource | Number |
+| :-------- | ------: |
+| FF | __59__ |
+| LUT | __87__ |
+| I/O | __11____ |
+| BUFG | __1____ |
 
- 
+3. From the power report, find the % power consumption used by each of the following:
 
- 
-
- 
-
- 
+| Resource | Number |
+| :-------- | ------: |
+| Clocks: | __<1%__ |
+| Signals: | __<1%__ |
+| Logic: | __<1%____ |
+| I/O: | __<1%____ |
+| PS7: | __<96%____ |
