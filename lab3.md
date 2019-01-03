@@ -29,7 +29,7 @@ After completing this lab, you will be able to:
 4. Make sure that the *Synthesis > flatten_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
 
    <p align="center">
-   <img src ="./images/lab3/Fig2.png">
+   <img src ="./images/lab3/Fig2.PNG">
    </p>
    <p align = "center">
    <i>Setting hierarchy to rebuilt</i>
