@@ -1,9 +1,5 @@
 # Xilinx Design Constraints
 
-## Introduction
-
-In this lab you will use the uart_led design that was introduced in the previous labs. You will start the project with I/O Planning type, enter pin locations, and export it to the rtl. You will then create the timing constraints and perform the timing analysis.
-
 ## Objectives 
 
 After completing this lab, you will be able to:
@@ -16,12 +12,7 @@ After completing this lab, you will be able to:
 
 - Perform timing analysis
 
-
-## Procedure 
-
-This lab is broken into steps that consist of general overview statements providing information on the detailed instructions that follow. Follow these detailed instructions to progress through the lab.
-
-Design Description
+## Design Description
 
 The design consists of a uart receiver receiving the input typed on a keyboard and displaying the binary equivalent of the typed character on the 8 LEDs.  When a push button is pressed, the lower and upper nibbles are swapped. 
 
@@ -36,7 +27,6 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 <i>The Complete Design on PL</i>
 </p>
 
-
 <p align="center">
 <img src ="./images/lab5/Fig2.png" width="50%" height="50%"/>
 </p>
@@ -44,25 +34,13 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 <i>The Complete System</i>
 </p>
 
+## Steps
 
+### Create a Vivado I/O Planning Project
 
-## General Flow
+#### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use the provided tcl script file (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart_led_pins_pynq.xdc and uart_led_timing_pynq.xdc files from the *<2018_2_zynq_sources>\lab5* directory.
 
-​   
-
-<p align="center">
-<img src ="./images/lab5/Fig3.png">
-</p>
-
-
-<p align = "center">
-</p> 
-
-## Create a Vivado I/O Planning Project
-
-### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use provided the tcl scripts (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart_led_pins_pynq.xdc and uart_led_timing_pynq.xdc files from the <*2018_2_zynq_sources>\lab5* directory.
-
-1. Open Vivado by selecting **Start > All Programs >** **Xilinx Design Tools > Vivado 2018.2**
+1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 
@@ -70,7 +48,7 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 
 4. Enter **lab5** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
-5. Select **I/O Planning Project** option in the *Project Type* form, and click **Next**.
+5. Select the **I/O Planning Project** option in the *Project Type* form, and click **Next**.
 
 6. Select **Do not import I/O ports at this time**, and click **Next**.
 
@@ -91,11 +69,11 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
    <i>I/O Planning project’s default windows and views</i>
    </p>
 
-## Create I/O Ports, Assign Various Pins and Add Source Files
+### Create I/O Ports, Assign Various Pins and Add Source Files
 
-### Create input ports clk_pin, btn_pin and rst_pin.
+#### Create input ports clk_pin, btn_pin and rst_pin.
 
-1. Expand the *Open* *I/O Design* entry under the *I/O PLANNING* task of the *Flow Navigator* and click on **Create I/O Ports**.
+1. Select **Flow Navigator > I/O PLANNING > Open I/O Design > Create I/O Parts**.
 
    The Create I/O Ports form will be displayed.
 
@@ -110,7 +88,7 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 
 3. Similarly, create the **btn_pin** and **rst_pin** input ports**.**
 
-### Assign input pins clk_pin, btn_pin and rst_pin to H16, D19 and D20 locations using the Device view and package pins. 
+#### Assign input pins clk_pin, btn_pin and rst_pin to H16, D19 and D20 locations using the Device view and package pins. 
 
 Hover the mouse over **H16** in the Device view window.
 
@@ -126,7 +104,7 @@ Hover the mouse over **H16** in the Device view window.
 
    The pin entry will be highlighted and displayed in the Package Pins tab.
 
-2. In the *Package* Pins pane, click in the Ports column of **H16** pin’s row, and select **clk_pin.**
+2. In the *Package Pins* pane, click in the *Ports* column of **H16** pin’s row, and select **clk_pin**.
 
 3. Similarly, add the **btn_pin** input port at **D19**.
 
@@ -139,12 +117,11 @@ Hover the mouse over **H16** in the Device view window.
    <i>Finding a package pin</i>
    </p>
 
-
    Notice that the Find Results tab is opened, and the corresponding entry is shown in the tab.
 
 5. Assign the **rst_pin** input to the pin.
 
-### Assign output pins led_pins[0] to led_pins[7] to locations R14, P14, N16, M14, W14, Y14, T11, T10. Create them as a vector and assign them using the Tcl command set_property. They all will be LVCMOS33.    
+#### Assign output pins led_pins[0] to led_pins[7] to locations R14, P14, N16, M14, W14, Y14, T11, T10. Create them as a vector and assign them using the Tcl command *set_property*. They all will be LVCMOS33.    
 
 **Note:** Notice that PYNQ has four LEDs hence we assign led_pins[3:0] to LEDs and led_pins[7:4] are assigned to PMODB.
 
@@ -157,7 +134,6 @@ Hover the mouse over **H16** in the Device view window.
    <i>Create I/O Ports button</i>
    </p>
 
-
    The Create I/O Ports form will be displayed.
 
 2. Type **led_pins** in the *Name* field, select *Output* direction, click on the check-box of **Create bus**, set the msb to **7**, and select **LVCMOS33** I/O standard and click **OK**. 
@@ -168,7 +144,6 @@ Hover the mouse over **H16** in the Device view window.
    <p align = "center">
    <i>Creating I/O ports for the led_pins output</i>
    </p>
-
 
    The led_pins entries will be created and displayed in the I/O Ports tab.  Notice that the I/O standard and directions are already set, leaving only the pin locations to be assigned.
 
@@ -192,11 +167,11 @@ Hover the mouse over **H16** in the Device view window.
 
 
 
-​	Select **File > Save Constraints**.
+4.	Select **File > Save Constraints**.
 
-​	The Save Constraints form will be displayed.
+	The Save Constraints form will be displayed.
 
-4. Enter **uart_led_pynq** in the *File name* field, and click **OK**.
+5. Enter **uart_led_pynq** in the *File name* field, and click **OK**.
 
    <p align="center">
    <img src ="./images/lab5/Fig10.png">
@@ -215,17 +190,17 @@ Hover the mouse over **H16** in the Device view window.
    <i>The uart_led_pynq.xdc file added to the source tree</i>
    </p>
 
-5. Expand the **I/O PLANNING > Open I/O Design** in the *Flow Navigator* pane. 
+6. Expand the **Flow Navigator > I/O PLANNING > Open I/O Design > Report DRC**. 
 
-6. Click on **Report DRC** and click **OK**.  Notice the design rules checker is run warnings is reported. Ignore the warnings.
+7. Click **OK**.  Notice the design rules checker is run warnings is reported. Ignore the warnings.
 
-7. Click on **Report Noise** and click **OK**.  Notice the noise analysis is done on the output pins only (led_pins) and the results are displayed.
+8. Expand the **Flow Navigator > I/O PLANNING > Open I/O Design > Report Noise** and click **OK**.  Notice the noise analysis is done on the output pins only (led_pins) and the results are displayed.
 
-8. Click on **Migrate to RTL.** 
+98. Click on **Migrate to RTL**.
 
-   The Migrate to RTL form will be displayed with Top RTL file field showing *c:/xup/fpga_flow/2018_2_zynq_labs/lab5/io_1.v* entry.
+   The *Migrate to RTL* form will be displayed with Top RTL file field showing *c:/xup/fpga_flow/2018_2_zynq_labs/lab5/io_1.v* entry.
 
-9. Change *io_1.v* to **uart_top.v**, and click **OK**
+10. Change *io_1.v* to **uart_top.v**, and click **OK**
 
    <p align="center">
    <img src ="./images/lab5/Fig12.png">
@@ -234,7 +209,7 @@ Hover the mouse over **H16** in the Device view window.
    <i>Assigning top-level file name</i>
    </p>
 
-10. Select the **Hierarchy** tab and notice that the *uart_top.v* file has been added to the project with top-level module name as **ios**.  If you double-click the entry, you will see the module name with the ports listing.
+11. Select the **Hierarchy** tab and notice that the *uart_top.v* file has been added to the project with top-level module name as **ios**.  If you double-click the entry, you will see the module name with the ports listing.
 
     <p align="center">
     <img src ="./images/lab5/Fig13.png">
@@ -243,9 +218,9 @@ Hover the mouse over **H16** in the Device view window.
     <i>The top-level module content and the design hierarchy after migrating to RTL</i>
     </p>
 
-### Add the provided source files (from <2018_2_zynq_sources>\lab5) to the project.  Copy the uart_top.txt (located in the <2018_2_zynq_sources >\lab5) content into the top-level source file.
+#### Add the provided source files (from <2018_2_zynq_sources>\lab5) to the project.  Copy the uart_top.txt (located in the <2018_2_zynq_sources >\lab5) content into the top-level source file.
 
-1. Click on **Add Sources** in the *Flow Navigator*.
+1. Click **Flow Navigator > Add Sources**.
 
 2. In the *Add Sources* form, select *Add or Create Design Sources*, and click **Next**.
 
@@ -257,7 +232,7 @@ Hover the mouse over **H16** in the Device view window.
 
 6. Using Windows Explorer, browse to **<2018_2_zynq_sources>\lab5** and open uart_top.txt using any text editor. Copy the content of it and paste it in uart_top.v (around line 22) in the Vivado project.
 
-7. In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
+7. In the Tcl Shell window enter the following command to change to the lab directory and hit the Enter key.
 
    *cd C:/xup/fpga_flow/2018_2_zynq_sources/lab5*
 
@@ -265,7 +240,7 @@ Hover the mouse over **H16** in the Device view window.
 
    *source ps7_create_pynq.tcl*
 
-   This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel 14 and one EMIO channel. It will then create a top-level wrapper file called system_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run.
+   This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel (GPIO14) and one EMIO channel. It will then create a top-level wrapper file called system_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run.
 
 9. Double-click on the **uart_led** entry to view its content.
 
@@ -278,9 +253,9 @@ Hover the mouse over **H16** in the Device view window.
    <i>CLOCK_RATE parameter of uart_led</i>
    </p>
 
-## Synthesize and Enter Timing Constraints
+### Synthesize and Enter Timing Constraints
 
-### Synthesize the design. Use the Constraints Wizard to specify a clock frequency, and input and output delay constraints.
+#### Synthesize the design. Use the Constraints Wizard to specify a clock frequency, and input and output delay constraints.
 
 1. Click on the **Run Synthesis** in the *Flow Navigator* pane.
 
@@ -294,7 +269,7 @@ Hover the mouse over **H16** in the Device view window.
 
 4. Read the *Identify and Recommend Missing Timing Constraints* screen of the wizard to understand what the wizard does and click **Next**.
 
-5. Specify the frequency of the object “clk_pin” to be **125 MHz,** notice the Period, Rise At and Fall At are automatically populated. Also notice the Tcl command that can be previewed at the bottom of the wizard. Click **Next** to proceed.
+5. Specify the frequency of the object *clk_pin* to be **125 MHz,** notice the Period, Rise At and Fall At are automatically populated. Also notice the Tcl command that can be previewed at the bottom of the wizard. Click **Next** to proceed.
 
    <p align="center">
    <img src ="./images/lab5/Fig15.png">
@@ -309,7 +284,7 @@ Hover the mouse over **H16** in the Device view window.
 
 8. There are no missing External Feedback Delays, click **Next** to proceed.
 
-9. The wizard identifies Input Delays needed for the pins: btn_pin and rst_pin. Do the following:
+9. The wizard identifies Input Delays needed for the *btn_pin* and *rst_pin* pins. Do the following:
 
    - Press Ctrl and select the two rows.
 
@@ -354,11 +329,11 @@ Hover the mouse over **H16** in the Device view window.
 
 15. Open uart_led_pynq.xdc (if it was already opened, click Reload in the yellow status bar) and notice additional constraints were added to the last line of the file. 
 
-### Generate an estimated Timing Report showing both the setup and hold paths in the design.
+#### Generate an estimated Timing Report showing both the setup and hold paths in the design.
 
-1. In the Flow Navigator, select Synthesized Design > Report Timing Summary.
+1. Select **Flow Navigator > SYNTHESIS > Open Synthesized Design > Report Timing Summary**.
 
-2. In the Options tab, select min_max from the Path delay type drop-down list.
+2. In the **Options** tab, select *min_max* from the *Path delay type* drop-down list.
 
    <p align="center">
    <img src ="./images/lab5/Fig19.png">
@@ -367,7 +342,7 @@ Hover the mouse over **H16** in the Device view window.
    <i>Performing timing analysis</i>
    </p>
 
-3. Click OK to run the analysis.
+3. Click **OK** to run the analysis.
 
    The Timing Results view opens at the bottom of the Vivado IDE.
 
@@ -392,7 +367,7 @@ Hover the mouse over **H16** in the Device view window.
    <i>The list of paths showing hold violations</i>
    </p>
 
-5. Double-click on the Path 11 to see the actual path detail.
+5. Double-click on the *Path 11* to see the actual path detail.
 
    <p align="center">
    <img src ="./images/lab5/Fig22.png">
@@ -401,7 +376,7 @@ Hover the mouse over **H16** in the Device view window.
    <i>Failing hold path</i>
    </p>
 
-6. Select Path11, right-click and select Schematic.
+6. Select *Path 11*, right-click and select **Schematic**.
 
    <p align="center">
    <img src ="./images/lab5/Fig23.png">
@@ -410,11 +385,11 @@ Hover the mouse over **H16** in the Device view window.
    <i>The schematic of the failing path</i>
    </p>
 
-## Implement and Analyze Timing Summary
+### Implement and Analyze Timing Summary
 
-### Implement the design.
+#### Implement the design.
 
-1. Click on the **Run Implementation** in the *Flow Navigator* pane.
+1. Click on the **Run Implementation**.
 
 2. Click **Yes** to run the synthesis first before running the implementation process.
 
@@ -422,15 +397,15 @@ Hover the mouse over **H16** in the Device view window.
 
 3. Select the *Open Implemented Design* option and click **OK**.
 
-4. Click Yes if you are prompted to close the synthesized design.
+4. Click *Yes* if you are prompted to close the synthesized design.
 
-### Generate a timing summary report
+#### Generate a timing summary report
 
-1. In the Flow Navigator, under Implementation > Open Implemented Design, click Report Timing Summary.
+1. Select **Flow Navigator > IMPLEMENTATION > Open Implemented Design > Report Timing Summary**.
 
-2. Click OK to generate the report using the default settings.
+2. Click **OK** to generate the report using the default settings.
 
-   The Design Timing Summary window opens at the bottom in the Timing tab.
+   The *Design Timing Summary* window opens at the bottom in the Timing tab.
 
    Note that failing timing paths are indicated in red. 
 
@@ -441,7 +416,7 @@ Hover the mouse over **H16** in the Device view window.
    <i>Failing setup paths</i>
    </p>
 
-3. Click on the WNS to see the failing paths.
+3. Click on the *WNS* to see the failing paths.
 
 4. Double-click on the first failing path from the top and see the detailed analysis.  
 
@@ -463,17 +438,17 @@ Hover the mouse over **H16** in the Device view window.
 
 10. Click Report Timing Summary, and observe that there are no failing paths.
 
-## Generate the Bitstream and Verify the Functionality (Optional) 
+### Generate the Bitstream and Verify the Functionality (Optional) 
 
-### Generate the bitstream.    
+#### Generate the bitstream.    
 
-1. In the Flow Navigator, under *Program and Debug*, click Generate Bitstream.
+1. Click **low Navigator > PROGRAM AND DEBUG > Generate Bitstream**.
 
 2. The write_bitstream command will be executed (you can verify it by looking in the Tcl console).
 
 3. Click **Cancel** when the bitstream generation is completed.
 
-### Connect the board and power it ON. Open a hardware session, and program the FPGA.  
+#### Connect the board and power it ON. Open a hardware session, and program the FPGA.  
 
 1. Make sure that the Micro-USB cable is connected to the JTAG PROG connector.
 
@@ -491,7 +466,7 @@ Hover the mouse over **H16** in the Device view window.
 
 6. Select the device and verify that the **ios.bit** is selected as the programming file in the General tab.
 
-### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. Program the FPGA and verify the functionality. 
+#### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. Program the FPGA and verify the functionality. 
 
 1. Start a terminal emulator program such as TeraTerm or HyperTerminal. 
 
@@ -505,11 +480,11 @@ Hover the mouse over **H16** in the Device view window.
 
    The programming bit file be downloaded and the DONE light will be turned ON indicating the FPGA has been programmed.
 
-### Start a SDK session, point it to the c:/xup/fpga_flow/ 2018_2_zynq_sources/lab5/pynq/lab5.sdk workspace. 
+### Start a SDK session, point it to the c:/xup/fpga_flow/2018_2_zynq_sources/lab5/pynq/lab5.sdk workspace. 
 
-1. Open **SDK** by selecting **Start > All Programs > Xilinx Design Tools > Xilinx SDK 2018.2**
+1. Open **SDK** by selecting **Start > Xilinx Design Tools > Xilinx SDK 2018.2**
 
-2. In the **Select a workspace** window, click on the browse button, browse to c:/xup/fpga_flow/ 2018_2_zynq_sources/lab5/pynq/lab5.sdk and click **OK.**
+2. In the **Select a workspace** window, click on the browse button, browse to *c:/xup/fpga_flow/2018_2_zynq_sources/lab5/pynq/lab5.sdk* and click **OK**.
 
 3. Click **OK**.
 
