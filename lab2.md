@@ -25,7 +25,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
  **<2018_2_zynq_labs>** refers to **C:\xup\fpga_flow\2018_2_zynq_labs** directory and **<2018_2_zynq_sources>** refers to **C:\xup\fpga_flow\2018_2_zynq_sources** directory.     
 
-1. Open Vivado by selecting **Start > All Programs > Xilinx Design Tools > Vivado 2018.2 > Vivado 2018.2**
+1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 
