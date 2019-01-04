@@ -18,7 +18,7 @@ After completing this lab, you will be able to:
 
 #### Launch Vivado and create an empty project targeting the PYNQ-Z1 or PYNQ-Z2 board, selecting Verilog as a target language. Use the provided lab1.v and lab1_zynq.xdc files from the *2018_2_zynq_sources\lab1* directory.
 
-1. Open Vivado by selecting **Start > All Programs > Xilinx Design Tools > Vivado 2018.2 > Vivado 2018.2**
+1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **C:\xup\fpga_flow\2018_2_zynq_labs**, and click **Select**.
 4. Enter **lab1** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
