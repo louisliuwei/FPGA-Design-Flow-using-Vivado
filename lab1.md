@@ -1,9 +1,5 @@
 # Vivado Design Flow
 
-## Introduction
-
-This lab guides you through the process of using Vivado IDE to create a simple HDL design targeting the PYNQ-Z1 and PYNQ-Z2.  You will simulate, synthesize, and implement the design with default settings.  Finally, you will generate the bitstream and download it into the hardware to verify the design functionality
-
 ## Objectives 
 
 After completing this lab, you will be able to:
@@ -16,41 +12,18 @@ After completing this lab, you will be able to:
 - Generate the bitstream
 - Configure ZYNQ using the generated bitstream and verify the functionality
 
-## Procedure 
-
-This lab is broken into steps that consist of general overview statements providing information on the detailed instructions that follow. Follow these detailed instructions to progress through the lab.
-
-## Design Description
-
-The design consists of some inputs that are logically operated on before the results are output on the LEDs. 
-
-<p align="center">
-<img src ="./images/lab1/Fig1.png">
-</p>
-
-
-
-
-## General Flow
-
-<p align="center">
-<img src ="./images/lab1/Fig2.png">
-</p>
-
-
-
 ## Steps
 
-## Create a Vivado Project using IDE                                                   
+### Create a Vivado Project using IDE                                                   
 
-### Launch Vivado and create an empty project targeting the PYNQ-Z1 or PYNQ-Z2 board, selecting Verilog as a target language. Use the provided lab1.v and lab1_zynq.xdc files from the *2018_2_zynq_sources\lab1* directory.
+#### Launch Vivado and create an empty project targeting the PYNQ-Z1 or PYNQ-Z2 board, selecting Verilog as a target language. Use the provided lab1.v and lab1_zynq.xdc files from the *2018_2_zynq_sources\lab1* directory.
 
-1. Open Vivado by selecting **Start > All Programs >** **Xilinx Design Tools > Vivado 2018.2 > Vivado 2018.2**
+1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **C:\xup\fpga_flow\2018_2_zynq_labs**, and click **Select**.
 4. Enter **lab1** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab1/Fig3.png">
 </p>
 <p align = "center">
@@ -61,7 +34,7 @@ The design consists of some inputs that are logically operated on before the res
 
 6. Using the drop-down buttons, select **Verilog** as the *Target Language* and *Simulator Language* in the *Add Sources* form.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab1/Fig4.png">
 </p>
 <p align = "center">
@@ -76,14 +49,13 @@ The design consists of some inputs that are logically operated on before the res
    <p align = "center">
    </p>
 
-
    If it is not already checked, check **Copy sources into project**
 
 8. Click **Next** to get to the *Add Constraints* form.
 
 9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **C:\xup\fpga_flow\2018_2_zynq_sources\lab1** directory (if necessary), select *lab1_zynq.xdc* and click **OK** (if necessary), and then click **Next.**
 
-   This Xilinx Design Constraints file assigns the physical IO locations on FPGA to the switches and LEDs located on the board.  This information can be obtained either through the board’s schematic or the board’s user guide. 
+   The Xilinx Design Constraints file assigns the physical IO locations on FPGA to the switches and LEDs located on the board.  This information can be obtained either through the board’s schematic or the board’s user guide. 
 
 10. In the *Default Part* form, use the **Parts** option and various drop-down fields of the **Filter** section. Select the **XC7Z020clg400-1**. ​		
 
@@ -94,27 +66,24 @@ The design consists of some inputs that are logically operated on before the res
     <i>Part Selection for the PYNQ</i>
     </p>
 
-
     You may also select the **Boards** option, select www.digilentinc.com for the PYNQ-Z1 board, tul.com.tw for the PYNQ-Z2 board under the Vendor filter and select the appropriate board. Notice that PYNQ-Z1 and PYNQ-Z1 may not be listed as they are not in the tools database. If not listed then you can download the board files for the desired boards either from Digilent PYNQ-Z1 webpage or TUL PYNQ-Z2 webpage. Click **Next**.
 
 11.  Click **Finish** to create the Vivado project.  
 
 Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab1** directory.  You will find that the lab1.cache and lab1.srcs directories and the lab1.xpr (Vivado) project file have been created. The lab1.cache directory is a place holder for the Vivado program database. Two directories, constrs_1 and sources_1, are created under the lab1.srcs directory; deep down under them, the copied lab1_<board>.xdc (constraint) and lab1.v (source) files respectively are placed.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab1/Fig7.png">
 </p>
 <p align = "center">
 <i>Generated directory structure</i>
 </p>
 
-
-
-### Open the lab1.v source and analyze the content.
+#### Open the lab1.v source and analyze the content.
 
 1. In the *Sources* pane, double-click the **lab1.v** entry to open the file in text mode.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab1/Fig8.png">
 </p>
 <p align = "center">
@@ -127,7 +96,7 @@ Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab
 
 4. Lines 8-9 defines the input and output ports whereas lines 12-15 defines the actual functionality.
 
-### Open the lab1_zynq.xdc source and analyze the content.
+#### Open the lab1_zynq.xdc source and analyze the content.
 
 1. In the *Sources* pane, expand the *Constraints* folder and double-click the **lab1_zynq.xdc** entry to open the file in text mode. 
 
@@ -138,7 +107,7 @@ Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab
    <i>Opening the constraint file</i>
    </p>
 
-2.  Lines 5-8 define the pin locations for the input buttons and lines 13-16 define pin locations for output LEDS.
+2.  Lines 5-8 define the pin locations for the input buttons and lines 13-16 define pin locations for output LEDs.
 
 ### Perform RTL analysis on the source file.
 
@@ -153,11 +122,9 @@ The model (design) will be elaborated and a logic view of the design is displaye
 <i>A logic view of the design</i>
 </p>
 
+### Simulate the Design using the Vivado Simulator
 
-
-## Simulate the Design using the Vivado Simulator
-
-### Add the lab1_tb.v testbench file.
+#### Add the lab1_tb.v testbench file.
 
 1. Click **Add Sources** under the *Project Manager* tasks of the *Flow Navigator* pane.
 
@@ -168,7 +135,7 @@ The model (design) will be elaborated and a logic view of the design is displaye
    <i>Add Sources</i>
    </p>
 
-2.  Select the *Add or Create Simulation Sources* option and click **Next**.
+2. Select the *Add or Create Simulation Sources* option and click **Next**.
 
    <p align="center">
    <img src ="./images/lab1/Fig12.png">
@@ -207,9 +174,9 @@ The model (design) will be elaborated and a logic view of the design is displaye
    </p>
 
 
-   The test bench defines the simulation step size and the resolution in line 1. The test bench module 		definition begins on line 5.  Line 15 instantiates the DUT (device/module under test). Lines 17 through 25 define the same module functionality for the expected value computation.  Lines 27 through 38 define the stimuli generation, and compare the expected output with what the DUT provides.  Line 40 ends the test bench.  The **$display** task will print the message in the simulator console window when the simulation is run.
+   The test bench defines the simulation step size and the resolution in line 1. The test bench module definition begins on line 5.  Line 15 instantiates the DUT (device/module under test). Lines 17 through 25 define the same module functionality for the expected value computation.  Lines 27 through 38 define the stimuli generation, and compare the expected output with what the DUT provides.  Line 40 ends the test bench.  The **$display** task will print the message in the simulator console window when the simulation is run.
 
-### Simulate the design for 200 ns using the Vivado simulator.
+#### Simulate the design for 200 ns using the Vivado simulator.
 
 1. Select **Settings** under the *Project Manager* tasks of the *Flow Navigator* pane.
 
@@ -247,16 +214,14 @@ The model (design) will be elaborated and a logic view of the design is displaye
    <i>Directory structure after running behavioral simulation</i>
    </p>
 
-
    You will see several buttons next to the waveform window which can be used for the specific purpose as listed in the table below.
 
- <p align="center">
+<p align="center">
 <img src ="./images/lab1/Fig18.png">
 </p>
 <p align = "center">
 <i>Various buttons available to view the waveform</i>
 </p>
-
 
 4. Click on the *Zoom Fit* button (![](./images/lab1/Fig19.png)) to see the entire waveform.
 
@@ -264,11 +229,11 @@ The model (design) will be elaborated and a logic view of the design is displaye
 
    You can also float the simulation waveform window by clicking on the Float button (![](./images/lab1/Fig20.png)) on the upper right hand side of the view. This will allow you to have a wider window to view the simulation waveforms. To reintegrate the floating window back into the GUI, simply click on the Dock Window button (![](./images/lab1/Fig21.png)).
 
-### Change display format if desired.
+#### Change display format if desired.
 
-Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then select *Unsigned Decimal* to view the for-loop index in *integer* form. Similarly, change the radix of **btn[3:0]** to *Hexadecimal*. Leave the **leds[3:0]** and **e_led[3:0]** radix to *binary* as we want to see each output bit.
+Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then select *Unsigned Decimal* to view the for-loop index in an unsigned *integer* form. Similarly, change the radix of **btn[3:0]** to *Hexadecimal*. Leave the **leds[3:0]** and **e_led[3:0]** radix to *binary* as we want to see each output bit.
 
-### Add more signals to monitor the lower-level signals and continue to run the simulation for 500 ns.
+#### Add more signals to monitor the lower-level signals and continue to run the simulation for 500 ns.
 
 1. Expand the **lab1_tb** instance, if necessary, in the *Scopes* window and select the **dut** instance.
 
@@ -280,7 +245,6 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 <p align = "center">
 <i>Selecting lower-level signals</i>
 </p>
-
 
 2. Select **btn[3:0]** and **led[3:0]** and drag them into the waveform window to monitor those lower-level signals.
 
@@ -294,7 +258,6 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
 <i>Running simulation for additional 500 ns</i>
 </p>
 
-
 Observe the Tcl Console window and see the output is being displayed as the testbench uses the $display task.
 
 <p align="center">
@@ -304,14 +267,13 @@ Observe the Tcl Console window and see the output is being displayed as the test
 <i>Tcl Console output after running the simulation for additional 500 ns</i>
 </p>
 
-
 5. Close the simulator by selecting **File > Close Simulation**. 
 
 6. Click **OK** and then click **Discard** to close it without saving the waveform.
 
-## Synthesize the Design
+### Synthesize the Design
 
-## Synthesize the design with the Vivado synthesis tool and analyze the Project Summary output. 
+#### Synthesize the design with the Vivado synthesis tool and analyze the Project Summary output. 
 
 1. Click on **Run Synthesis** under the *SYNTHESIS* tasks of the *Flow Navigator* pane.
 
@@ -332,14 +294,13 @@ Observe the Tcl Console window and see the output is being displayed as the test
    <i>Project Summary view </i>
    </p>
 
-
    Click on the various links to see what information they provide and which allows you to change the synthesis settings.
 
 4. Click on the **Table** tab in the **Project Summary** tab.
 
    Notice that there are an estimated 3 LUTs and 8 IOs (4 input and 4 output) that are used.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab1/Fig31.png">
 </p>
 <p align = "center">
@@ -355,7 +316,6 @@ Observe the Tcl Console window and see the output is being displayed as the test
    <i>Synthesized design’s schematic view</i>
    </p>
 
-
    Notice that IBUFs and OBUFs are automatically instantiated (added) to the design as the input and output are buffered.  The logical gates are implemented in LUTs (1 input is listed as LUT1, 2 input is listed as LUT2, and 3 input is listed as LUT3).  Four gates in RTL analysis output are mapped onto four LUTs in the synthesized output.
 
    Using Windows Explorer, verify that **lab1.runs** directory is created under **lab1**.  Under the **runs** directory, **synth_1** directory is created which holds several files related to synthesis.
@@ -367,9 +327,9 @@ Observe the Tcl Console window and see the output is being displayed as the test
 <i>Directory structure after synthesizing the design</i>
 </p>
 
-## Implement the Design
+### Implement the Design
 
-### Implement the design with the Vivado Implementation Defaults settings and analyze the Project Summary output.    
+#### Implement the design with the Vivado Implementation Defaults settings and analyze the Project Summary output.    
 
 1. Click on **Run Implementation** under the *Implementation* tasks of the *Flow Navigator* pane.
 
@@ -382,10 +342,7 @@ The implementation process will be run on the synthesized design.  When the proc
 
 5. If it is not selected, click the *Routing Resources* icon ![](./images/lab1/Fig34.png) to show routing resources. 
 
-   <p align = "center">
-   <i>Selecting a net</i>
-   </p>
-      <p align="center">
+   <p align="center">
    <img src ="./images/lab1/Fig35.png">
    </p>
    <p align = "center">
@@ -398,14 +355,12 @@ The implementation process will be run on the synthesized design.  When the proc
 <img src ="./images/lab1/Fig36.png">
 </p>
 <p align = "center">
-<i>Viewing implemented design</i>
+<i>Selecting a net</i>
 </p>
-
-
 
 6. Close the implemented design view by selecting **File > Close Implemented Design**, and select the **Project Summary** tab (you may have to change to the Default Layout view) and observe the results.
 
-   Select the Post-Implementation tab.
+7. Select the Post-Implementation tab.
 
    **Notice** that the actual resource utilization is 3 LUTs and 8 IOs.  Also, it indicates that no timing constraints were defined for this design (since the design is combinatorial).
 
@@ -419,18 +374,18 @@ The implementation process will be run on the synthesized design.  When the proc
 
    Using the Windows Explorer, verify that **impl_1** directory is created at the same level as **synth_1** under the **lab1.runs** directory.  The **impl_1** directory contains several files including the implementation report files.
 
-7. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
+8. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
 
-   <p align="center">
+<p align="center">
 <img src ="./images/lab1/Fig38.png">
 </p>
 <p align = "center">
 <i>Available reports to view</i>
 </p>					
 
-## Perform Timing Simulation
+### Perform Timing Simulation
 
-### Run a timing simulation.  
+#### Run a timing simulation.  
 
 1. Select **Run Simulation > Run Post-Implementation Timing Simulation** process under the *Simulation* tasks of the *Flow Navigator* pane.
 
@@ -453,16 +408,15 @@ The implementation process will be run on the synthesized design.  When the proc
    <i>Timing simulation output</i>
    </p>
 
-
    Notice that we monitored the expected led output at 10 ns after the input is changed (see the testbench) whereas the actual delay is about 8 to 9.7 ns (depending on the board).
 
 6. Close the simulator by selecting **File > Close Simulation** without saving any changes.
 
-## Generate the Bitstream and Verify Functionality
+### Generate the Bitstream and Verify Functionality
 
-### Connect the board and power it ON. Generate the bitstream, open a hardware session, and program the FPGA.  
+#### Connect the board and power it ON. Generate the bitstream, open a hardware session, and program the FPGA.  
 
-1. Make sure that the Micro-USB cable is connected to the JTAG PROG connector next to the ETHERNET connector for the PYNQ-Z1. The PYNQ-Z2 JTAG PROG connector is located next to the power supply switch).
+1. Make sure that the Micro-USB cable is connected to the JTAG PROG connector.
 
 2. The PYNQ-Z1 and PYNQ-Z2 can be powered through USB power via the JTAG PROG.
 
@@ -482,12 +436,11 @@ The implementation process will be run on the synthesized design.  When the proc
 <i>Board connection for the PYNQ-Z2</i>
 </p>
 
-
 3. Power **ON** the board.
 
 4. Click on the **Generate Bitstream** entry under the *PROGRAM AND DEBUG* tasks of the *Flow Navigator* pane.
 
-   The bitstream generation process will be run on the implemented design.  When the process is completed a *Bitstream Generation* *Completed* dialog box with three options will be displayed.  
+   The bitstream generation process will be run on the implemented design.  When the process is completed a *Bitstream Generation  Completed* dialog box with three options will be displayed.  
 
    <p align="center">
    <img src ="./images/lab1/Fig43.png">
@@ -496,8 +449,7 @@ The implementation process will be run on the synthesized design.  When the proc
    <i>Bitstream generation</i>
    </p>
 
-
-   This process will have generated a **lab1.bit** file under **impl_1** directory in the **lab1.runs** directory.
+   This process will have generated a **lab1.bit** file under the **impl_1** directory in the **lab1.runs** directory.
 
 5. Select the *Open Hardware Manager* option and click **OK**.
 
@@ -512,7 +464,6 @@ The implementation process will be run on the synthesized design.  When the proc
 <i>Opening new hardware target</i>
 </p>
 
-
 7. From the dropdown menu, click **Auto Connect.**
 
    The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
@@ -524,15 +475,14 @@ The implementation process will be run on the synthesized design.  When the proc
    <i>Opened hardware session</i>
    </p>
 
-
    Select the device and verify that the lab1.bit is selected as the programming file in the General tab.
 
    <p align="center">
    <img src ="./images/lab1/Fig46.png">
    </p>
-<p align = "center">
-<i>Programming file</i>
-</p>
+   <p align = "center">
+   <i>Programming file</i>
+   </p>
 
 8. Click on the *Program device* link in the green information bar to program the target FPGA device. Another way is to right click on the device and select *Program Device.*
 
@@ -543,12 +493,11 @@ The implementation process will be run on the synthesized design.  When the proc
 <i>Selecting to program the FPGA</i>
 </p>
 
-
 9. Click **Program** to program the FPGA.
 
-   The DONE light will light when the device is programmed. You may see some other LEDs lit depending on switch positions.
+   The DONE LED will lit when the device is programmed. You may see some other LEDs lit depending on switch positions.
 
-10. Verify the functionality by flipping switches and observing the output on the LEDs (Refer to the earlier logic diagram).
+10. Verify the functionality by flipping the switches and observing the output on the LEDs (Refer to the earlier logic diagram).
 
 11. When satisfied, power **OFF** the board.
 

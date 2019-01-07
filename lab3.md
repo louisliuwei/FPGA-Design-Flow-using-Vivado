@@ -1,9 +1,5 @@
 # Implementing the Design
 
-## Introduction
-
-This lab continues with the previous lab. You will perform static timing analysis. You will implement the design with the default settings and generate a bitstream.  Then you will open a hardware session and program the FPGA. Finally the design will be validated by programming the hardware in SDK using the software application running on A9 that is provided to you. 
-
 ## Objectives 
 
 After completing this lab, you will be able to:
@@ -17,36 +13,23 @@ After completing this lab, you will be able to:
 - Generate bitstream and verify the functionality in hardware
 
 
-## Procedure 
+## Steps
+### Open a Vivado Project using IDE
 
-This lab is broken into steps that consist of general overview statements providing information on the detailed instructions that follow. Follow these detailed instructions to progress through the lab.
+#### Launch Vivado and open the lab2 project. Save the project as lab3 in the *<2018_2_zynq _labs>* directory making sure that the create subdirectory option is selected.  Set the flatten_hierarchy setting to rebuilt. Create new synthesis run naming it as synth_2.
 
- 
+ **<2018_2_zynq _labs>** refers to the **C:\xup\fpga_flow\2018_2_zynq_labs** directory and **<2018_2_zynq   _sources>** to the **C:\xup\fpga_flow\2018_2_zynq _sources** directory. 
 
-## General Flow
+1. Start the Vivado if necessary and open the lab2 project (lab2.xpr) you created in the previous lab using the **Open Project** link in the Getting Started page.
 
-​   
-
-<p align="center">
-<img src ="./images/lab3/Fig1.png" width="70%" height="70%"/>
-</p>
-
-## Open a Vivado Project using IDE
-
-### Launch Vivado and open the lab2 project. Save the project as lab3 in the *<2018_2_zynq _labs>* directory making sure that the create subdirectory option is selected.  Set the flatten_hierarchy setting to rebuilt. Create new synthesis run naming it as synth_2.
-
- References to   **<2018_2_zynq _labs>** is a   placeholder for the **C:\xup\fpga_flow\2018_2_zynq   _labs** directory and **<2018_2_zynq   _sources>** is a place holder for the **C:\xup\fpga_flow\2018_2_zynq _sources** directory. 
-
-1. Start the Vivado if necessary and open either the lab2 project (lab2.xpr) you created in the previous lab or the lab2 project in the lab solution directory using the **Open Project** link in the Getting Started page.
-
-2. Select **File > Project > Save As …** to open the *Save Project As* dialog box. Enter **lab3** as the project name.  Make sure that the *Create Project Subdirectory* option is checked, the project directory path is **<2018_2_zynq _labs >** and click **OK.**
+2. Select **File > Project > Save As …** to open the *Save Project As* dialog box. Enter **lab3** as the project name.  Make sure that the *Create Project Subdirectory* option is checked, the project directory path is **<2018_2_zynq _labs>** and click **OK.**
 
 3. Click on the **Settings** in the *Flow Navigator* pane.
 
-4. Make sure that the *Synthesis >* *flatten_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
+4. Make sure that the *Synthesis > flatten_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
 
    <p align="center">
-   <img src ="./images/lab3/Fig2.png">
+   <img src ="./images/lab3/Fig2.PNG">
    </p>
    <p align = "center">
    <i>Setting hierarchy to rebuilt</i>
@@ -74,7 +57,6 @@ This lab is broken into steps that consist of general overview statements provid
 <p align = "center">
 <i>Timing report for the PYNQ</i>
 </p>
-
 
 5. Click on the link beside the **Worst Negative Slack** (WNS) and see the 8 failing paths.
 
@@ -113,7 +95,6 @@ This lab is broken into steps that consist of general overview statements provid
     <i>The schematic view of the source clock path</i>
     </p>
 
-
     This corresponds to the Source Clock Path in the timing report.
 
     <p align="center">
@@ -122,7 +103,6 @@ This lab is broken into steps that consist of general overview statements provid
     <p align = "center">
     <i>The source clock path for the PYNQ</i>
     </p>
-
 
     Since the virtual clock is slower (12 ns) than the clk_pin period (8 ns), the data path delay includes the clock period of the clk_pin clock source.
 
@@ -133,7 +113,7 @@ This lab is broken into steps that consist of general overview statements provid
     <i>Worst failing path for the PYNQ</i>
     </p>
 
-### Change the design constraint to constrain the virtual clock period to 8ns. Re-synthesize the design and analyze the results.
+#### Change the design constraint to constrain the virtual clock period to 8ns. Re-synthesize the design and analyze the results.
 
 1. Click **Edit Timing Constraints** under the Synthesized Design. 
 
@@ -165,7 +145,6 @@ This lab is broken into steps that consist of general overview statements provid
 <p align = "center">
 </p>
 
-
 4. Click on **Rerun**.
 
    Notice that setup timing violations are gone. However, there are still 2 failing paths for the Hold.
@@ -176,7 +155,6 @@ This lab is broken into steps that consist of general overview statements provid
 <p align = "center">
 <i>Setup timing met for the PYNQ</i>
 </p>
-
 
 5. Click on the WHS link to see the paths.
 
@@ -190,9 +168,9 @@ This lab is broken into steps that consist of general overview statements provid
 
    Notice that the Synthesis Out-of-Date status is displayed on the top-right corner.
 
-## Implement the Design
+### Implement the Design
 
-### Run the implementation after saving the synthesis run. Perform the timing analysis.    
+#### Run the implementation after saving the synthesis run. Perform the timing analysis.    
 
 1. In the Design Runs tab, right-click on the synth_2 and select **Reset Runs**. Make sure the generated files are deleted. Click **Reset**.
 
@@ -206,13 +184,13 @@ This lab is broken into steps that consist of general overview statements provid
 
 5. Select the *Open Implemented Design* option and click **OK**.
 
-### View the amount of FPGA resources consumed by the design using Report Utilization.
+#### View the amount of FPGA resources consumed by the design using Report Utilization.
 
 1. In the *Flow Navigator* pane, select IMPLEMENTATION > Open Implemented Design > Report Utilization.
 
    The Report Utilization dialog box opens.
 
-2. Click OK.
+2. Click **OK**.
 
    The utilization report is displayed at the bottom of the Vivado IDE. You can select any of the resources on the left to view its corresponding utilization.
 
@@ -225,9 +203,9 @@ This lab is broken into steps that consist of general overview statements provid
    <i>Resource utilization for the PYNQ</i>
    </p>
 
-### Generate a timing summary report
+#### Generate a timing summary report
 
-1. In the Flow Navigator, under **IMPLEMENTATION > Open Implemented Design**, click **Report Timing Summary** 
+1. Click **Flow Navigator > **IMPLEMENTATION > Open Implemented Design > Report Timing Summary** 
 
    The Report Timing Summary dialog box opens.
 
@@ -240,7 +218,6 @@ This lab is broken into steps that consist of general overview statements provid
 <i>The timing summary report showing timing violations</i>
 </p>
 
-
 3. Click on the WNS link to see a detailed report to determine the failing path entries.
 
 4. Double-click on the first failing path to see why it is failing.
@@ -251,7 +228,6 @@ This lab is broken into steps that consist of general overview statements provid
    <p align = "center">
    <i>First failing path delays for the PYNQ</i>
    </p>
-
 
    Compared to delays from the synthesis report, the net delays are actual delays (rather than an estimated figure).  The data path delay is longer than the destination clock path delay giving a negative slack (violation). The data path delay is 11.693 ns for the PYNQ-Z2, the destination clock path is 7.975 ns and the negative slack is -3.718 ns. 
 
@@ -265,7 +241,6 @@ This lab is broken into steps that consist of general overview statements provid
 <p align = "center">
 </p>
 
-
 6. Click on **Save File** button to save the modified constraint file and then click on the **Run Implementation** in the *Flow Navigator* pane to implement the project with new constraint file.
 
 7. Click **OK** when prompted to run the synthesis first before running the implementation process.
@@ -274,7 +249,7 @@ This lab is broken into steps that consist of general overview statements provid
 
 8. Select the ***Open Implemented Design*** option and click **OK**.
 
-9. In the **Flow Navigator**, under **IMPLEMENTATION > Open Implemented Design**, click **Report Timing Summary**
+9. Click **Flow Navigator > IMPLEMENTATION > Open Implemented Design > Report Timing Summary**
 
    Observe that the timing violations of the Intra-clock paths are gone.  
 
@@ -301,11 +276,9 @@ This lab is broken into steps that consist of general overview statements provid
     <i>Clock nets for the PYNQ-Z2</i>
     </p>
 
-## Generate the Bitstream
+### Generate the Bitstream
 
-### Generate the bitstream.    
-
-1. In the Flow Navigator, under **PROGRAM AND DEBUG** click **Generate Bitstream**.
+1. Click **Flow Navigator > PROGRAM AND DEBUG > Generate Bitstream**.
 
    <p align="center">
    <img src ="./images/lab3/Fig18.png">
@@ -318,11 +291,11 @@ This lab is broken into steps that consist of general overview statements provid
 
 3. Click **Cancel** when the bitstream generation is completed.
 
-## Verify the Functionality 
+### Verify the Functionality 
 
-### Connect the board and power it ON. Open a hardware session, and program the FPGA.  
+#### Connect the board and power it ON. Open a hardware session, and program the FPGA.  
 
-1. Make sure that the Micro-USB cable is connected to the JTAG PROG connector next to the Ethernet connector for the PYNQ-Z1. The PYNQ-Z2 JTAG PROG connector is located next to the power supply switch).
+1. Make sure that the Micro-USB cable is connected to the JTAG PROG connector.
 
 2. Select the *Open Hardware Manager* option.
 
@@ -336,7 +309,6 @@ This lab is broken into steps that consist of general overview statements provid
 <p align = "center">
 </p>
 
-
 4. The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
 5. Select the device in the *Hardware Device Properties,* and verify that the **uart_top.bit** is selected as the programming file in the General tab.
@@ -349,12 +321,11 @@ This lab is broken into steps that consist of general overview statements provid
 <p align = "center">
 </p>
 
-
 7. Click on the **Program** button.
 
    The programming bit file will be downloaded and the DONE light will be turned ON when the FPGA has been programmed.
 
-### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. 
+#### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. 
 
 1. Start a terminal emulator program such as TeraTerm or HyperTerminal. 
 
@@ -362,7 +333,7 @@ This lab is broken into steps that consist of general overview statements provid
 
 3. Set the COM port for 115200 baud rate communication. 
 
-### Program FPGA, Start a SDK session, point it to the *C:/xup/fpga_flow/2018_2_zynq_sources/lab3/Pynq/lab3.sdk workspace.* 
+#### Program FPGA, Start a SDK session, point it to the *C:/xup/fpga_flow/2018_2_zynq_sources/lab3/Pynq/lab3.sdk workspace.* 
 
 1. Open **SDK** by selecting **Start > All Programs > Xilinx Design Tools > Xilinx SDK 2018.2**
 
@@ -376,7 +347,6 @@ This lab is broken into steps that consist of general overview statements provid
    <p align = "center">
    <i>Running the application</i>
    </p>
-
 
    The program will be downloaded and the execution will begin.
 

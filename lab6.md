@@ -1,9 +1,5 @@
 # Hardware Debugging
 
-## Introduction
-
-In this lab you will use the uart_led design that was introduced in the previous labs. You will use Mark Debug feature and also the available Integrated Logic Analyzer (ILA) core (in IP Catalog) to debug the hardware.
-
 ## Objectives 
 
 After completing this lab, you will be able to:
@@ -14,10 +10,6 @@ After completing this lab, you will be able to:
 
 -  Use hardware debugger to debug a design
 
-
-## Procedure 
-
-This lab is broken into steps that consist of general overview statements providing information on the detailed instructions that follow. Follow these detailed instructions to progress through the lab.
 
 ## Design Description
 
@@ -41,29 +33,20 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 <i>The Complete System</i>
 </p>
 
-
-## General Flow
-
-<p align="center">
-<img src ="./images/lab6/Fig3.png">
-</p>
-<p align = "center">
-</p>
-
-
-## Create a Vivado Project using IDE
+## Steps
+### Create a Vivado Project using IDE
 
 In this design we will use board’s USB-UART which is controlled by the Zynq’s ARM Cortex-A9 processor.  Our PL design needs access to this USB-UART. So first thing we will do is to create a Processing System design which will put the USB-UART connections in a simple GPIO-style and make it available to the PL section.
 
-### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use provided the tcl scripts (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart_led_pins_pynq.xdc and uart_led_timing_pynq.xdc files from the <*2018_2_zynq_sources>\lab6* directory.
+#### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use provided the tcl script file (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart_led_pins_pynq.xdc and uart_led_timing_pynq.xdc files from the *<2018_2_zynq_sources>\lab6* directory.
 
-References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_flow\2018_2_zynq_labs**   directory and **<2018_2_zynq_sources>**   is a place holder for the **C:\xup\fpga_flow\2018_2_zynq_sources\**   directory.     
+**<2018_2_zynq_labs>** refers to the **C:\xup\fpga_flow\2018_2_zynq_labs** directory and **<2018_2_zynq_sources>** refers to the **C:\xup\fpga_flow\2018_2_zynq_sources** directory.     
 
-1. Open Vivado by selecting **Start > All Programs >** **Xilinx Design Tools > Vivado 2018.2**
+1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 
-3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **<2018_2_zynq_labs>**, and click **Select**.
+3. Click the *Browse* button of the *Project location* field of the **New Project** form, browse to **<2018_2_zynq_labs>**, and click **Select**.
 
 4. Enter **lab6** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
@@ -83,13 +66,13 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
     You may also use the **Parts** option and various drop-down fields of the **Filter** section, select the **XC7Z020clg400-1** part. 
 
-    Notice that PYNQ-Z1 and PYNQ-Z2 may not be listed under Boards menu as they are not in the tools database. If not listed then you can download the board files for the desired boards**.
+    Notice that PYNQ-Z1 and PYNQ-Z2 may not be listed under the Boards menu as they are not in the tools database. If not listed then you can download the board files for the desired boards**.
 
 12. Click **Next**.
 
 13. Click **Finish** to create the Vivado project.  
 
-14. In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
+14. In the Tcl Shell window enter the following command to change to the lab directory and hit the Enter key.
 
     *cd C:/xup/fpga_flow/2018_2_zynq_sources/lab6*
 
@@ -97,7 +80,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
     *source ps7_create_pynq.tcl*
 
-    This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel 14 and one EMIO channel. It will then create a top-level wrapper file called system_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run. 
+    This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel (GPIO14) and one EMIO channel. It will then create a top-level wrapper file called system_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run. 
 
 16. Double-click on the **uart_led** entry to view its content.
 
@@ -110,13 +93,13 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     <i>CLOCK_RATE parameter of uart_led</i>
     </p>
 
-### Add the ILA Core
+#### Add the ILA Core
 
-1. Click **IP Catalog** under the *PROJECT MANAGER* tasks of the *Flow Navigator* pane.
+1. Click **Flow Navigator > PROJECT MANAGER > IP Catalog**.
 
-2. The catalog will be displayed in the Auxiliary pane.
+   The catalog will be displayed in the Auxiliary pane.
 
-3. Expand the **Debug & Verification > Debug** folders and double-click the **ILA** entry.
+2. Expand the **Debug & Verification > Debug** folders and double-click the **ILA** entry.
 
    <p align="center">
    <img src ="./images/lab6/Fig5.png">
@@ -128,11 +111,11 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
    This exercise will be connecting the ILA core/component to the LED port which is 8-bit wide.
 
-4. Click **Customize IP** on the following Add IP window. The ILA IP will open.
+3. Click **Customize IP** on the following Add IP window. The ILA IP will open.
 
-5. Change the component name to **ila_led**.
+4. Change the component name to **ila_led**.
 
-6. Change the *Number of Probes* to **2**.
+5. Change the *Number of Probes* to **2**.
 
    <p align="center">
    <img src ="./images/lab6/Fig6.png">
@@ -141,7 +124,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    <i>Setting the component name and the number of probes field</i>
    </p>
 
-7. Select the *Probe Ports* tab and change the PROBE1 port width to **8**, leaving the PROBE0 width to **1**.
+6. Select the *Probe Ports* tab and change the PROBE1 port width to **8**, leaving the PROBE0 width to **1**.
 
    <p align="center">
    <img src ="./images/lab6/Fig7.png">
@@ -150,7 +133,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    <i>Setting the probes widths</i>
    </p>
 
-8. Click **OK**.
+7. Click **OK**.
 
    The Generate Output Products dialog box will appear.
 
@@ -161,7 +144,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    <i>The Generate Output Products</i>
    </p>
 
-9. Click the **Generate** button to generate the core including the instantiation template. Click **OK** at the warning box. Notice the core is added to the *Design Sources* view.
+8. Click the **Generate** button to generate the core including the instantiation template. Click **OK** at the warning box. Notice the core is added to the *Design Sources* view.
 
    <p align="center">
    <img src ="./images/lab6/Fig9.png">
@@ -170,13 +153,13 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    <i>Newly generate ila core added in the design source</i>
    </p>
 
-10. Select the **IP Sources** tab, expand the **IP(1) > ila_led > Instantiation Template**, and double-click the **ila_led.veo** entry to see the instantiation template.
+9. Select the **IP Sources** tab, expand the **IP(1) > ila_led > Instantiation Template**, and double-click the **ila_led.veo** entry to see the instantiation template.
 
-11. Instantiate the ila_led in design by copying lines 56 – 62 and pasting to ~line 69 (before “endmodule” on the last line) in the uart_top.v file.
+10. Instantiate the ila_led in design by copying lines 56 – 62 and pasting to ~line 69 (before “endmodule” on the last line) in the uart_top.v file.
 
-12. Change *your_instance_name* to **ila_led_i0.**
+11. Change *your_instance_name* to **ila_led_i0.**
 
-13. Change the following port names in the Verilog code to connect the ila to existing signals in the design:
+12. Change the following port names in the Verilog code to connect the ila to existing signals in the design:
 
     *.clk(CLK)          . clk(clk_pin)*
 
@@ -191,7 +174,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     <i>Instantiating the ILA Core in the uart_top.v</i>
     </p>
 
-14. Select **File > Save File**.
+13. Select **File > Save File**.
 
     Notice that the ILA Core instance is in the design hierarchy.
 
@@ -202,17 +185,17 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     <i>ILA Core added to the design</i>
     </p>
 
-## Synthesize the Design and Mark Debug
+### Synthesize the Design and Mark Debug
 
-### Synthesize the design. Open the synthesized design.  View the schematic. Add Mark Debug on the rx_data bus between the uart_rx_i0 and led_ctl_i0 instances.
+#### Synthesize the design. Open the synthesized design.  View the schematic. Add Mark Debug on the rx_data bus between the uart_rx_i0 and led_ctl_i0 instances.
 
-1. Click on **Run Synthesis** under the *SYNTHESIS* tasks of the *Flow Navigator* pane. Click **Save** to Save Project if prompted.
+1. Click **Flow Navigator > SYNTHESIS > Run Synthesis**. Click **Save** to Save Project if prompted.
 
    The synthesis process will be run on the uart_top.v and all its hierarchical files.  When the process is completed a *Synthesis Completed* dialog box with three options will be displayed.
 
 2. Select the *Open Synthesized Design* option and click **OK**.
 
-3. Click on **Schematic** under the *Synthesized Design* tasks of *Synthesis* tasks of the *Flow Navigator* pane to view the synthesized design in a schematic view.
+3. Click on **Flow Navigator > SYNTHESIS > Synthesized Desig > Schematic** to view the synthesized design in a schematic view.
 
 4. Expand component **U0** and Select the **rx_data** bus between the *uart_rx_i0* and the *led_ctl_i0* instances, right-click, and select **Mark Debug**. 
 
@@ -255,7 +238,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
    <p align = "center">
    </p>
 
-10. In the Set Up Debug wizard click **Next.**
+10. In the *Set Up Debug* wizard click **Next**.
 
     Note that rx_data is listed, with the Clock Domain as clk_pin_IBUF_BUFG.
 
@@ -281,13 +264,13 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
 14. Select **File > Constraints > Save** and click **OK** and Click **Yes.**
 
-15. Open uart_led_pins_pynq.xdc and notice the debug nets have been appended to the bottom of the file.
+15. Open *uart_led_pins_pynq.xdc* and notice the debug nets have been appended to the bottom of the file.
 
 16. Perform this step if synthesis is not already up-to-date: In the **Design Runs** tab, right-click on the *synth_1* and select **Force Up-to-Date** to ensure that the synthesis process is not re-run, since the design was not changed.
 
-## Implement and Generate Bitstream 
+### Implement and Generate Bitstream 
 
-### Generate the bitstream.    
+#### Generate the bitstream.    
 
 1. Click on the **Generate Bitstream** to run the implementation and bit generation processes.
 
@@ -295,9 +278,9 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
 3. When the bitstream generation process has completed successfully, a box with three options will appear.  Select the **Open Hardware Manager** option and click **OK**. 
 
-## Debug in Hardware
+### Debug in Hardware
 
-### Connect the board and power it ON. Open a hardware session, and program the FPGA.  
+#### Connect the board and power it ON. Open a hardware session, and program the FPGA.  
 
 1. Make sure that the Micro-USB cable is connected to the JTAG PROG connector.
 
@@ -315,7 +298,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
 6. Select the device and verify that the **uart_top.bit** is selected as the programming file in the General tab. Also notice that there is an entry in the *Debug probes file* field.
 
-### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. Program the FPGA and verify the functionality. 
+#### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. Program the FPGA and verify the functionality. 
 
 1. Start a terminal emulator program such as TeraTerm or HyperTerminal. 
 
@@ -327,11 +310,11 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
    The programming bit file be downloaded and the DONE light will be turned ON indicating the FPGA has been programmed. Debug Probes window will also be opened, if not, then select **Window > Debug Probes.**
 
-### Start a SDK session, point it to the c:\xup\fpga_flow\2018_2_zynq_sources\lab6\pynq\lab6.sdk workspace
+#### Start a SDK session, point it to the c:\xup\fpga_flow\2018_2_zynq_sources\lab6\pynq\lab6.sdk workspace
 
-1. Open **SDK** by selecting **Start > All Programs > Xilinx Design Tools >** **Xilinx SDK 2018.2**
+1. Open **SDK** by selecting **Start > Xilinx Design Tools > Xilinx SDK 2018.2**
 
-2. In the **Select a workspace** window, click on the browse button, browse to C:\xup\fpga_flow\2018_2_zynq_sources\lab6\pynq\lab6.sdk and click **OK.**
+2. In the **Select a workspace** window, click on the browse button, browse to C:\xup\fpga_flow\2018_2_zynq_sources\lab6\pynq\lab6.sdk and click **OK**.
 
 3. Click **OK**.
 
@@ -369,9 +352,9 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
    Two waveform windows will be created, one for each ila; one ila is of the instantiated ILA core and another for the MARK DEBUG method.
 
-### Setup trigger conditions to trigger on a write to led port (rx_data_rdy_out=1) and the trigger position to 512. Arm the trigger.
+#### Setup trigger conditions to trigger on a write to led port (rx_data_rdy_out=1) and the trigger position to 512. Arm the trigger.
 
-1. In the **Trigger Setup** window, click Add Probes and select the **rx_data_rdy_out**.
+1. In the **Trigger Setup** window, click *Add Probes* and select the **rx_data_rdy_out**.
 
    <p align="center">
    <img src ="./images/lab6/Fig22.png">
@@ -400,7 +383,7 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
 4. Similarly, set the trigger position of the *hw_ila_2* to **512**.
 
-5. Select the hw_ila_1 in the Hardware window and then click on the Run Trigger ( ![](.\images\lab6\Fig25.png)  ) button. Observe that the hw_ila_1 core is armed and showing the status as **Waiting for Trigger**.  
+5. Select the *hw_ila_1* in the Hardware window and then click on the Run Trigger ( ![](.\images\lab6\Fig25.png)  ) button. Observe that the hw_ila_1 core is armed and showing the status as **Waiting for Trigger**.  
 
    <p align="center">
    <img src ="./images/lab6/Fig26.png">
@@ -411,9 +394,9 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
 
 6. In the terminal emulator window, type a character, and observe that the hw_ila_1 status changes from capturing to idle as the rx_data_rdy_out became 1.
 
-7. Select the hw_ila_data_1.wcfg window and see the waveform.  Notice that the rx_data_rdy_out goes from 0 to 1 at 512th sample.
+7. Select the hw_ila_data_1.wcfg window and see the waveform.  Notice that the *rx_data_rdy_out* goes from 0 to 1 at 512th sample.
 
-  <p align="center">
+<p align="center">
 <img src ="./images/lab6/Fig27.png">
 </p>
 <p align = "center">
@@ -443,7 +426,8 @@ References to **<2018_2_zynq_labs>** is a place holder   for the **C:\xup\fpga_f
     <i>Second ila core triggered</i>
     </p>
 
-12. When satisfied, close the terminal emulator program and power OFF the board 
+12. When satisfied, close the terminal emulator program and power OFF the board.
+
 13. Select **File > Close Hardware Manager**. Click **OK** to close it.
 
 14. Close the **Vivado** program by selecting **File > Exit** and click **OK**.
