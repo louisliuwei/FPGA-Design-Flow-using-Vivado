@@ -291,7 +291,6 @@ Look through the report and find the number used of each of the following:
    <p align = "center">
    <i>Power consumption estimation for the PYNQ</i>
    </p>
-
    **Question 3**
 
    From the power report, find the % power consumption used by each of the following: 
