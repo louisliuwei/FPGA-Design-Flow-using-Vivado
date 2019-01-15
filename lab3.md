@@ -335,7 +335,7 @@ After completing this lab, you will be able to:
 
 #### Program FPGA, Start a SDK session, point it to the *C:/xup/fpga_flow/2018_2_zynq_sources/lab3/Pynq/lab3.sdk workspace.* 
 
-1. Open **SDK** by selecting **Start > All Programs > Xilinx Design Tools > Xilinx SDK 2018.2**
+1. Open **SDK** by selecting **Start >  Xilinx Design Tools > Xilinx SDK 2018.2**
 
 2. In the **Select a drectory as workspace** window, click on the browse button, browse to C:/xup/fpga_flow/2018_2_zynq_sources/lab3/lab3.sdk directory.
 

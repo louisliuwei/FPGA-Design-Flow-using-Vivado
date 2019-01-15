@@ -1,8 +1,8 @@
-17:30:39 **** Incremental Build of configuration Debug for project wave_gen_uart ****
+13:39:12 **** Incremental Build of configuration Debug for project wave_gen_uart ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
 
-17:30:39 Build Finished (took 453ms)
+13:39:13 Build Finished (took 617ms)
 

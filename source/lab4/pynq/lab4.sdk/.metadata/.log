@@ -1,60 +1,60 @@
-!SESSION 2018-09-28 17:28:16.019 -----------------------------------------------
+!SESSION 2019-01-15 13:36:52.805 -----------------------------------------------
 eclipse.buildId=2018.2
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/xup/fpga_flow/Test/lab4/lab4.sdk
 
-!ENTRY org.eclipse.ui 2 0 2018-09-28 17:28:21.568
+!ENTRY org.eclipse.ui 2 0 2019-01-15 13:36:54.778
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2018-09-28 17:28:21.568
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-01-15 13:36:54.778
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY org.eclipse.ui 2 0 2018-09-28 17:28:22.179
+!ENTRY org.eclipse.ui 2 0 2019-01-15 13:36:55.413
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2018-09-28 17:28:22.179
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-01-15 13:36:55.414
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:31.538
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:01.893
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:01.895
 !MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:31.539
-!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:31.545
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:01.911
 !MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:31.551
-!MESSAGE XSCT Command: [setws C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk], Thread: Thread-14
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:01.923
+!MESSAGE XSCT Command: [setws C:/xup/fpga_flow/Test/lab4/lab4.sdk], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:34.916
-!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-9
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:02.450
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:34.917
-!MESSAGE XSCT command with result: [setws C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk], Result: [null, ]. Thread: Thread-14
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:02.452
+!MESSAGE XSCT command with result: [setws C:/xup/fpga_flow/Test/lab4/lab4.sdk], Result: [null, ]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:34.976
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-4
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:02.522
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-3
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.265
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-4
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.474
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-3
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.277
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-4
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.485
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-3
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.283
-!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.490
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
 "family": "zynq",
 "timestamp": "Fri Sep 28 14:36:06 2018",
 "vivado_version": "2018.2",
 "part": "xc7z020clg400-1",
-}]. Thread: Worker-4
+}]. Thread: Worker-3
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.291
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-4
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.492
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-3
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.309
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"processing_system7_0": {"hier_name": "processing_system7_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.502
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"processing_system7_0": {"hier_name": "processing_system7_0",
 "type": "processing_system7",
 "version": "5.5",
 "ip_type": "",
@@ -214,13 +214,13 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/xup/fpga_flow
 "version": "1.00.a",
 "ip_type": "PERIPHERAL",
 },
-}]. Thread: Worker-4
+}]. Thread: Worker-3
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.673
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.617
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.692
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.630
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
 "base": "0xF8008000",
 "high": "0xF8008FFF",
 "size": "4096",
@@ -519,11 +519,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/xup/fpga_flow
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.741
-!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.660
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.753
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {},
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.666
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {},
 "ps7_afi_1": {},
 "ps7_afi_2": {},
 "ps7_afi_3": {},
@@ -552,11 +552,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/xup/fpga_flow
 "ps7_xadc_0": {},
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.754
-!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.667
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:40.760
-!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {},
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:05.673
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {},
 "ps7_afi_1": {},
 "ps7_afi_2": {},
 "ps7_afi_3": {},
@@ -585,11 +585,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/xup/fpga_flow
 "ps7_xadc_0": {},
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.642
-!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.682
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.651
-!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_1": {"name": "freertos10_xilinx",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.691
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_1": {"name": "freertos10_xilinx",
 "version": "1.1",
 "desc": "FreeRTOS is a market leading open source RTOS",
 "compilerflags": "",
@@ -621,46 +621,46 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/xup/fpga_flow
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.668
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.708
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.670
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.711
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.682
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.719
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.685
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.722
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.686
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.723
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.689
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.726
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.691
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.728
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.699
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.732
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.701
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.734
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.704
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.738
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.713
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.745
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.715
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.748
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.716
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.749
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.791
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.822
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
 "description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
 "supp_proc": "psu_cortexr5",
@@ -900,152 +900,332 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.796
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.826
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.829
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [{Format=This application requires a Uart IP in the hardware., Time=1538126926828, Code=1}, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.852
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [{Format=This application requires a Uart IP in the hardware., Time=1547530633851, Code=1}, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.831
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.853
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.853
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.876
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.856
-!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.878
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:46.877
-!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:13.900
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:53.978
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:15.342
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:53.980
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:15.345
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:54.054
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:18.807
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:54.054
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:18.884
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "standalone",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos10_xilinx",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"freertos_lwip_tcp_perf_client": {"userdefname": "FreeRTOS lwIP TCP Perf Client",
+"description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"os": "standalone",
+},
+"freertos_lwip_tcp_perf_server": {"userdefname": "FreeRTOS lwIP TCP Perf Server",
+"description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"os": "standalone",
+},
+"freertos_lwip_udp_perf_client": {"userdefname": "FreeRTOS lwIP UDP Perf Client",
+"description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"os": "standalone",
+},
+"freertos_lwip_udp_perf_server": {"userdefname": "FreeRTOS lwIP UDP Perf Server",
+"description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"lwip_tcp_perf_client": {"userdefname": "lwIP TCP Perf Client",
+"description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"os": "standalone",
+},
+"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
+"description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"os": "standalone",
+},
+"lwip_udp_perf_client": {"userdefname": "lwIP UDP Perf Client",
+"description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"os": "standalone",
+},
+"lwip_udp_perf_server": {"userdefname": "lwIP UDP Perf Server",
+"description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:54.504
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:54.512
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+Update the serial_flash_family and serial_flash_interface in xilisf library in BSP settings!
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:54.837
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:54.840
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:18.887
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:55.524
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:18.910
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:55.527
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:19.900
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw wave_gen_uart_bsp -dir C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:56.690
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:19.928
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw wave_gen_uart_bsp -dir C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:56.693
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:20.030
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:56.810
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:20.034
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:56.813
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:20.035
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:57.113
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:57.116
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:59.541
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:28:59.544
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.104
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.112
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.246
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.248
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.555
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.558
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.713
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:00.721
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:09.435
-!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw wave_gen_uart_bsp -dir C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:09.461
-!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw wave_gen_uart_bsp -dir C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:09.540
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:09.544
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:09.545
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:09.549
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:20.040
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.7",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:09.550
-!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:20.041
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:14.447
-!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.217
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.679
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.632
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.683
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.638
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.684
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.640
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.688
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {}]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.654
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.688
-!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.666
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.691
-!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_xadc_0]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.670
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_xadc_0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.692
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.672
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.698
-!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.683
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
 "ver": "2.0",
 },
 "ps7_afi_1": {"name": "generic",
@@ -1131,11 +1311,11 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.699
-!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.685
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.747
-!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"processing_system7_0": {"version": "5.5",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.777
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"processing_system7_0": {"version": "5.5",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0",
 "repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
@@ -1433,77 +1613,50 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.750
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.861
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.756
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.866
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.757
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.867
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.761
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.763
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.764
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.796
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.814
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.815
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.819
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.872
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.7",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.820
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.878
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.823
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.883
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.824
-!MESSAGE XSCT Command: [::hsi::utils::opensw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.961
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.831
-!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:25.964
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.832
-!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart/src], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.206
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:15.945
-!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart/src], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.212
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.247
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.213
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.251
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.218
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.252
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.219
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.256
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
-"osname": "standalone",
-"osver": "6.7",
-}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.281
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.290
-!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.226
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
 "ver": "2.0",
 },
 "ps7_afi_1": {"name": "generic",
@@ -1589,61 +1742,85 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.352
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.228
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.356
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.232
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.357
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.233
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.361
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.237
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.238
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.241
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.270
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.279
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.280
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.287
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.7",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.366
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.288
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.371
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.292
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.443
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.293
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:16.446
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.295
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.037
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.296
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart/src], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.042
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.415
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart/src], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.046
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.966
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.052
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.972
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.974
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.985
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.7",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.056
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.992
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.061
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:27.999
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.127
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:28.063
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:29:17.129
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:37:28.066
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:17.310
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:28.172
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1670,7 +1847,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:17.571
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:28.450
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1681,7 +1858,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:17.578
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:28.512
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1692,7 +1869,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:17.908
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:28.956
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1703,7 +1880,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:17.914
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:28.995
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1714,7 +1891,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:18.169
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:29.361
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1725,7 +1902,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:18.174
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:29.399
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1736,7 +1913,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:18.409
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:29.762
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1747,7 +1924,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:18.414
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:29.798
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1758,7 +1935,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:18.787
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:30.251
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1769,7 +1946,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:18.792
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:30.288
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1780,7 +1957,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.058
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:30.695
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1791,7 +1968,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.062
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:30.705
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1802,7 +1979,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.328
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:31.113
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1813,7 +1990,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.334
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:31.150
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1824,7 +2001,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.602
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:31.558
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1835,7 +2012,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.607
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:31.593
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1846,7 +2023,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.875
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:31.984
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1857,7 +2034,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:19.880
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:32.022
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1868,7 +2045,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:20.144
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:32.507
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1879,7 +2056,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:20.148
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:32.521
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1890,7 +2067,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:21.273
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:34.091
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1901,7 +2078,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:21.277
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:34.129
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1912,7 +2089,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:21.565
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:34.520
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1923,7 +2100,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:21.569
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:34.554
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1934,7 +2111,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:21.761
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:34.886
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1945,7 +2122,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.200
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:35.222
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1956,7 +2133,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.334
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:35.442
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1967,7 +2144,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.339
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:35.479
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1978,7 +2155,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.518
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:35.762
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1989,7 +2166,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.588
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:35.949
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2000,7 +2177,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.592
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:35.984
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2011,7 +2188,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.794
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:36.333
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2022,7 +2199,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.956
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:36.598
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2033,7 +2210,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:22.961
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:36.635
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2044,7 +2221,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:23.189
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:36.910
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2055,7 +2232,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:24.944
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:38.724
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2066,7 +2243,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:24.949
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:38.762
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2077,7 +2254,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:25.144
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:39.030
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2088,7 +2265,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:26.717
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:41.192
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2099,7 +2276,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:26.726
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:41.261
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2110,7 +2287,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:26.932
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:41.871
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2121,7 +2298,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:28.682
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:44.093
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2132,7 +2309,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:28.688
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:44.133
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2143,7 +2320,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:28.873
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:44.406
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2154,7 +2331,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:30.555
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:46.315
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2165,7 +2342,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:30.562
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:46.348
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2176,7 +2353,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:30.769
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:46.627
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2187,7 +2364,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:31.836
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:47.807
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2198,7 +2375,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:31.841
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:47.816
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2209,7 +2386,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:32.032
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:48.092
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2220,7 +2397,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:33.111
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:49.308
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2231,7 +2408,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:33.117
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:49.340
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2242,7 +2419,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:33.403
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:49.724
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2253,7 +2430,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.115
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.064
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2264,7 +2441,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.137
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.078
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2275,7 +2452,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.138
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.080
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2286,7 +2463,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.139
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.081
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2297,7 +2474,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.436
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.412
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2308,7 +2485,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.438
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.413
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2319,7 +2496,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.439
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.415
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2330,7 +2507,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:37.440
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:53.416
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2341,7 +2518,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:39.703
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:55.718
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2352,7 +2529,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:39.704
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:55.720
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2363,7 +2540,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:39.705
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:55.721
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2374,7 +2551,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:39.706
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:55.722
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2385,7 +2562,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:41.032
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:57.067
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2396,7 +2573,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:41.033
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:57.068
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2407,7 +2584,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:41.034
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:57.069
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2418,7 +2595,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:41.034
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:57.070
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2429,7 +2606,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:41.961
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:58.126
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2440,7 +2617,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:41.965
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:58.162
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2451,7 +2628,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:42.149
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:37:58.440
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2462,7 +2639,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:43.890
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:38:00.535
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2473,7 +2650,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2018-09-28 17:29:43.911
+!ENTRY org.eclipse.cdt.core 4 0 2019-01-15 13:38:00.625
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2498,41 +2675,62 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-09-28 17:29:45.405
-!MESSAGE Indexed 'wave_gen_uart_bsp' (83 sources, 112 headers) in 1.37 sec: 3,614 declarations; 14,381 references; 60 unresolved inclusions; 5 syntax errors; 61 unresolved names (0.34%)
+!ENTRY org.eclipse.cdt.core 1 0 2019-01-15 13:38:02.386
+!MESSAGE Indexed 'wave_gen_uart_bsp' (83 sources, 112 headers) in 1.63 sec: 3,614 declarations; 14,381 references; 60 unresolved inclusions; 5 syntax errors; 61 unresolved names (0.34%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-09-28 17:29:45.407
-!MESSAGE Indexed 'wave_gen_uart' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY org.eclipse.cdt.core 1 0 2019-01-15 13:38:02.390
+!MESSAGE Indexed 'wave_gen_uart' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:34.863
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:38:21.202
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:34.868
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:38:21.210
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:34.869
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:38:21.211
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:34.873
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:38:21.217
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "6.7",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:34.874
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:38:21.219
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:34.877
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:38:21.221
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 1 0 2018-09-28 17:30:40.058
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:09.317
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:09.324
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:09.325
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:09.329
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:09.330
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:09.335
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-01-15 13:39:13.654
 !MESSAGE Updating toolusage
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.063
-!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.658
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.073
-!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "650",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.665
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "650",
 "PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
 "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
 "PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
@@ -2544,61 +2742,61 @@ java.lang.NullPointerException
 "PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
 "PCW_UIPARAM_DDR_BUS_WIDTH": "16 Bit",
 "PCW_UIPARAM_DDR_FREQ_MHZ": "525",
-}]. Thread: Worker-6
+}]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.074
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.666
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.078
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.669
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.080
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.670
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.089
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.672
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.090
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.673
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.093
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.675
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.094
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.676
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.100
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.679
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.101
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.679
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.104
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.682
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.105
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.682
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.112
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.685
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.114
-!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.685
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.122
-!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.689
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
 "index": "0",
 },
 "ps7_cortexa9_1": {"bscan": "",
 "index": "1",
 },
-}]. Thread: Worker-6
+}]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.123
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.690
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.142
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.702
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
 "base": "0xF8008000",
 "high": "0xF8008FFF",
 "size": "4096",
@@ -2895,287 +3093,296 @@ java.lang.NullPointerException
 "acctype": "",
 "tz": "",
 },
-}]. Thread: Worker-6
+}]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.143
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.703
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.147
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.705
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.148
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.706
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.155
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.709
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.156
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.709
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.159
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.712
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.159
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.713
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.164
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.715
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.165
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.716
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.167
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.719
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.168
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.720
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.178
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.723
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 650000000]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.181
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf bit], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.726
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf bit], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.183
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf bit], Result: [null, wave_gen_top.bit]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.728
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf bit], Result: [null, wave_gen_top.bit]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.185
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.730
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.194
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.739
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.196
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.741
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.363
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.887
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.364
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.889
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.369
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.894
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.370
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.895
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.385
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.910
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.386
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.911
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==0} -index 1], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.411
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.937
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==0} -index 1], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.413
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.939
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.416
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.954
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.417
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.955
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.424
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.956
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.425
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.957
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.431
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.962
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.433
-!MESSAGE XSCT Command: [version -server], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.964
+!MESSAGE XSCT Command: [version -server], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.435
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.966
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.436
-!MESSAGE XSCT Command: [version], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.968
+!MESSAGE XSCT Command: [version], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.437
-!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.969
+!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.441
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.969
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.447
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.975
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.448
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.975
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.463
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.991
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.463
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.992
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.469
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.998
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.470
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:13.999
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.484
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.013
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.496
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.015
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.506
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.022
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.507
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.023
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.524
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.039
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.524
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.040
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.531
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.046
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.531
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.047
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.545
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.064
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.546
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.066
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.552
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.074
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.553
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.075
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.567
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.096
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.568
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.097
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.573
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx TUL 1234-tulA]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.103
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx PYNQ-Z1 003017A4D171A]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.574
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.104
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.589
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.120
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.590
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.121
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level == 0}], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.604
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx TUL 1234-tulA" && level == 0}], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.137
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx PYNQ-Z1 003017A4D171A" && level == 0}], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.605
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.138
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.606
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.140
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.609
-!MESSAGE XSCT Command: [source C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/ps7_init.tcl], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.141
+!MESSAGE XSCT Command: [source C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/ps7_init.tcl], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.612
-!MESSAGE XSCT command with result: [source C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.144
+!MESSAGE XSCT command with result: [source C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.613
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.145
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.633
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.164
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.633
-!MESSAGE XSCT Command: [loadhw -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.165
+!MESSAGE XSCT Command: [loadhw -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.662
-!MESSAGE XSCT command with result: [loadhw -hw C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, wave_gen_top]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.192
+!MESSAGE XSCT command with result: [loadhw -hw C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, wave_gen_top]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.663
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.193
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.665
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.195
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.666
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.196
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.684
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.216
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.685
-!MESSAGE XSCT Command: [stop], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.218
+!MESSAGE XSCT Command: [stop], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.714
-!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.245
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.715
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.246
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.986
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.541
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.987
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.542
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.994
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.553
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:40.995
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.554
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.012
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.573
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.013
-!MESSAGE XSCT Command: [rst -processor], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.574
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.052
-!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.619
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.053
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.620
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.072
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.650
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.073
-!MESSAGE XSCT Command: [dow C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart/Debug/wave_gen_uart.elf], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.651
+!MESSAGE XSCT Command: [dow C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart/Debug/wave_gen_uart.elf], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.182
-!MESSAGE XSCT command with result: [dow C:/xup/fpga_flow/2018_2_zynq_labs/lab4/lab4.sdk/wave_gen_uart/Debug/wave_gen_uart.elf], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.756
+!MESSAGE XSCT command with result: [dow C:/xup/fpga_flow/Test/lab4/lab4.sdk/wave_gen_uart/Debug/wave_gen_uart.elf], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.183
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.757
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.185
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.759
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.255
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.844
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.281
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.874
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D171A"} -index 0], Result: [null, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.281
-!MESSAGE XSCT Command: [con], Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.875
+!MESSAGE XSCT Command: [con], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-09-28 17:30:41.302
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-6
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:39:14.895
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-01-15 13:46:20.659
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:46:20.682
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-137
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-01-15 13:46:20.685
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-137
