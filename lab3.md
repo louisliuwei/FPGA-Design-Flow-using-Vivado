@@ -115,7 +115,7 @@ After completing this lab, you will be able to:
 
 #### Change the design constraint to constrain the virtual clock period to 8ns. Re-synthesize the design and analyze the results.
 
-1. Click **Edit Timing Constraints** under the Synthesized Design. 
+1. Click **Edit Timing Constraints** under the Synthesized Design.  
 
    The Timing Constraints GUI will appear, showing the design has two create clocks, four inputs, and one output constraints. It also shows the constraints in the text form in the All Constraints section.
 
