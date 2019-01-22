@@ -209,7 +209,7 @@ Look through the table and find the number used of each of the following:
 
    Notice that line 86 is highlighted.  Also notice that the CLOCK_RATE and BAUD_RATE parameters are passed to the module being called.
 
-8. Double-click on the **meta_harden_rxd_io** instance to see how the synchronization circuit is being implemented using two FFs.  This synchronization is necessary to reduce the likelihood of meta-stability.  
+8. Double-click on the **meta_harden_rxd_i0** instance to see how the synchronization circuit is being implemented using two FFs.  This synchronization is necessary to reduce the likelihood of meta-stability.  
 
 9. Click on the (  ![](./images/lab2/Fig11_1.png) ) in the schematic view to go back to its parent block.
 
