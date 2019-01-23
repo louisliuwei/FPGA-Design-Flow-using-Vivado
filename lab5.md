@@ -149,21 +149,21 @@ Hover the mouse over **H16** in the Device view window.
 
 3. Type the following commands in the console to assign the pin locations.
 
-   *set\_property -dict { PACKAGE\_PIN R14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[0] }];*
+*set\_property -dict { PACKAGE\_PIN R14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[0] }];*
 
-​	set\_property -dict { PACKAGE\_PIN P14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[1] }];
+​*set\_property -dict { PACKAGE\_PIN P14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[1] }];*
 
-​	set\_property -dict { PACKAGE\_PIN N16   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[2] }];
+​*set\_property -dict { PACKAGE\_PIN N16   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[2] }];*
 
-​	set\_property -dict { PACKAGE\_PIN M14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[3] }];
+​*set\_property -dict { PACKAGE\_PIN M14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[3] }];*
 
-​	set\_property -dict { PACKAGE\_PIN W14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[4] }];
+​*set\_property -dict { PACKAGE\_PIN W14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[4] }];*
 
-​	set\_property -dict { PACKAGE\_PIN Y14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[5] }];
+​*set\_property -dict { PACKAGE\_PIN Y14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[5] }];*
 
-​	set\_property -dict { PACKAGE\_PIN T11   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[6] }];
+​*set\_property -dict { PACKAGE\_PIN T11   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[6] }];*
 
-​	*set\_property -dict { PACKAGE\_PIN T10   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[7] }];*
+​*set\_property -dict { PACKAGE\_PIN T10   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[7] }];*
 
 
 
@@ -187,7 +187,7 @@ Hover the mouse over **H16** in the Device view window.
    <img src ="./images/lab5/Fig11.png" width="60%" height="60%"/>
    </p>
    <p align = "center">
-   <i>The uart\_led\_pynq.xdc file added to the source tree</i>
+   <i>The uart_led_pynq.xdc file added to the source tree</i>
    </p>
 
 6. Expand the **Flow Navigator > I/O PLANNING > Open I/O Design > Report DRC**. 
@@ -250,7 +250,7 @@ Hover the mouse over **H16** in the Device view window.
    <img src ="./images/lab5/Fig14.png">
    </p>
    <p align = "center">
-   <i>CLOCK\_RATE parameter of uart\_led</i>
+   <i>CLOCK_RATE parameter of uart_led</i>
    </p>
 
 ### Synthesize and Enter Timing Constraints
@@ -275,7 +275,7 @@ Hover the mouse over **H16** in the Device view window.
    <img src ="./images/lab5/Fig15.png">
    </p>
    <p align = "center">
-   <i>Constraints Wizard clk\_pin parameters and Tcl command</i>
+   <i>Constraints Wizard clk_pin parameters and Tcl command</i>
    </p>
 
 6. There are no missing Generated Clocks, click **Next** to proceed.
@@ -298,7 +298,7 @@ Hover the mouse over **H16** in the Device view window.
    <img src ="./images/lab5/Fig16.png">
    </p>
    <p align = "center">
-   <i>Specifying Input Delays for btn\_pin and rst\_pin</i>
+   <i>Specifying Input Delays for btn_pin and rst_pin</i>
    </p>
 
 10. Enter the tsu and thd as **0 ns** and Enter the trce\_dly\_max and trce\_dly\_min as **-2.20 ns.** Click **Apply** and then click **Next**.
