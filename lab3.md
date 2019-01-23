@@ -16,17 +16,17 @@ After completing this lab, you will be able to:
 ## Steps
 ### Open a Vivado Project using IDE
 
-#### Launch Vivado and open the lab2 project. Save the project as lab3 in the *<2018_2_zynq _labs>* directory making sure that the create subdirectory option is selected.  Set the flatten_hierarchy setting to rebuilt. Create new synthesis run naming it as synth_2.
+#### Launch Vivado and open the lab2 project. Save the project as lab3 in the *<2018\_2\_zynq\_labs>* directory making sure that the create subdirectory option is selected.  Set the flatten_hierarchy setting to rebuilt. Create new synthesis run naming it as synth\_2.
 
- **<2018_2_zynq _labs>** refers to the **C:\xup\fpga_flow\2018_2_zynq_labs** directory and **<2018_2_zynq   _sources>** to the **C:\xup\fpga_flow\2018_2_zynq _sources** directory. 
+ **<2018\_2\_zynq\_labs>** refers to the **C:\xup\fpga_flow\2018\_2\_zynq\_labs** directory and **<2018\_2\_zynq   \_sources>** to the **C:\xup\fpga\_flow\2018\_2\_zynq\_sources** directory. 
 
 1. Start the Vivado if necessary and open the lab2 project (lab2.xpr) you created in the previous lab using the **Open Project** link in the Getting Started page.
 
-2. Select **File > Project > Save As …** to open the *Save Project As* dialog box. Enter **lab3** as the project name.  Make sure that the *Create Project Subdirectory* option is checked, the project directory path is **<2018_2_zynq _labs>** and click **OK.**
+2. Select **File > Project > Save As …** to open the *Save Project As* dialog box. Enter **lab3** as the project name.  Make sure that the *Create Project Subdirectory* option is checked, the project directory path is **<2018\_2\_zynq\_labs>** and click **OK.**
 
 3. Click on the **Settings** in the *Flow Navigator* pane.
 
-4. Make sure that the *Synthesis > flatten_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
+4. Make sure that the *Synthesis > flatten\_hierarchy* is set to **rebuilt**, which allows the design hierarchy to be preserved for synthesis, and then rebuilt which is more useful for design analysis because many logical references will be maintained.
 
    <p align="center">
    <img src ="./images/lab3/Fig2.PNG">
@@ -37,19 +37,19 @@ After completing this lab, you will be able to:
 
 5. Click **OK**.
 
-   A Create New Run dialog box will appear asking you if a new run should be created.  Click **Yes** and then **OK** to create the new run with **synth_2** name.
+   A Create New Run dialog box will appear asking you if a new run should be created.  Click **Yes** and then **OK** to create the new run with **synth\_2** name.
 
 ### Synthesize the design. Generate the timing summary and analyze the design.
 
 1. Click on **Run Synthesis** under the *Synthesis* tasks of the *Flow Navigator* pane.
 
-   The synthesis process will be run on the uart_top.v and all its hierarchical files.  When the process is completed a *Synthesis Completed* dialog box with three options will be displayed.
+   The synthesis process will be run on the uart\_top.v and all its hierarchical files.  When the process is completed a *Synthesis Completed* dialog box with three options will be displayed.
 
 2. Select the *Open Synthesized Design* option and click **OK** as we want to look at the synthesis output.
 
 3. Click on **Report Timing Summary** under the *Synthesized Design* tasks of the *Flow Navigator* pane.
 
-4. Leave all the settings unchanged, and click **OK** to generate a default timing report, *timing_1.*
+4. Leave all the settings unchanged, and click **OK** to generate a default timing report, *timing\_1.*
 
 <p align="center">
 <img src ="./images/lab3/Fig3.png">
@@ -104,7 +104,7 @@ After completing this lab, you will be able to:
     <i>The source clock path for the PYNQ</i>
     </p>
 
-    Since the virtual clock is slower (12 ns) than the clk_pin period (8 ns), the data path delay includes the clock period of the clk_pin clock source.
+    Since the virtual clock is slower (12 ns) than the clk\_pin period (8 ns), the data path delay includes the clock period of the clk\_pin clock source.
 
     <p align="center">
     <img src ="./images/lab3/Fig8.png">
@@ -126,7 +126,7 @@ After completing this lab, you will be able to:
    <i>Timing Constraints showing 12 ns Virtual Clock period defined</i>
    </p>
 
-2. Click in the Period cell of the virtual_clock and change the period from 12 to 8 
+2. Click in the Period cell of the virtual\_clock and change the period from 12 to 8 
 
 <p align="center">
 <img src ="./images/lab3/Fig10.png">
@@ -172,7 +172,7 @@ After completing this lab, you will be able to:
 
 #### Run the implementation after saving the synthesis run. Perform the timing analysis.    
 
-1. In the Design Runs tab, right-click on the synth_2 and select **Reset Runs**. Make sure the generated files are deleted. Click **Reset**.
+1. In the Design Runs tab, right-click on the synth\_2 and select **Reset Runs**. Make sure the generated files are deleted. Click **Reset**.
 
 2. Click the **Close Design** link in the status bar. If prompted, do not save anything.
 
@@ -205,7 +205,7 @@ After completing this lab, you will be able to:
 
 #### Generate a timing summary report
 
-1. Click **Flow Navigator > **IMPLEMENTATION > Open Implemented Design > Report Timing Summary** 
+1. Click **Flow Navigator > IMPLEMENTATION > Open Implemented Design > Report Timing Summary** 
 
    The Report Timing Summary dialog box opens.
 
@@ -233,7 +233,7 @@ After completing this lab, you will be able to:
 
    At this point we can ignore this violation as the LED display change by a few nanoseconds won’t be observable by human eyes.  We can also change the output delay by -4 ns and make the timings meet.
 
-5. Change the output delay by -4 ns and add the following min delay constraint in the uart_led_timing_pynq.xdc file.
+5. Change the output delay by -4 ns and add the following min delay constraint in the uart\_led\_timing\_pynq.xdc file.
 
 <p align="center">
 <img src ="./images/lab3/Fig16.png">
@@ -253,7 +253,7 @@ After completing this lab, you will be able to:
 
    Observe that the timing violations of the Intra-clock paths are gone.  
 
-10. Expand the **Intra-Clock Paths** folder on the left, expand *clk_pin*, and select the Setup group to see the list of 10 worst case delays on the right side.
+10. Expand the **Intra-Clock Paths** folder on the left, expand *clk\_pin*, and select the Setup group to see the list of 10 worst case delays on the right side.
 
 11. Double-click on the any path to see how that is made up of. Also right-click on it and select **Schematic**.
 
@@ -265,7 +265,7 @@ After completing this lab, you will be able to:
 
     The Clock Networks report will be displayed in the Console pane showing two clock net entries.
 
-14. Select *clk_pin* entry and observe the selected nets in the Device view.
+14. Select *clk\_pin* entry and observe the selected nets in the Device view.
 
     The clock nets are spread across multiple clock regions.
 
@@ -287,7 +287,7 @@ After completing this lab, you will be able to:
    <i>Generating the bitstream</i>
    </p>
 
-2. The write_bitstream command will be executed (you can verify it by looking in the Tcl console).
+2. The write\_bitstream command will be executed (you can verify it by looking in the Tcl console).
 
 3. Click **Cancel** when the bitstream generation is completed.
 
@@ -311,7 +311,7 @@ After completing this lab, you will be able to:
 
 4. The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
-5. Select the device in the *Hardware Device Properties,* and verify that the **uart_top.bit** is selected as the programming file in the General tab.
+5. Select the device in the *Hardware Device Properties,* and verify that the **uart\_top.bit** is selected as the programming file in the General tab.
 
 6. Click on the FPGA device in the HARDWARE MANAGER window
 
@@ -333,13 +333,13 @@ After completing this lab, you will be able to:
 
 3. Set the COM port for 115200 baud rate communication. 
 
-#### Program FPGA, Start a SDK session, point it to the *C:/xup/fpga_flow/2018_2_zynq_sources/lab3/Pynq/lab3.sdk workspace.* 
+#### Program FPGA, Start a SDK session, point it to the *C:/xup/fpga\_flow/2018\_2\_zynq\_sources/lab3/Pynq/lab3.sdk workspace.* 
 
 1. Open **SDK** by selecting **Start >  Xilinx Design Tools > Xilinx SDK 2018.2**
 
-2. In the **Select a drectory as workspace** window, click on the browse button, browse to C:/xup/fpga_flow/2018_2_zynq_sources/lab3/lab3.sdk directory.
+2. In the **Select a drectory as workspace** window, click on the browse button, browse to C:/xup/fpga\_flow/2018\_2\_zynq\_sources/lab3/lab3.sdk directory.
 
-3. In the *Project Explorer*, right-click on the *uart_led_zynq*, select *Run As*, and then **Launch on Hardware (System Debugger).**
+3. In the *Project Explorer*, right-click on the *uart\_led\_zynq*, select *Run As*, and then **Launch on Hardware (System Debugger).**
 
    <p align="center">
    <img src ="./images/lab3/Fig21.png">

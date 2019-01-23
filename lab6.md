@@ -38,15 +38,15 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
 
 In this design we will use board’s USB-UART which is controlled by the Zynq’s ARM Cortex-A9 processor.  Our PL design needs access to this USB-UART. So first thing we will do is to create a Processing System design which will put the USB-UART connections in a simple GPIO-style and make it available to the PL section.
 
-#### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use provided the tcl script file (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart_led_pins_pynq.xdc and uart_led_timing_pynq.xdc files from the *<2018_2_zynq_sources>\lab6* directory.
+#### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use provided the tcl script file (ps7\_create\_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, uart\_led\_pins\_pynq.xdc and uart\_led\_timing\_pynq.xdc files from the *<2018\_2\_zynq\_sources>\lab6* directory.
 
-**<2018_2_zynq_labs>** refers to the **C:\xup\fpga_flow\2018_2_zynq_labs** directory and **<2018_2_zynq_sources>** refers to the **C:\xup\fpga_flow\2018_2_zynq_sources** directory.     
+**<2018\_2\_zynq\_labs>** refers to the **C:\xup\fpga\_flow\2018\_2\_zynq\_labs** directory and **<2018\_2\_zynq\_sources>** refers to the **C:\xup\fpga\_flow\2018\_2\_zynq\_sources** directory.     
 
 1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 
-3. Click the *Browse* button of the *Project location* field of the **New Project** form, browse to **<2018_2_zynq_labs>**, and click **Select**.
+3. Click the *Browse* button of the *Project location* field of the **New Project** form, browse to **<2018\_2\_zynq\_labs>**, and click **Select**.
 
 4. Enter **lab6** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
@@ -54,11 +54,11 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 6. Using the drop-down buttons, select **Verilog** as the *Target Language* and *Simulator Language* in the *Add Sources* form.
 
-7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018_2_zynq_sources>\lab6** directory, select all the Verilog files *(led_ctl.v, meta_harden.v, uart_baud_gen.v, uart_led.v, uart_rx.v, uart_rx_ctl.v and uart_top.v),* click **OK**, and then click **Next**.
+7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018\_2\_zynq\_sources>\lab6** directory, select all the Verilog files *(led\_ctl.v, meta\_harden.v, uart\_baud\_gen.v, uart\_led.v, uart\_rx.v, uart\_rx\_ctl.v and uart\_top.v),* click **OK**, and then click **Next**.
 
 8. Click **Next** to get to the *Add Cons*traints form.
 
-9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **c:\xup\fpga_flow\2018_2_zynq_sources\lab6** directory (if necessary), select *uart_led_timing_pynq.xdc* and the appropriate *uart_led_pins_pynq.xdc* and click **Open**.
+9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **c:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab6** directory (if necessary), select *uart\_led\_timing\_pynq.xdc* and the appropriate *uart\_led\_pins\_pynq.xdc* and click **Open**.
 
 10. Click **Next.**
 
@@ -66,7 +66,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
     You may also use the **Parts** option and various drop-down fields of the **Filter** section, select the **XC7Z020clg400-1** part. 
 
-    Notice that PYNQ-Z1 and PYNQ-Z2 may not be listed under the Boards menu as they are not in the tools database. If not listed then you can download the board files for the desired boards**.
+    Notice that PYNQ-Z1 and PYNQ-Z2 may not be listed under the Boards menu as they are not in the tools database. If not listed then you can download the board files for the desired boards.
 
 12. Click **Next**.
 
@@ -74,17 +74,17 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 14. In the Tcl Shell window enter the following command to change to the lab directory and hit the Enter key.
 
-    *cd C:/xup/fpga_flow/2018_2_zynq_sources/lab6*
+    *cd C:/xup/fpga\_flow/2018\_2\_zynq\_sources/lab6*
 
 15. Generate the PS design by executing the provided Tcl script.
 
-    *source ps7_create_pynq.tcl*
+    *source ps7\_create\_pynq.tcl*
 
-    This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel (GPIO14) and one EMIO channel. It will then create a top-level wrapper file called system_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run. 
+    This script will create a block design called *system*, instantiate ZYNQ PS with one GPIO channel (GPIO14) and one EMIO channel. It will then create a top-level wrapper file called system\_wrapper.v which will instantiate the system.bd (the block design). You can check the contents of the tcl files to confirm the commands that are being run. 
 
-16. Double-click on the **uart_led** entry to view its content.
+16. Double-click on the **uart\_led** entry to view its content.
 
-    Notice in the Verilog code, the BAUD_RATE and CLOCK_RATE parameters are defined to be 115200 and 125 MHz respectively.
+    Notice in the Verilog code, the BAUD\_RATE and CLOCK\_RATE parameters are defined to be 115200 and 125 MHz respectively.
 
     <p align="center">
     <img src ="./images/lab6/Fig4.png">
@@ -113,7 +113,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 3. Click **Customize IP** on the following Add IP window. The ILA IP will open.
 
-4. Change the component name to **ila_led**.
+4. Change the component name to **ila\_led**.
 
 5. Change the *Number of Probes* to **2**.
 
@@ -153,25 +153,25 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Newly generate ila core added in the design source</i>
    </p>
 
-9. Select the **IP Sources** tab, expand the **IP(1) > ila_led > Instantiation Template**, and double-click the **ila_led.veo** entry to see the instantiation template.
+9. Select the **IP Sources** tab, expand the **IP(1) > ila\_led > Instantiation Template**, and double-click the **ila\_led.veo** entry to see the instantiation template.
 
-10. Instantiate the ila_led in design by copying lines 56 – 62 and pasting to ~line 69 (before “endmodule” on the last line) in the uart_top.v file.
+10. Instantiate the ila\_led in design by copying lines 56 – 62 and pasting to ~line 69 (before “endmodule” on the last line) in the uart\_top.v file.
 
-11. Change *your_instance_name* to **ila_led_i0.**
+11. Change *your\_instance\_name* to **ila\_led\_i0.**
 
 12. Change the following port names in the Verilog code to connect the ila to existing signals in the design:
 
-    *.clk(CLK)          . clk(clk_pin)*
+    *.clk(CLK)          . clk(clk\_pin)*
 
-    *.probe0(PROBE0)   . probe0(rx_data_rdy_out)*
+    *.probe0(PROBE0)   . probe0(rx\_data\_rdy\_out)*
 
-    *.probe1(PROBE1)   . probe1(led_pins)*
+    *.probe1(PROBE1)   . probe1(led\_pins)*
 
     <p align="center">
     <img src ="./images/lab6/Fig10.png">
     </p>
     <p align = "center">
-    <i>Instantiating the ILA Core in the uart_top.v</i>
+    <i>Instantiating the ILA Core in the uart\_top.v</i>
     </p>
 
 13. Select **File > Save File**.
@@ -187,17 +187,17 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 ### Synthesize the Design and Mark Debug
 
-#### Synthesize the design. Open the synthesized design.  View the schematic. Add Mark Debug on the rx_data bus between the uart_rx_i0 and led_ctl_i0 instances.
+#### Synthesize the design. Open the synthesized design.  View the schematic. Add Mark Debug on the rx\_data bus between the uart\_rx\_i0 and led\_ctl\_i0 instances.
 
 1. Click **Flow Navigator > SYNTHESIS > Run Synthesis**. Click **Save** to Save Project if prompted.
 
-   The synthesis process will be run on the uart_top.v and all its hierarchical files.  When the process is completed a *Synthesis Completed* dialog box with three options will be displayed.
+   The synthesis process will be run on the uart\_top.v and all its hierarchical files.  When the process is completed a *Synthesis Completed* dialog box with three options will be displayed.
 
 2. Select the *Open Synthesized Design* option and click **OK**.
 
 3. Click on **Flow Navigator > SYNTHESIS > Synthesized Desig > Schematic** to view the synthesized design in a schematic view.
 
-4. Expand component **U0** and Select the **rx_data** bus between the *uart_rx_i0* and the *led_ctl_i0* instances, right-click, and select **Mark Debug**. 
+4. Expand component **U0** and Select the **rx\_data** bus between the *uart\_rx\_i0* and the *led\_ctl\_i0* instances, right-click, and select **Mark Debug**. 
 
    <p align="center">
    <img src ="./images/lab6/Fig12.png">
@@ -208,7 +208,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 5. Select **File > Constraints > Save**.
 
-6. Click **OK**, and then again **OK** to use **uart_led_timing_pynq.xdc** as the target.
+6. Click **OK**, and then again **OK** to use **uart\_led\_timing\_pynq.xdc** as the target.
 
 7. Select the **Netlist** tab and notice that the nets which are marked/assigned for debugging have a debug icon next to them.
 
@@ -240,7 +240,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 10. In the *Set Up Debug* wizard click **Next**.
 
-    Note that rx_data is listed, with the Clock Domain as clk_pin_IBUF_BUFG.
+    Note that rx\_data is listed, with the Clock Domain as clk\_pin\_IBUF\_BUFG.
 
     <p align="center">
     <img src ="./images/lab6/Fig17.png">
@@ -251,7 +251,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 11. Click **Next** and again **Next** (leaving everything as defaults) then **Finish**.
 
-12. In the Synthesized Design Schematic, click on the net on the output side of the BUFG for the input pin named clk_pin. Hover over the now highlighted net and notice the name is clk_pin_IBUF_BUFG. This is the clock net selected for the debug nets earlier.
+12. In the Synthesized Design Schematic, click on the net on the output side of the BUFG for the input pin named clk\_pin. Hover over the now highlighted net and notice the name is clk\_pin\_IBUF\_BUFG. This is the clock net selected for the debug nets earlier.
 
     <p align="center">
     <img src ="./images/lab6/Fig18.png">
@@ -260,13 +260,13 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
     <i>Locating clk_pin_IBUF_BUFG in the design</i>
     </p>
 
-13. Right click on **uart_led_pins_pynq.xdc** in the sources pane and select **Set as Target Constraint File**. This will save the changes to the file
+13. Right click on **uart\_led\_pins\_pynq.xdc** in the sources pane and select **Set as Target Constraint File**. This will save the changes to the file
 
 14. Select **File > Constraints > Save** and click **OK** and Click **Yes.**
 
-15. Open *uart_led_pins_pynq.xdc* and notice the debug nets have been appended to the bottom of the file.
+15. Open *uart\_led\_pins\_pynq.xdc* and notice the debug nets have been appended to the bottom of the file.
 
-16. Perform this step if synthesis is not already up-to-date: In the **Design Runs** tab, right-click on the *synth_1* and select **Force Up-to-Date** to ensure that the synthesis process is not re-run, since the design was not changed.
+16. Perform this step if synthesis is not already up-to-date: In the **Design Runs** tab, right-click on the *synth\_1* and select **Force Up-to-Date** to ensure that the synthesis process is not re-run, since the design was not changed.
 
 ### Implement and Generate Bitstream 
 
@@ -296,7 +296,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 5. The Hardware Session status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
-6. Select the device and verify that the **uart_top.bit** is selected as the programming file in the General tab. Also notice that there is an entry in the *Debug probes file* field.
+6. Select the device and verify that the **uart\_top.bit** is selected as the programming file in the General tab. Also notice that there is an entry in the *Debug probes file* field.
 
 #### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. Program the FPGA and verify the functionality. 
 
@@ -310,17 +310,17 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
    The programming bit file be downloaded and the DONE light will be turned ON indicating the FPGA has been programmed. Debug Probes window will also be opened, if not, then select **Window > Debug Probes.**
 
-#### Start a SDK session, point it to the c:\xup\fpga_flow\2018_2_zynq_sources\lab6\pynq\lab6.sdk workspace
+#### Start a SDK session, point it to the c:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab6\pynq\lab6.sdk workspace
 
 1. Open **SDK** by selecting **Start > Xilinx Design Tools > Xilinx SDK 2018.2**
 
-2. In the **Select a workspace** window, click on the browse button, browse to C:\xup\fpga_flow\2018_2_zynq_sources\lab6\pynq\lab6.sdk and click **OK**.
+2. In the **Select a workspace** window, click on the browse button, browse to C:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab6\pynq\lab6.sdk and click **OK**.
 
 3. Click **OK**.
 
-   In the *Project Explorer*, right-click on the uart_led_zynq, select *Run As*, and then **Launch on Hardware (System Debugger)**
+   In the *Project Explorer*, right-click on the uart\_led\_zynq, select *Run As*, and then **Launch on Hardware (System Debugger)**
 
-   In the Hardware window in Vivado notice that there are two debug cores, hw_ila_1 and hw_ila_2.
+   In the Hardware window in Vivado notice that there are two debug cores, hw\_ila\_1 and hw\_ila\_2.
 
    <p align="center">
    <img src ="./images/lab6/Fig19.png">
@@ -340,7 +340,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    </p>
 
 
-   Select the target FPGA xc7z020_1), and click on the **Run Trigger Immediate** button to see the signals in the waveform window.
+   Select the target FPGA xc7z020\_1), and click on the **Run Trigger Immediate** button to see the signals in the waveform window.
 
    <p align="center">
    <img src ="./images/lab6/Fig21.png">
@@ -352,9 +352,9 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
    Two waveform windows will be created, one for each ila; one ila is of the instantiated ILA core and another for the MARK DEBUG method.
 
-#### Setup trigger conditions to trigger on a write to led port (rx_data_rdy_out=1) and the trigger position to 512. Arm the trigger.
+#### Setup trigger conditions to trigger on a write to led port (rx\_data\_rdy\_out=1) and the trigger position to 512. Arm the trigger.
 
-1. In the **Trigger Setup** window, click *Add Probes* and select the **rx_data_rdy_out**.
+1. In the **Trigger Setup** window, click *Add Probes* and select the **rx\_data\_rdy\_out**.
 
    <p align="center">
    <img src ="./images/lab6/Fig22.png">
@@ -372,7 +372,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Setting the trigger condition</i>
    </p>
 
-3. Set the trigger position of the *hw_ila_1* to **512**.
+3. Set the trigger position of the *hw\_ila\_1* to **512**.
 
    <p align="center">
    <img src ="./images/lab6/Fig24.png">
@@ -381,9 +381,9 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Setting up the trigger position</i>
    </p>
 
-4. Similarly, set the trigger position of the *hw_ila_2* to **512**.
+4. Similarly, set the trigger position of the *hw\_ila\_2* to **512**.
 
-5. Select the *hw_ila_1* in the Hardware window and then click on the Run Trigger ( ![](.\images\lab6\Fig25.png)  ) button. Observe that the hw_ila_1 core is armed and showing the status as **Waiting for Trigger**.  
+5. Select the *hw\_ila\_1* in the Hardware window and then click on the Run Trigger ( ![](.\images\lab6\Fig25.png)  ) button. Observe that the hw\_ila\_1 core is armed and showing the status as **Waiting for Trigger**.  
 
    <p align="center">
    <img src ="./images/lab6/Fig26.png">
@@ -392,9 +392,9 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Hardware analyzer running in capture mode</i>
    </p>
 
-6. In the terminal emulator window, type a character, and observe that the hw_ila_1 status changes from capturing to idle as the rx_data_rdy_out became 1.
+6. In the terminal emulator window, type a character, and observe that the hw\_ila\_1 status changes from capturing to idle as the rx\_data\_rdy\_out became 1.
 
-7. Select the hw_ila_data_1.wcfg window and see the waveform.  Notice that the *rx_data_rdy_out* goes from 0 to 1 at 512th sample.
+7. Select the hw\_ila\_data\_1.wcfg window and see the waveform.  Notice that the *rx\_data\_rdy\_out* goes from 0 to 1 at 512th sample.
 
 <p align="center">
 <img src ="./images/lab6/Fig27.png">
@@ -404,7 +404,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 </p>
 
 
-8. Add the hw_ila_2 probes to the trigger window of the hw_ila_2 and change the trigger condtion for rx_data[7:0]’s Radix from Hexadecimal to Binary. Change XXXX_XXXX to **0101_0101** (for the ASCII equivalent of U).
+8. Add the hw\_ila\_2 probes to the trigger window of the hw\_ila\_2 and change the trigger condtion for rx\_data[7:0]’s Radix from Hexadecimal to Binary. Change XXXX\_XXXX to **0101\_0101** (for the ASCII equivalent of U).
 
    <p align="center">
    <img src ="./images/lab6/Fig28.png">
@@ -413,7 +413,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Setting up trigger condition for a particular input pattern</i>
    </p>
 
-9. In the Hardware window, right-click on the **hw_ila_2** and select **Run Trigger,** and notice that the status of the hw_ila_2 changes  from *idle* to *Waiting for Trigger.* Also notice that the hw_ila_1 status does not change from idle as it is not armed.
+9. In the Hardware window, right-click on the **hw\_ila\_2** and select **Run Trigger,** and notice that the status of the hw\_ila\_2 changes  from *idle* to *Waiting for Trigger.* Also notice that the hw\_ila\_1 status does not change from idle as it is not armed.
 
 10. Switch to the terminal emulator window and type **U** (shift+u) to trigger the core.
 

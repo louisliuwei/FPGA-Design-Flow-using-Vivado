@@ -32,9 +32,9 @@ The wave generator implements a look-up table of 1024 samples of 16 bits each in
 - speed: The speed (or rate) for the output samples in units of the prescaled clock.
 
 
-The wave generator can be instructed to send the appropriate number of samples once, cycling from 0 to nsamp-1 once and then stopping, or continuously, where it continuously loops the nsamp samples. When enabled, either once or continuously, the wave generator will send one sample to the DAC every (prescale x speed) clk_tx clock cycles. The contents of the RAM, as well as the three variables, can be changed via commands sent over the RS-232 link, as can the mode of the wave generator. The wave generator will generate responses for all commands.
+The wave generator can be instructed to send the appropriate number of samples once, cycling from 0 to nsamp-1 once and then stopping, or continuously, where it continuously loops the nsamp samples. When enabled, either once or continuously, the wave generator will send one sample to the DAC every (prescale x speed) clk\_tx clock cycles. The contents of the RAM, as well as the three variables, can be changed via commands sent over the RS-232 link, as can the mode of the wave generator. The wave generator will generate responses for all commands.
 
-There are three clock domains within this design: **clk_rx**, **clk_tx**, and **clk_samp**. The clock generator module instantiates all the clocking resources required for generating these three clocks. All three clocks are derived from a single clock input, coming in on **clk_pin**. The frequency of the clock input is 125MHz for PYNQ-Z1 and PYNQ-Z2.
+There are three clock domains within this design: **clk\_rx**, **clk\_tx**, and **clk\_samp**. The clock generator module instantiates all the clocking resources required for generating these three clocks. All three clocks are derived from a single clock input, coming in on **clk\_pin**. The frequency of the clock input is 125MHz for PYNQ-Z1 and PYNQ-Z2.
 
 In this design we will use board’s USB-UART which is controlled by the Zynq’s ARM Cortex-A9 processor.  Our PL design needs access to this USB-UART. So first thing we will do is to create a Processing System design which will put the USB-UART connections in a simple GPIO-style and make it available to the PL section. 
 
@@ -60,13 +60,13 @@ The provided design places the UART (RX and TX) pins of the PS (Processing Syste
 
 In this design we will use board’s USB-UART which is controlled by the Zynq’s ARM Cortex-A9 processor.  Our PL design needs access to this USB-UART. So first thing we will do is to create a Processing System design which will put the USB-UART connections in a simple GPIO-style and make it available to the PL section.
 
-#### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use the provided tcl script file (ps7_create_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, wave_gen_pins_pynq.xdc and wave_gen_timing_pynq.xdc files from the <2018_2_zynq_sources>\lab4 directory.
+#### Launch Vivado and create a project targeting the XC7Z020clg400-1 device, and use the provided tcl script file (ps7\_create\_pynq.tcl) to generate the block design for the PS subsystem. Also, add the Verilog HDL files, wave\_gen\_pins\_pynq.xdc and wave\_gen\_timing\_pynq.xdc files from the <2018\_2\_zynq\_sources>\lab4 directory.
 
 1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
 
-3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **<2018_2_zynq_labs>**, and click **Select**.
+3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **<2018\_2\_zynq\_labs>**, and click **Select**.
 
 4. Enter **lab4** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
@@ -74,11 +74,11 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 6. Using the drop-down button, select **Verilog** as the *Target Language* and *Simulator Language* in the *Add Sources* form.
 
-7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018_2_zynq_sources>\lab4** directory, select all the Verilog files*,* click **OK**, and then click **Next**.
+7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **<2018\_2\_zynq\_sources>\lab4** directory, select all the Verilog files, click **OK**, and then click **Next**.
 
 8. Click **Next** to get to the *Add Constraints* form.
 
-9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **c:\xup\fpga_flow\2018_2_zynq_sources\lab4** directory (if necessary), select *wave_gen_timing_pynq.xdc* and the appropriate *wave_gen_pins_pynq.xdc* and click **Open**.
+9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **c:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab4** directory (if necessary), select *wave\_gen\_timing\_pynq.xdc* and the appropriate *wave\_gen\_pins\_pynq.xdc* and click **Open**.
 
 10. Click **Next.**
 
@@ -100,29 +100,29 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 3. Select *Add or Create Design Sources* and click **Next**.
 
-4. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **<2018_2_zynq_sources>\lab4\pynq\ip**
+4. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **<2018\_2\_zynq\_sources>\lab4\pynq\ip**
 
-5. In the *File Type* field, select **All Files**, and then select **char_fifo.xcix** file.
+5. In the *File Type* field, select **All Files**, and then select **char\_fifo.xcix** file.
 
-6. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **<2018_2_zynq_sources>\lab4\**
+6. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **<2018\_2\_zynq\_sources>\lab4**
 
 7. In the *File Type* field, select **All Files**, and then select **clogb2.txt** file.
 
 8. Click **OK** and then **Finish**.
 
-9. In the *Sources* pane, expand *Design Sources* and *wave_*gen_top and wave_gen if necessary, and double-click on the **clk_gen_i0** entry.
+9. In the *Sources* pane, expand *Design Sources* and *wave\_gen\_top* and wave\_gen if necessary, and double-click on the **clk\_gen\_i0** entry.
 
    Scroll down the file and notice that around line 79 there is an instruction to instantiate a clock core.
 
 10. In the Tcl Shell window enter the following command to change to the lab directory and hit **Enter**.
 
-    *cd C:/xup/fpga_flow/2018_2_zynq_sources/lab4*
+    *cd C:/xup/fpga\_flow/2018\_2\_zynq\_sources/lab4*
 
 11. Generate the PS design by executing the provided Tcl script.
 
-    *source ps7_create_pynq.tcl*
+    *source ps7\_create\_pynq.tcl*
 
-    This script will create a block design called *system*, instantiate ZYNQ PS, enable two GPIO channels (GPIO14 and GPIO15) and two EMIO channels. It will create system.bd that is instantiated under system_wrapper.v wrapper file. You can check the contents of the tcl files to confirm the commands that are being run.
+    This script will create a block design called *system*, instantiate ZYNQ PS, enable two GPIO channels (GPIO14 and GPIO15) and two EMIO channels. It will create system.bd that is instantiated under system\_wrapper.v wrapper file. You can check the contents of the tcl files to confirm the commands that are being run.
 
 ### Generate and Instantiate Clock Generator Module
 
@@ -141,7 +141,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 3. Click **Customize IP** on the following Add IP window. The clocking wizard will open.
 
-4. Change the core name to **clk_core**.  Make sure that the *Primary* input clock frequency is **125.000** MHz and the primitive used is **MMCM**.
+4. Change the core name to **clk\_core**.  Make sure that the *Primary* input clock frequency is **125.000** MHz and the primitive used is **MMCM**.
 
    <p align="center">
    <img src ="./images/lab4/Fig5.png">
@@ -183,11 +183,11 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 1. Select the **IP Sources** tab in the *Sources* pane.
 
-2. Expand the **IP (2)** branch. Notice the two IP entries. The *char_fifo* IP is the core that was included while creating project.  The second core clk_core is the one that you have generated.
+2. Expand the **IP (2)** branch. Notice the two IP entries. The *char\_fifo* IP is the core that was included while creating project.  The second core clk\_core is the one that you have generated.
 
-3. Expand **clk_core > Instantiation Template** and double-click on **clk_core.veo** to see the instantiation template.
+3. Expand **clk\_core > Instantiation Template** and double-click on **clk\_core.veo** to see the instantiation template.
 
-4. Copy lines 72 through 81 and paste them at or around line 79 of the **clk_gen.v** file.
+4. Copy lines 72 through 81 and paste them at or around line 79 of the **clk\_gen.v** file.
 
 5. Change the instance name and net names to as shown in the figure below to match the names of existing signals in the design.
 
@@ -198,15 +198,15 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Assigning instance name and net connections</i>
    </p>
 
-6. Click (![](.\images\lab4\Fig10.png)) to save **clk_gen.v** 
+6. Click (![](.\images\lab4\Fig10.png)) to save **clk\_gen.v** 
 
-7. Select the *Hierarchy* tab, expand the **wave_gen > clk_gen_i0** hierarchy and verify that clk_core.xci is in the hierarchy. The IP has a bordered yellow square icon next to it.
+7. Select the *Hierarchy* tab, expand the **wave_gen > clk\_gen\_i0** hierarchy and verify that clk\_core.xci is in the hierarchy. The IP has a bordered yellow square icon next to it.
 
    <p align="center">
    <img src ="./images/lab4/Fig11.png">
    </p>
    <p align = "center">
-   <i>The clk_core instantiated and shown in the hierarchy</i>
+   <i>The clk\_core instantiated and shown in the hierarchy</i>
    </p>
 
 ### Implement the Design
@@ -256,7 +256,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 4. The Hardware Manager status changes from Unconnected to the server name and the device is highlighted. Also notice that the Status indicates that it is not programmed.
 
-5. Select the device and verify that the **wave_gen_top.bit** is selected as the programming file in the General tab.
+5. Select the device and verify that the **wave\_gen\_top.bit** is selected as the programming file in the General tab.
 
 ### Start a terminal emulator program such as TeraTerm or HyperTerminal. Select an appropriate COM port (you can find the correct COM number using the Control Panel).  Set the COM port for 115200 baud rate communication. Program the FPGA .
 
@@ -272,15 +272,15 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
    The programming bit file be downloaded and the DONE light will be turned ON indicating the FPGA has been programmed.
 
-### Start a SDK session, point it to the *c:/xup/fpga_flow/2018_2_zynq_sources /lab4/pynq/lab4.sdk* workspace. 
+### Start a SDK session, point it to the *c:/xup/fpga\_flow/2018\_2\_zynq\_sources /lab4/pynq/lab4.sdk* workspace. 
 
 1. Open **SDK** by selecting **Start > Xilinx Design Tools > Xilinx SDK 2018.2**
 
-2. In the **Select a workspace** window, click on the browse button, browse to *C:\xup\fpga_flow\2018_2_zynq_sources\lab4\pynq\lab4.sdk* and click **OK.**
+2. In the **Select a workspace** window, click on the browse button, browse to *C:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab4\pynq\lab4.sdk* and click **OK.**
 
 3. Click **OK**.
 
-   In the *Project Explorer*, right-click on the wave_gen_uart, select *Run As*, and then **Launch on Hardware (System Debugger)**
+   In the *Project Explorer*, right-click on the wave\_gen\_uart, select *Run As*, and then **Launch on Hardware (System Debugger)**
 
    <p align="center">
    <img src ="./images/lab4/Fig13.png">
@@ -293,7 +293,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 5. Select **File > Send File …** in the Tera Term window.
 
-6. Browse to **<2018_2_zynq_sources>\lab4**, select **testpattern.txt** file, and click **Open**.
+6. Browse to **<2018\_2\_zynq\_sources>\lab4**, select **testpattern.txt** file, and click **Open**.
 
    The file content will be send to the design.  The file content is as follows:
 
@@ -363,13 +363,13 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 ### Generate and Instantiate an IPI Block
 
-#### Save the project as lab4_ipi. Remove the char_fifo IP from the design.    
+#### Save the project as lab4\_ipi. Remove the char\_fifo IP from the design.    
 
-1. Select **File > Save Project As…** and save it as **lab4_ipi** in the **<2018_2_zynq_labs>** directory making sure that the *Create Project Subdirectory* option is checked.
+1. Select **File > Save Project As…** and save it as **lab4\_ipi** in the **<2018\_2\_zynq\_labs>** directory making sure that the *Create Project Subdirectory* option is checked.
 
 2. Select the **IP Sources** tab in the *Sources* pane.
 
-3. Right-click on *char_fifo*, and select **Remove File from Project…**
+3. Right-click on *char\_fifo*, and select **Remove File from Project…**
 
 4. If a following window appears, click on the check-box of *Also delete the project local file/directory from disk*, and click **OK** or else continue to next step.
 
@@ -380,7 +380,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Removing an existing IP from the project</i>
    </p>
 
-5. Select **Hierarchy** tab in the *Sources* pane and observe that the char_fifo instance has a ? mark indicating that it is missing the source file.
+5. Select **Hierarchy** tab in the *Sources* pane and observe that the char\_fifo instance has a ? mark indicating that it is missing the source file.
 
    <p align="center">
    <img src ="./images/lab4/Fig17.png">
@@ -389,9 +389,9 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Removed source file</i>
    </p>
 
-6. Double-click on the **wave_gen.v** to open it in the editor window.
+6. Double-click on the **wave\_gen.v** to open it in the editor window.
 
-7. Toggle line comments the instantiation of the char_fifo from the file around line 336.
+7. Toggle line comments the instantiation of the char\_fifo from the file around line 336.
 
 <p align="center">
 <img src ="./images/lab4/Fig18.png">
@@ -402,11 +402,11 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 8. Select **File > Save File**.
 
-#### Create a block design naming it as char_fifo and add an instance of an FIFO Generator IP.    
+#### Create a block design naming it as char\_fifo and add an instance of an FIFO Generator IP.    
 
 1. Click on **Create Block Design** in the Flow Navigator block.
 
-2. Enter **char_fifo** as the block design name.
+2. Enter **char\_fifo** as the block design name.
 
 <p align="center">
 <img src ="./images/lab4/Fig19.png">
@@ -466,7 +466,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 5. Select First Word Fall Through as the read mode. 
 
-6. Set the write width to be 8 bits**.** 
+6. Set the write width to be 8 bits. 
 
 7. Click in the *Read Width* field to change it automatically to match the write width. 
 
@@ -507,17 +507,17 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 </p>
 
 
-1. Expand the **FIFO_WRITE** and **FIFO_READ** interfaces.
+1. Expand the **FIFO\_WRITE** and **FIFO\_READ** interfaces.
 
-2. Select *wr_clk* and then press and hold the Ctrl key and select the *rd_clk* ports of the FIFO.
+2. Select *wr\_clk* and then press and hold the Ctrl key and select the *rd\_clk* ports of the FIFO.
 
 3. With the ports highlighted, right-click and select **Make External**.
 
    Two external connections are created for the selected FIFO ports. Notice that the external connections have the same name as the IP module port that they connect to. You can rename these connections by selecting them and changing the name in the External Port Properties window.
 
-4. Select the external connection port named **wr_clk**.
+4. Select the external connection port named **wr\_clk**.
 
-5. In the *External Port Properties* window, in the Name field of the General tab, type the name **clk_rx** and press Enter.  Similarly, select the external connection port named **rd_clk** and change its name to **clk_tx**.
+5. In the *External Port Properties* window, in the Name field of the General tab, type the name **clk\_rx** and press Enter.  Similarly, select the external connection port named **rd\_clk** and change its name to **clk\_tx**.
 
    <p align="center">
    <img src ="./images/lab4/Fig26.png">
@@ -526,23 +526,23 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Changing the external port name</i>
    </p>
 
-6. You will need to expand *FIFO_WRITE* and *FIFO_READ* to see the signal names by clicking on the “+” symbols next to the bus names. While pressing the Ctrl key, click all of the remaining FIFO input and output ports and make them external.
+6. You will need to expand *FIFO\_WRITE* and *FIFO\_READ* to see the signal names by clicking on the “+” symbols next to the bus names. While pressing the Ctrl key, click all of the remaining FIFO input and output ports and make them external.
 
 7. Change their names as listed below:
 
-   *din = char_fifo_din*
+   *din = char\_fifo\_din*
 
-   *dout = char_fifo_dout*
+   *dout = char\_fifo\_dout*
 
-   *empty = char_fifo_empty*
+   *empty = char\_fifo\_empty*
 
-   *full = char_fifo_full*
+   *full = char\_fifo\_full*
 
-   *rd_en = char_fifo_rd_en*
+   *rd\_en = char\_fifo\_rd\_en*
 
-   *wr_en = char_fifo_wr_en*
+   *wr\_en = char\_fifo\_wr\_en*
 
-   *rst = rst_i*
+   *rst = rst\_i*
 
    When you have finished, your subsystem design should look like the figure below.  
 
@@ -561,7 +561,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 #### Generate the output product.
 
-1. In the IP Sources tab of the Sources window, select the char_fifo under the Block Designs. 
+1. In the IP Sources tab of the Sources window, select the char\_fifo under the Block Designs. 
 
 2. Right-click and select Generate Output Products. 
 
@@ -583,9 +583,9 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Generated output products</i>
    </p>
 
-#### Instantiate the char_fifo IP in the project.
+#### Instantiate the char\_fifo IP in the project.
 
-1. From the *IP Sources* tab of the *Sources* window, select the char_fifo module.
+1. From the *IP Sources* tab of the *Sources* window, select the char\_fifo module.
 
 2. Right-click and select View Instantiation Template.
 
@@ -596,7 +596,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
    <i>Generating an instantiation template</i>
    </p>
 
-The char_fifo_wrapper.v instantiation template is opened in the text editor in the Vivado IDE.
+The char\_fifo\_wrapper.v instantiation template is opened in the text editor in the Vivado IDE.
 
 <p align="center">
 <img src ="./images/lab4/Fig32.png">
@@ -606,7 +606,7 @@ The char_fifo_wrapper.v instantiation template is opened in the text editor in t
 </p>
 
 
-3. Copy lines 42 through line 51, and paste them at or around line 334 in the wave_gen.v file.
+3. Copy lines 42 through line 51, and paste them at or around line 334 in the wave\_gen.v file.
 
 4. Save the Verilog file.
 
@@ -626,11 +626,11 @@ The char_fifo_wrapper.v instantiation template is opened in the text editor in t
 
 6. Open **SDK** by selecting **Start > Xilinx Design Tools > Xilinx SDK 2018.2**
 
-7. In the **Select a workspace** window, click on the browse button, browse to *C:\xup\fpga_flow\2018_2_zynq_sources\lab4\pynq\lab4.sdk* and click **OK**.
+7. In the **Select a workspace** window, click on the browse button, browse to *C:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab4\pynq\lab4.sdk* and click **OK**.
 
 8. Click **OK**.
 
-   In the *Project Explorer*, right-click on the wave_gen_uart, select *Run As*, and then **Launch on Hardware (System Debugger)**
+   In the *Project Explorer*, right-click on the wave\_gen\_uart, select *Run As*, and then **Launch on Hardware (System Debugger)**
 
    verify the functionality of the design in the hardware.
 

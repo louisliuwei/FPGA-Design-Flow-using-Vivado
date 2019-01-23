@@ -16,11 +16,11 @@ After completing this lab, you will be able to:
 
 ### Create a Vivado Project using IDE                                                   
 
-#### Launch Vivado and create an empty project targeting the PYNQ-Z1 or PYNQ-Z2 board, selecting Verilog as a target language. Use the provided lab1.v and lab1_zynq.xdc files from the *2018_2_zynq_sources\lab1* directory.
+#### Launch Vivado and create an empty project targeting the PYNQ-Z1 or PYNQ-Z2 board, selecting Verilog as a target language. Use the provided lab1.v and lab1\_zynq.xdc files from the *2018\_2\_zynq\_sources\lab1* directory.
 
 1. Open Vivado by selecting **Start > Xilinx Design Tools > Vivado 2018.2**
 2. Click **Create New Project** to start the wizard. You will see *Create A New Vivado Project* dialog box. Click **Next**.
-3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **C:\xup\fpga_flow\2018_2_zynq_labs**, and click **Select**.
+3. Click the Browse button of the *Project location* field of the **New Project** form, browse to **C:\xup\fpga\_flow\2018\_2\_zynq\_labs**, and click **Select**.
 4. Enter **lab1** in the *Project name* field.  Make sure that the *Create Project Subdirectory* box is checked.  Click **Next**.
 
 <p align="center">
@@ -41,7 +41,7 @@ After completing this lab, you will be able to:
 <i>Selecting Target and Simulator language</i>
 </p>	
 
-7. Click on the **Blue Plus** button, then **Add Files…** and browse to the **C:\xup\fpga_flow\2018_2_zynq_sources\lab1** directory, select *lab1.v,* click **OK**.
+7. Click on the **Blue Plus** button, then **Add Files…** and browse to the **C:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab1** directory, select *lab1.v,* click **OK**.
 
    <p align="center">
    <img src ="./images/lab1/Fig5.png">
@@ -53,7 +53,7 @@ After completing this lab, you will be able to:
 
 8. Click **Next** to get to the *Add Constraints* form.
 
-9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **C:\xup\fpga_flow\2018_2_zynq_sources\lab1** directory (if necessary), select *lab1_zynq.xdc* and click **OK** (if necessary), and then click **Next.**
+9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **C:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab1** directory (if necessary), select *lab1\_zynq.xdc* and click **OK** (if necessary), and then click **Next.**
 
    The Xilinx Design Constraints file assigns the physical IO locations on FPGA to the switches and LEDs located on the board.  This information can be obtained either through the board’s schematic or the board’s user guide. 
 
@@ -70,7 +70,7 @@ After completing this lab, you will be able to:
 
 11.  Click **Finish** to create the Vivado project.  
 
-Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab1** directory.  You will find that the lab1.cache and lab1.srcs directories and the lab1.xpr (Vivado) project file have been created. The lab1.cache directory is a place holder for the Vivado program database. Two directories, constrs_1 and sources_1, are created under the lab1.srcs directory; deep down under them, the copied lab1_<board>.xdc (constraint) and lab1.v (source) files respectively are placed.
+Use the Windows Explorer and look at the **C:\xup\fpga\_flow\2018\_2\_zynq\_labs\lab1** directory.  You will find that the lab1.cache and lab1.srcs directories and the lab1.xpr (Vivado) project file have been created. The lab1.cache directory is a place holder for the Vivado program database. Two directories, constrs\_1 and sources\_1, are created under the lab1.srcs directory; deep down under them, the copied lab1\_<board>.xdc (constraint) and lab1.v (source) files respectively are placed.
 
 <p align="center">
 <img src ="./images/lab1/Fig7.png">
@@ -96,9 +96,9 @@ Use the Windows Explorer and look at the **C:\xup\fpga_flow\2018_2_zynq_labs\lab
 
 4. Lines 8-9 defines the input and output ports whereas lines 12-15 defines the actual functionality.
 
-#### Open the lab1_zynq.xdc source and analyze the content.
+#### Open the lab1\_zynq.xdc source and analyze the content.
 
-1. In the *Sources* pane, expand the *Constraints* folder and double-click the **lab1_zynq.xdc** entry to open the file in text mode. 
+1. In the *Sources* pane, expand the *Constraints* folder and double-click the **lab1\_zynq.xdc** entry to open the file in text mode. 
 
    <p align="center">
    <img src ="./images/lab1/Fig9.png">
@@ -124,7 +124,7 @@ The model (design) will be elaborated and a logic view of the design is displaye
 
 ### Simulate the Design using the Vivado Simulator
 
-#### Add the lab1_tb.v testbench file.
+#### Add the lab1\_tb.v testbench file.
 
 1. Click **Add Sources** under the *Project Manager* tasks of the *Flow Navigator* pane.
 
@@ -147,13 +147,13 @@ The model (design) will be elaborated and a logic view of the design is displaye
 
 3. In the *Add Sources Files* form, click the **Blue Plus** button and then **Add Files…**.
 
-4. Browse to the **C:\xup\fpga_flow\2018_2_zynq_sources\lab1** folder and select *lab1_tb.v* and click **OK**.
+4. Browse to the **C:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab1** folder and select *lab1\_tb.v* and click **OK**.
 
 5. Click **Finish**.
 
 6. Select the *Sources* tab and expand the *Simulation Sources* group.
 
-   The lab1_tb.v file is added under the *Simulation Sources* group, and **lab1.v** is automatically placed in its hierarchy as a dut (device under test) instance.
+   The lab1\_tb.v file is added under the *Simulation Sources* group, and **lab1.v** is automatically placed in its hierarchy as a dut (device under test) instance.
 
    <p align="center">
    <img src ="./images/lab1/Fig13.png">
@@ -162,9 +162,9 @@ The model (design) will be elaborated and a logic view of the design is displaye
    <i>Simulation Sources hierarchy</i>
    </p>
 
-7. Using the Windows Explorer, verify that the **sim_1** directory is created at the same level as constrs_1 and sources_1 directories under the lab1.srcs directory, and that a copy of lab1_tb.v is placed under **lab1.srcs > sim_1 > imports > lab1**. 
+7. Using the Windows Explorer, verify that the **sim\_1** directory is created at the same level as constrs\_1 and sources\_1 directories under the lab1.srcs directory, and that a copy of lab1\_tb.v is placed under **lab1.srcs > sim\_1 > imports > lab1**. 
 
-8. Double-click on the **lab1_tb** in the *Sources* pane to view its contents.
+8. Double-click on the **lab1\_tb** in the *Sources* pane to view its contents.
 
    <p align="center">
    <img src ="./images/lab1/Fig14.png">
@@ -231,11 +231,11 @@ The model (design) will be elaborated and a logic view of the design is displaye
 
 #### Change display format if desired.
 
-Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then select *Unsigned Decimal* to view the for-loop index in an unsigned *integer* form. Similarly, change the radix of **btn[3:0]** to *Hexadecimal*. Leave the **leds[3:0]** and **e_led[3:0]** radix to *binary* as we want to see each output bit.
+Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then select *Unsigned Decimal* to view the for-loop index in an unsigned *integer* form. Similarly, change the radix of **btn[3:0]** to *Hexadecimal*. Leave the **leds[3:0]** and **e\_led[3:0]** radix to *binary* as we want to see each output bit.
 
 #### Add more signals to monitor the lower-level signals and continue to run the simulation for 500 ns.
 
-1. Expand the **lab1_tb** instance, if necessary, in the *Scopes* window and select the **dut** instance.
+1. Expand the **lab1\_tb** instance, if necessary, in the *Scopes* window and select the **dut** instance.
 
    The btn[3:0] and led[3:0] signals will be displayed in the *Objects* window.
 
@@ -318,7 +318,7 @@ Observe the Tcl Console window and see the output is being displayed as the test
 
    Notice that IBUFs and OBUFs are automatically instantiated (added) to the design as the input and output are buffered.  The logical gates are implemented in LUTs (1 input is listed as LUT1, 2 input is listed as LUT2, and 3 input is listed as LUT3).  Four gates in RTL analysis output are mapped onto four LUTs in the synthesized output.
 
-   Using Windows Explorer, verify that **lab1.runs** directory is created under **lab1**.  Under the **runs** directory, **synth_1** directory is created which holds several files related to synthesis.
+   Using Windows Explorer, verify that **lab1.runs** directory is created under **lab1**.  Under the **runs** directory, **synth\_1** directory is created which holds several files related to synthesis.
 
    <p align="center">
    <img src ="./images/lab1/Fig33.png">
@@ -338,7 +338,7 @@ The implementation process will be run on the synthesized design.  When the proc
 2. Select **Open implemented design** and click **OK** as we want to look at the implemented design in a Device view tab.
 
 3. Click **Yes,** if prompted, to close the synthesized design.  The implemented design will be opened. 
-4. In the *Netlist* pane, select one of the nets (e.g. led_OBUF[3]) and notice that the net displayed in the X1Y2 clock region in the Device view tab (you may have to zoom in to see it).
+4. In the *Netlist* pane, select one of the nets (e.g. led\_OBUF[3]) and notice that the net displayed in the X1Y2 clock region in the Device view tab (you may have to zoom in to see it).
 
 5. If it is not selected, click the *Routing Resources* icon ![](./images/lab1/Fig34.png) to show routing resources. 
 
@@ -372,7 +372,7 @@ The implementation process will be run on the synthesized design.  When the proc
    </p>
 
 
-   Using the Windows Explorer, verify that **impl_1** directory is created at the same level as **synth_1** under the **lab1.runs** directory.  The **impl_1** directory contains several files including the implementation report files.
+   Using the Windows Explorer, verify that **impl\_1** directory is created at the same level as **synth\_1** under the **lab1.runs** directory.  The **impl\_1** directory contains several files including the implementation report files.
 
 8. In Vivado, select the **Reports** tab in the bottom panel (if not visible, click *Window* in the menu bar and select **Reports**), and double-click on the *Utilization Report* entry under the *Place Design* section. The report will be displayed in the auxiliary view pane showing resource utilization.  Note that since the design is combinatorial no registers are used.
 
@@ -389,9 +389,9 @@ The implementation process will be run on the synthesized design.  When the proc
 
 1. Select **Run Simulation > Run Post-Implementation Timing Simulation** process under the *Simulation* tasks of the *Flow Navigator* pane.
 
-   The Vivado simulator will be launched using the implemented design and **lab1_tb** as the top-level module.
+   The Vivado simulator will be launched using the implemented design and **lab1\_tb** as the top-level module.
 
-   Using the Windows Explorer, verify that **timing** directory is created under the **lab1.sim > sim_1 > impl** directory.  The **timing** directory contains generated files to run the timing simulation.
+   Using the Windows Explorer, verify that **timing** directory is created under the **lab1.sim > sim\_1 > impl** directory.  The **timing** directory contains generated files to run the timing simulation.
 
 2. Click on the **Zoom Fit** button to see the waveform window from 0 to 200 ns.
 
@@ -399,7 +399,7 @@ The implementation process will be run on the synthesized design.  When the proc
 
 4. Similarly, right-click and add a marker at around 58.000 ns where the **leds** changes.
 
-5. You can also add a marker by clicking on the Add Marker button ( ![](./images/lab1/Fig39.png)  ). Click on the **Add Marker** button and left-click at around 60 ns where **e_led** changes.
+5. You can also add a marker by clicking on the Add Marker button ( ![](./images/lab1/Fig39.png)  ). Click on the **Add Marker** button and left-click at around 60 ns where **e\_led** changes.
 
    <p align="center">
    <img src ="./images/lab1/Fig40.png">
@@ -449,7 +449,7 @@ The implementation process will be run on the synthesized design.  When the proc
    <i>Bitstream generation</i>
    </p>
 
-   This process will have generated a **lab1.bit** file under the **impl_1** directory in the **lab1.runs** directory.
+   This process will have generated a **lab1.bit** file under the **impl\_1** directory in the **lab1.runs** directory.
 
 5. Select the *Open Hardware Manager* option and click **OK**.
 
