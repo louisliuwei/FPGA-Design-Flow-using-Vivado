@@ -83,7 +83,7 @@ The provided design places the UART (RX) pin of the PS (Processing System) on th
    <img src ="./images/lab5/Fig5.png">
    </p>
    <p align = "center">
-   <i>Creating I/O Port for clk\_pin input</i>
+   <i>Creating I/O Port for clk_pin input</i>
    </p>
 
 3. Similarly, create the **btn\_pin** and **rst\_pin** input ports.
@@ -424,9 +424,9 @@ Hover the mouse over **H16** in the Device view window.
 
 5. Apply the constraint by typing the following two commands in the Tcl console.
 
-   *set\_output\_delay -clock [get\_clocks clk\_pin] -min -add\_delay -2.250 [get\_ports {led\_pins[]}]*
+   set\_output\_delay -clock [get\_clocks clk\_pin] -min -add\_delay -2.250 [get\_ports {led\_pins[*]}]
 
-   *set\_output\_delay -clock [get\_clocks clk\_pin] -max -add\_delay -2.250 [get\_ports {led\_pins[*]}] 
+   set\_output\_delay -clock [get\_clocks clk\_pin] -max -add\_delay -2.250 [get\_ports {led\_pins[*]}] 
 
 6. Select **File > Constraints > Save**. Click **OK** at the warning message. Click **Yes** to save the project.
 
