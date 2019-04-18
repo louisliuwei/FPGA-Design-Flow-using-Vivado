@@ -52,13 +52,12 @@ After completing this lab, you will be able to:
     You may also select the **Boards** option, select www.digilentinc.com for the PYNQ-Z1 board, tul.com.tw for the PYNQ-Z2 board under the Vendor filter and select the appropriate board. Notice that PYNQ-Z1 and PYNQ-Z1 may not be listed as they are not in the tools database. If not listed then you can download the board files for the desired boards either from Digilent PYNQ-Z1 webpage or TUL PYNQ-Z2 webpage. Click **Next**.
 11.  Click **Finish** to create the Vivado project.  
 Use the Windows Explorer and look at the **C:\xup\fpga\_flow\2018\_2\_zynq\_labs\lab1** directory.  You will find that the lab1.cache and lab1.srcs directories and the lab1.xpr (Vivado) project file have been created. The lab1.cache directory is a place holder for the Vivado program database. Two directories, constrs\_1 and sources\_1, are created under the lab1.srcs directory; deep down under them, the copied lab1\_<board>.xdc (constraint) and lab1.v (source) files respectively are placed.
-
-    <p align="center">
-    <img src ="./images/lab1/Fig7.png">
-    </p>
-    <p align = "center">
-    <i>Generated directory structure</i>
-    </p>
+<p align="center">
+<img src ="./images/lab1/Fig7.png">
+</p>
+<p align = "center">
+<i>Generated directory structure</i>
+</p>
 
 #### Open the lab1.v source and analyze the content.
 
@@ -327,7 +326,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
     </p>
     This process will have generated a **lab1.bit** file under the **impl\_1** directory in the **lab1.runs** directory.
 5. Select the *Open Hardware Manager* option and click **OK**.
-    The Hardware Manager window will open indicating “unconnected” status.
+    The Hardware Manager window will open indicating *unconnected* status.
 6. Click on the **Open target** link.
     <p align="center">
     <img src ="./images/lab1/Fig44.png">
