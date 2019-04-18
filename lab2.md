@@ -119,7 +119,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
     If you don’t see the Project Summary tab then select **Layout > Default Layout,** or click the **Project Summary** icon![](./images/lab2/Fig11.png).    
 4. Click on the **Table** tab in the **Project Summary** tab and fill out the following information.
 
-**Question 1**
+**Question 1**  
 Look through the table and find the number used of each of the following: 
 | Resource | Number |
 | :-------- | ------: |
@@ -139,7 +139,7 @@ Look through the table and find the number used of each of the following:
 7. Select the **uart\_baud\_gen\_rx\_i0** instance, right-click, and select *Go To Source*.
     Notice that line 86 is highlighted.  Also notice that the CLOCK\_RATE and BAUD\_RATE parameters are passed to the module being called.
 8. Double-click on the **meta\_harden\_rxd\_i0** instance to see how the synchronization circuit is being implemented using two FFs.  This synchronization is necessary to reduce the likelihood of meta-stability.  
-9. Click on the (  ![](./images/lab2/Fig11_1.png) ) in the schematic view to go back to its parent block.
+9. Click on the (![](./images/lab2/Fig11_1.png)) in the schematic view to go back to its parent block.
 
 #### Analyze the timing report
 1. Click on **Flow Navigator > SYNTHESIS > Open Synthesized Design > Report Timing Summary**.
@@ -177,8 +177,8 @@ Look through the table and find the number used of each of the following:
     <i>Utilization report for the PYNQ</i>
     </p>
 
-**Question 2**
-Look through the report and find the number used of each of the following: 
+**Question 2**  
+Look through the report and find the number used of each of the following:   
 | Resource | Number |
 | :-------- | ------: |
 | FF: | ______ |
@@ -202,8 +202,9 @@ Look through the report and find the number used of each of the following:
     <i>Power consumption estimation for the PYNQ</i>
     </p>
     
-**Question 3**
-From the power report, find the % power consumption used by each of the following: 
+
+**Question 3**  
+From the power report, find the % power consumption used by each of the following:   
 | Resource | Number |
 | :-------- | ------: |
 | Clocks: | ______ |
@@ -288,22 +289,22 @@ You can move the mouse on the boxes which do not show the percentage to see the 
 ## Conclusion 
 In this lab you applied the timing constraints and synthesized the design.  You viewed various post-synthesis reports.  You wrote checkpoints and read it back to perform the analysis you were doing during the design flow. You saw the effect of changing synthesis settings.  
 
-**Answers** 
-1. Look through the table and find the number used of each of the following:
+**Answers**   
+1. Look through the table and find the number used of each of the following:  
 | Resource | Number |
 | :-------- | ------: |
 | FF | 59 |
 | LUT | 87 |
 | I/O | 11 |
 | BUFG | 1 |
-2. Look through the table and find the number used of each of the following:
+2. Look through the table and find the number used of each of the following:  
 | Resource | Number |
 | :-------- | ------: |
 | FF | 59 |
 | LUT | 87 |
 | I/O | 11 |
 | BUFG | 1 |
-3. From the power report, find the % power consumption used by each of the following:
+3. From the power report, find the % power consumption used by each of the following:  
 | Resource | Number |
 | :-------- | ------: |
 | Clocks: | <1% |

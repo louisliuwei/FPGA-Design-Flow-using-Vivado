@@ -145,15 +145,15 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 12. Change the following port names in the Verilog code to connect the ila to existing signals in the design:
 
-    *.clk(CLK)          . clk(clk\_pin)*
-    *.probe0(PROBE0)   . probe0(rx\_data\_rdy\_out)*
-    *.probe1(PROBE1)   . probe1(led\_pins)*
-    <p align="center">
-    <img src ="./images/lab6/Fig10.png">
-    </p>
-    <p align = "center">
-    <i>Instantiating the ILA Core in the uart\_top.v</i>
-    </p>
+     *.clk(CLK)          . clk(clk\_pin)*
+     *.probe0(PROBE0)   . probe0(rx\_data\_rdy\_out)*
+     *.probe1(PROBE1)   . probe1(led\_pins)*
+     <p align="center">
+     <img src ="./images/lab6/Fig10.png">
+     </p>
+     <p align = "center">
+     <i>Instantiating the ILA Core in the uart\_top.v</i>
+     </p>
 
 13. Select **File > Save File**.
     Notice that the ILA Core instance is in the design hierarchy.

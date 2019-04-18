@@ -101,15 +101,15 @@ Hover the mouse over **H16** in the Device view window.
     </p>
 
     The led\_pins entries will be created and displayed in the I/O Ports tab.  Notice that the I/O standard and directions are already set, leaving only the pin locations to be assigned.
-3. Type the following commands in the console to assign the pin locations.
-    *set\_property -dict { PACKAGE\_PIN R14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[0] }];*
-    *set\_property -dict { PACKAGE\_PIN P14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[1] }];*
-    *set\_property -dict { PACKAGE\_PIN N16   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[2] }];*
-    *set\_property -dict { PACKAGE\_PIN M14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[3] }];*
-    *set\_property -dict { PACKAGE\_PIN W14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[4] }];*
-    *set\_property -dict { PACKAGE\_PIN Y14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[5] }];*
-    *set\_property -dict { PACKAGE\_PIN T11   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[6] }];*
-    *set\_property -dict { PACKAGE\_PIN T10   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[7] }];*
+3. Type the following commands in the console to assign the pin locations.  
+    *set\_property -dict { PACKAGE\_PIN R14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[0] }];*  
+    *set\_property -dict { PACKAGE\_PIN P14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[1] }];*  
+    *set\_property -dict { PACKAGE\_PIN N16   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[2] }];*  
+    *set\_property -dict { PACKAGE\_PIN M14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[3] }];*  
+    *set\_property -dict { PACKAGE\_PIN W14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[4] }];*  
+    *set\_property -dict { PACKAGE\_PIN Y14   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[5] }];*  
+    *set\_property -dict { PACKAGE\_PIN T11   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[6] }];*  
+    *set\_property -dict { PACKAGE\_PIN T10   IOSTANDARD LVCMOS33 } [get\_ports { led\_pins[7] }];*  
 4. Select **File > Save Constraints**.
     The Save Constraints form will be displayed.
 5. Enter **uart\_led\_pynq** in the *File name* field, and click **OK**.
@@ -139,12 +139,12 @@ Hover the mouse over **H16** in the Device view window.
     <i>Assigning top-level file name</i>
     </p>
 11. Select the **Hierarchy** tab and notice that the *uart\_top.v* file has been added to the project with top-level module name as **ios**.  If you double-click the entry, you will see the module name with the ports listing.
-    <p align="center">
-    <img src ="./images/lab5/Fig13.png">
-    </p>
-    <p align = "center">
-    <i>The top-level module content and the design hierarchy after migrating to RTL</i>
-    </p>
+     <p align="center">
+     <img src ="./images/lab5/Fig13.png">
+     </p>
+     <p align = "center">
+     <i>The top-level module content and the design hierarchy after migrating to RTL</i>
+     </p>
 
 #### Add the provided source files (from <2018\_2\_zynq\_sources>\lab5) to the project.  Copy the uart\_top.txt (located in the <2018\_2\_zynq\_sources >\lab5) content into the top-level source file.
 1. Click **Flow Navigator > Add Sources**.

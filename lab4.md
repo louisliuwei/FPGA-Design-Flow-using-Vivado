@@ -394,25 +394,29 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 11. Verify that the information is correct. For this configuration you are using one 18K block RAM. Click OK.
 
 #### Make the ports external naming them as shown below.    
+
 <p align="center">
 <img src ="./images/lab4/Fig25.png">
 </p>
 <p align = "center">
 <i>FIFO Generator IP fully generated and connected</i>
 </p>
+
 1. Expand the **FIFO\_WRITE** and **FIFO\_READ** interfaces.
 2. Select *wr\_clk* and then press and hold the Ctrl key and select the *rd\_clk* ports of the FIFO.
 3. With the ports highlighted, right-click and select **Make External**.
     Two external connections are created for the selected FIFO ports. Notice that the external connections have the same name as the IP module port that they connect to. You can rename these connections by selecting them and changing the name in the External Port Properties window.
 4. Select the external connection port named **wr\_clk**.
 5. In the *External Port Properties* window, in the Name field of the General tab, type the name **clk\_rx** and press Enter.  Similarly, select the external connection port named **rd\_clk** and change its name to **clk\_tx**.
+    
     <p align="center">
     <img src ="./images/lab4/Fig26.png">
     </p>
     <p align = "center">
     <i>Changing the external port name</i>
     </p>
-6. You will need to expand *FIFO\_WRITE* and *FIFO\_READ* to see the signal names by clicking on the “+” symbols next to the bus names. While pressing the Ctrl key, click all of the remaining FIFO input and output ports and make them external.
+    
+6. You will need to expand *FIFO\_WRITE* and *FIFO\_READ* to see the signal names by clicking on the “+” symbols next to the bus names. While pressing the Ctrl key, click all of the remaining FIFO input and output ports and make them external.  
 7. Change their names as listed below:
     *din = char\_fifo\_din*
     *dout = char\_fifo\_dout*

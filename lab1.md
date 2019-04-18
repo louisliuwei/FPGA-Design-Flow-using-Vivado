@@ -42,7 +42,7 @@ After completing this lab, you will be able to:
 9. Click on the **Blue Plus** button, then **Add Files…** and browse to the **C:\xup\fpga\_flow\2018\_2\_zynq\_sources\lab1** directory (if necessary), select *lab1\_zynq.xdc* and click **OK** (if necessary), and then click **Next.**
 
     The Xilinx Design Constraints file assigns the physical IO locations on FPGA to the switches and LEDs located on the board.  This information can be obtained either through the board’s schematic or the board’s user guide. 
-10. In the *Default Part* form, use the **Parts** option and various drop-down fields of the **Filter** section. Select the **XC7Z020clg400-1**. ​		
+10. In the *Default Part* form, use the **Parts** option and various drop-down fields of the **Filter** section. Select the **XC7Z020clg400-1**.
     <p align="center">
     <img src ="./images/lab1/Fig6.png">
     </p>
@@ -255,7 +255,7 @@ Select **i[31:0]** in the waveform window, right-click, select *Radix*, and then
     <p align = "center">
     <i>Viewing implemented design</i>
     </p>
-    
+
     <p align="center">
     <img src ="./images/lab1/Fig36.png">
     </p>
