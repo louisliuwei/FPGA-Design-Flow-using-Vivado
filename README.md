@@ -26,6 +26,8 @@ In the instructions for the labs;
 
 **{labs}** refers to the location which you will use as your workspace for the labs in the workshop
 
+**{boards}** refers to the target board, currently, PYNQ-Z1 and PYNQ-Z2 are the supported target boards
+
 ---
 **NOTE**
 
