@@ -5,59 +5,66 @@ The labs have been developed on a PC running Microsoft Windows 10 professional e
 
 ## Source Files Setup
 
-To use the source files for each of the labs in this workshop, you have to clone this repository from XUP Github. For that, do the following:
 
-#### To be completed
+To use the source files for each of the labs in this workshop, you have to clone this repository from Github. For that, do the following:
 
----
-#### In the instructions for the labs;
+  If in **Windows**, download [Cmder](http://cmder.net/) or download [Git Bash](https://git-scm.com/download/win)
 
-**{sources}** refers to *C:\xup\fpga_flow\2018_2_zynq_sources*. You can download the source files for the labs from the cloned sources directory
+  If in **Ubuntu (or any Debian distribution)**, install git from the aptitude package manager by running this command in a terminal window:
+  ```
+  sudo apt-get install git
+  ```
 
-**{labs}** refers to *C:\xup\fpga_flow\2018_2_zynq_labs*. It assumes that you will create the mentioned directory structure to carry out the labs of this workshop
+  After installing, set up git from [here](https://help.github.com/articles/set-up-git/).  Then open a new git-bash/cmder/terminal window and run the following command:
+  ```
+  git clone https://github.com/xupgit/FPGA-Design-Flow-using-Vivado.git
+  ```
+
+In the instructions for the labs;
+
+**{sources}** refers to the location where you will get the base files for the labs [here](https://github.com/xupgit/FPGA-Design-Flow-using-Vivado/tree/master/source)
+
+**{labs}** refers to the location which you will use as your workspace for the labs in the workshop
 
 ---
 **NOTE**
 
 Board support for the PYNQ-Z1 and PYNQ-Z2 are not included in Vivado 2018.2 by default. The relevant files need to be extracted and saved to:
 
- {Vivado installation}\data\boards\board_files\
+ {Vivado installation}\data\boards\board_files\zynq
 
-These files can be downloaded from
-
-PYNQ-Z1:[/board_files](https://www.xilinx.com/support/documentation/university/vivado/workshops/vivado-adv-embedded-design-zynq/materials/2018x/PYNQZ1/pynq-z1.zip). 
-
-PYNQ-Z2:[/board_files](https://www.xilinx.com/support/documentation/university/vivado/workshops/vivado-adv-embedded-design-zynq/materials/2018x/PYNQZ2/pynq-z2.zip).
+These files can be downloaded from [/board_files](https://github.com/xupgit/Zynq-Design-using-Vivado/tree/master/board_files).
 
 ---
 
 ## Hardware Setup
 
-**PYNQ-Z2**:  Connect the board to the PC using a micro USB cable. Make sure that a jumper is connected to JTAG (between JP1_1 and JP1_2) to use the board in the development mode.  Also, make sure that another jumper is placed between J9_2 and J9_3 to select USB as a power source.
+**PYNQ-Z2**:  Connect the board to the PC using a micro USB cable. Make sure that a jumper is connected to JTAG (between JP1\_1 and JP1\_2) to use the board in the development mode.  Also, make sure that another jumper is placed between J9\_2 and J9\_3 to select USB as a power source.
 
-**PYNQ-Z1**:  Connect the board to the PC using a micro USB cable. Make sure that a jumper is connected to JTAG (between JP4_1 and JP4_2) to use the board in the development mode.  Also, make sure that another jumper is placed between JP5_2 and JP5_3 to select USB as a power source.
+
+**PYNQ-Z1**:  Connect the board to the PC using a micro USB cable. Make sure that a jumper is connected to JTAG (between JP4\_1 and JP4\_2) to use the board in the development mode.  Also, make sure that another jumper is placed between JP5\_2 and JP5\_3 to select USB as a power source.
 
 ## Labs Overview:
 
 ### Lab 1
-This lab guides you through the process of using Vivado IDE to create a simple HDL design targeting the PYNQ-Z1 or PYNQ-Z2.  You will simulate, synthesize, and implement the design with default settings.  Finally, you will generate the bitstream and download it into the hardware to verify the design functionality.
+This lab guides you through the process of using Vivado IDE to create a simple HDL design.  You will simulate, synthesize, and implement the design with default settings.  Finally, you will generate the bitstream and download it into the hardware to verify the design functionality.
 
 <p align="center">
 <img src ="./images/lab1/Fig1.png"/>
 </p>
 
 ### Lab 2
-This lab shows you the synthesis process and effect of changing of synthesis settings targeting the PYNQ-Z1 or PYNQ-Z2.  You will analyze the design and the generated reports.
+This lab shows you the synthesis process and effect of synthesis settings changes.  You will analyze the design and the generated reports.
 
 <p align="center">
 <img src ="./images/lab2/Fig1.png"/>
 </p>
 
 ### Lab 3
-This lab continues with the previous lab. You will perform static timing analysis. You will implement the design with the default settings and generate a bitstream.  Then you will open a hardware session and program the FPGA. Finally the design will be validated by programming the hardware in SDK using the software application running on A9 that is provided to you.
+This lab continues with the previous lab. You will perform static timing analysis. You will implement the design with the default settings and generate a bitstream.  Then you will open a hardware session and program the FPGA. Finally the design will be validated by programming the hardware in SDK using the provided software application running on A9.
 
 ### Lab 4
-In this lab you will use the IP Catalog to generate a clock resource. You will instantiate the generated clock core in the provided waveform generator design. You will also use IP Integrator to generate a FIFO core and then use it in the HDL design.
+In this lab you will use Vivado IP Catalog to generate a clock resource. You will instantiate the generated clock core in the provided waveform generator design. You will also use IP Integrator to generate a FIFO core and then use it in the HDL design.
 
 <p align="center">
 <img src ="./images/lab4/Fig1.png"/>
@@ -67,4 +74,4 @@ In this lab you will use the IP Catalog to generate a clock resource. You will i
 In this lab you will use the uart_led design that was introduced in the previous labs. You will start the project with I/O Planning type, enter pin locations, and export it to the rtl. You will then create the timing constraints and perform the timing analysis.
 
 ### Lab 6
-In this lab you will use the uart_led design that was introduced in the previous labs. You will use Mark Debug feature and also the available Integrated Logic Analyzer (ILA) core (in IP Catalog) to debug the hardware.
+In this lab you will use the uart_led design that was introduced in the previous labs. You will use Mark Debug feature and also the available Integrated Logic Analyzer (ILA) core available in Vivado IP Catalog to debug the hardware.
