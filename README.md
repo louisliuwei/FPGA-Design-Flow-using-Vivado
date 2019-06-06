@@ -31,11 +31,10 @@ In the instructions for the labs;
 ---
 **NOTE**
 
-Board support for the PYNQ-Z1 and PYNQ-Z2 are not included in Vivado 2018.2 by default. The relevant files need to be extracted and saved to:
+Board support for the PYNQ-Z1 and PYNQ-Z2 are not included in Vivado 2018.2 by default. The relevant files, included in this repository, need to be copied to:
 
- {Vivado installation}\data\boards\board_files\zynq
+ {Vivado installation}\data\boards\board_files
 
-These files can be downloaded from [/board_files](https://github.com/xupgit/Zynq-Design-using-Vivado/tree/master/board_files).
 
 ---
 
