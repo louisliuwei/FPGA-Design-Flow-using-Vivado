@@ -65,7 +65,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 6. Using the drop-down button, select **Verilog** as the *Target Language* and *Simulator Language* in the *Add Sources* form.
 
-7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **{sources}\lab4** directory, select all the Verilog files*,* click **OK**, and then click **Next**.
+7. Click on the **Blue Plus** button, then the **Add Files…** button and browse to the **{sources}\lab4** directory, select all the Verilog files, click **OK**, and then click **Next**.
 
 8. Click **Next** to get to the *Add Constraints* form.
 
@@ -95,7 +95,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 5. In the *File Type* field, select **All Files**, and then select **char\_fifo.xcix** file.
 
-6. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **{sources}\lab4\**
+6. Click on the **Blue Plus** button, then the **Add Files…** button and browse to **{sources}\lab4**
 
 7. In the *File Type* field, select **All Files**, and then select **clogb2.txt** file.
 
@@ -189,7 +189,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 	<i>Assigning instance name and net connections</i>
 	</p>
 
-6. Click (![](.\images\lab4\Fig10.png)) to save **clk\_gen.v** 
+6. Click (![](./images/lab4/Fig10.png)) to save **clk\_gen.v** 
 
 7. Select the *Hierarchy* tab, expand the **wave\_gen > clk\_gen\_i0** hierarchy and verify that clk\_core.xci is in the hierarchy. The IP has a bordered yellow square icon next to it.
 
@@ -384,7 +384,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 7. Toggle line comments the instantiation of the char\_fifo from the file around line 336.
 
-		<p align="center">
+	<p align="center">
 	<img src ="./images/lab4/Fig18.png">
 	</p>
 	<p align = "center">
@@ -454,9 +454,9 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 	From the *Native Ports* tab you can configure the read mode, built-in FIFO options, data port parameters, and implementation options. 
 
-5. Select First Word Fall Through as the read mode. 
+5. Select **First Word Fall Through** as the read mode. 
 
-6. Set the write width to be 8 bits**.** 
+6. Set the write width to be **8** bits. 
 
 7. Click in the *Read Width* field to change it automatically to match the write width. 
 
@@ -534,7 +534,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 	<i>Renamed external ports</i>
 	</p>
 
-8. Click on Regenerate Layout ( ![](.\images\lab4\Fig28.png)  ) icon from the vertical toolbar to see the above diagram.
+8. Click on Regenerate Layout ( ![](./images/lab4/Fig28.png)  ) icon from the vertical toolbar to see the above diagram.
 
 9. Select **Tools > Validate Design**.
 

@@ -181,7 +181,7 @@ After completing this lab, you will be able to:
 
 #### View the amount of FPGA resources consumed by the design using Report Utilization.
 
-1. In the *Flow Navigator* pane, select IMPLEMENTATION > Open Implemented Design > Report Utilization.
+1. In the *Flow Navigator* pane, select **IMPLEMENTATION > Open Implemented Design > Report Utilization**.
 
 	The Report Utilization dialog box opens.
 
@@ -200,7 +200,7 @@ After completing this lab, you will be able to:
 
 #### Generate a timing summary report
 
-1. Click **Flow Navigator > **IMPLEMENTATION > Open Implemented Design > Report Timing Summary** 
+1. Click **Flow Navigator > IMPLEMENTATION > Open Implemented Design > Report Timing Summary** 
 
 	The Report Timing Summary dialog box opens.
 

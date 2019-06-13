@@ -355,7 +355,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 
 4. Similarly, set the trigger position of the *hw\_ila\_2* to **512**.
 
-5. Select the *hw\_ila\_1* in the Hardware window and then click on the Run Trigger ( ![](.\images\lab6\Fig25.png)  ) button. Observe that the hw\_ila\_1 core is armed and showing the status as **Waiting for Trigger**.  
+5. Select the *hw\_ila\_1* in the Hardware window and then click on the Run Trigger ( ![](./images/lab6/Fig25.png)  ) button. Observe that the hw\_ila\_1 core is armed and showing the status as **Waiting for Trigger**.  
 
 	<p align="center">
 	<img src ="./images/lab6/Fig26.png">

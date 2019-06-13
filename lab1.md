@@ -70,11 +70,12 @@ Make sure that the *Create Project Subdirectory* box is checked.
     <i>Part Selection for the PYNQ</i>
     </p>
 
-    You may also select the **Boards** option and select the target {board}. Click **Next**.
+    You may also select the **Boards** option and select the target **{board}**. Click **Next**.
 
-13.  Click **Finish** to create the Vivado project.  
 
-	Use the Windows Explorer and look at the **{labs}\lab1** directory.  You will find that the lab1.cache and lab1.srcs directories and the lab1.xpr (Vivado) project file have been created. The lab1.cache directory is a place holder for the Vivado program database. Two directories, constrs_1 and sources_1, are created under the lab1.srcs directory; deep down under them, the copied lab1_<board>.xdc (constraint) and lab1.v (source) files respectively are placed.
+13.	Click **Finish** to create the Vivado project.
+
+	Use the Windows Explorer and look at the **{labs}\lab1** directory.  You will find that the lab1.cache and lab1.srcs directories and the lab1.xpr (Vivado) project file have been created. The lab1.cache directory is a place holder for the Vivado program database. Two directories, constrs_1 and sources_1, are created under the lab1.srcs directory; deep down under them, the copied lab1_{board}.xdc (constraint) and lab1.v (source) files respectively are placed.
 
 	<p align="center">
 	<img src ="./images/lab1/Fig7.png">

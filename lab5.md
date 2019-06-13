@@ -61,7 +61,7 @@ After completing this lab, you will be able to:
 	<i>Creating I/O Port for clk_pin input</i>
 	</p>
 
-3. Similarly, create the **btn\_pin** and **rst\_pin** input ports**.**
+3. Similarly, create the **btn\_pin** and **rst\_pin** input ports.
 
 #### Assign input pins clk\_pin, btn\_pin and rst\_pin to H16, D19 and D20 locations using the Device view and package pins. 
 
