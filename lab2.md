@@ -75,7 +75,7 @@ In this design we will use board’s USB-UART which is controlled by the Zynq’
 <img src ="./images/lab2/Fig5.png">
 </p>
 <p align = "center">
-<i>CLOCK\_RATE parameter of uart\_led for the {board}</i>
+<i>CLOCK_RATE parameter of uart_led for the {board}</i>
 </p>
 
 3. Expand **U0** and **uart\_rx\_i0** instance to see its hierarchy. 
