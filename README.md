@@ -6,16 +6,8 @@ The labs have been developed on a PC running Microsoft Windows 10 professional e
 ## Source Files Setup
 
 
-To use the source files for each of the labs in this workshop, you have to clone this repository from Github. For that, do the following:
+To use the source files for each of the labs in this workshop, you either have to clone this repository or download in a zip format from Github. You can clone the repository using  the following command:
 
-  If in **Windows**, download [Cmder](http://cmder.net/) or download [Git Bash](https://git-scm.com/download/win)
-
-  If in **Ubuntu (or any Debian distribution)**, install git from the aptitude package manager by running this command in a terminal window:
-  ```
-  sudo apt-get install git
-  ```
-
-  After installing, set up git from [here](https://help.github.com/articles/set-up-git/).  Then open a new git-bash/cmder/terminal window and run the following command:
   ```
   git clone https://github.com/xupgit/FPGA-Design-Flow-using-Vivado.git
   ```
